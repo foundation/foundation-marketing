@@ -1,0 +1,23 @@
+$sites-accent-color: #1583cc;
+
+// Saw no reference to old rule of #sites
+// TODO verify this rule is used
+.sites-layout {
+  a {
+    &:not(.button, .marketing-subnav) {
+      color: $sites-accent-color;
+    }
+  }
+
+  .button {
+    background: $sites-accent-color;
+  }
+}
+
+.sites-button {
+  background: $sites-accent-color;
+
+  &:hover {
+    background: scale-color($sites-accent-color, $lightness: -15%);
+  }
+}

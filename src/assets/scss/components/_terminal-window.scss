@@ -1,0 +1,44 @@
+.terminal-window {
+  background: #333;
+  border-radius: 8px;
+  color: $true-white;
+  font-family: 'Courier', monospace;
+  font-size: 1.25rem;
+  min-height: 125px;
+  padding: 1rem;
+  padding-top: 2.5rem;
+  position: relative;
+  white-space: pre;
+
+  // Window title bar
+  &::before {
+    background: #666;
+    border-radius: 8px 8px 0 0;
+    content: '';
+    display: block;
+    height: 1.5rem;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  // Window control buttons
+  &::after {
+    $color: lighten($emails-accent-color, 10%);
+    background: $color;
+    border-radius: 1000px;
+    box-shadow: 24px 0 0 $color, 48px 0 0 $color;
+    content: '';
+    display: block;
+    height: 12px;
+    left: 7px;
+    position: absolute;
+    top: 7px;
+    width: 12px;
+  }
+}
+
+.typed-cursor {
+  display: none;
+}

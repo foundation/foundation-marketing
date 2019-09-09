@@ -1,0 +1,144 @@
+// ZURB logo font
+@font-face {
+  font-family: 'zurb-logo';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/zurb-webfont.eot'),
+  url('/assets/fonts/zurb-webfont.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/zurb-webfont.svg') format('svg'),
+  url('/assets/fonts/zurb-webfont.ttf') format('truetype'),
+  url('/assets/fonts/zurb-webfont.woff') format('woff');
+}
+
+.marketing-topbar {
+  @include clearfix;
+
+  background: $topbar-background !important;
+  font-size: rem-calc(13);
+  font-weight: bold;
+  position: relative;
+
+  ul {
+    &:first-child {
+      float: left;
+    }
+
+    &:last-child  {
+      float: right;
+    }
+  }
+
+  .dropdown.menu a {
+    background: $topbar-background;
+  }
+
+  .dropdown.menu a.button {
+    background: $primary-color;
+
+    &:hover {
+      background: darken($primary-color, 10%);
+    }
+  }
+
+  // background of the dropdown items on hover
+  .is-dropdown-submenu-item a {
+    &:hover {
+      background: $topbar-hover-color;
+    }
+  }
+
+  .zurb-logo-text {
+    @include vertical-center;
+
+    margin-left: 5px;
+    padding-top: 4px;
+  }
+
+  .topbar-title > a {
+    font-family: "zurb-logo";
+    font-size: 38px;
+    font-weight: normal;
+    opacity: 0.75;
+    transition: all .25s ease-in-out;
+
+    strong {
+      display: inline;
+      font-family: 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 45px;
+      margin-left: -7px;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .menu a {
+    color: $light-gray;
+    height: 45px;
+    line-height: 45px !important;
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+
+    &:hover:not(.button, .zurb-logo),
+    &:focus {
+      background: $topbar-hover-color;
+    }
+
+    &.button {
+      border-radius: 0;
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+  }
+
+  .menu.submenu {
+    border: 0;
+    margin-left: -1px;
+  }
+
+  .dropdown.menu > li.opens-right > .is-dropdown-submenu {
+    border: none;
+  }
+
+  // zurb logo
+  .zurb-logo img {
+    height: 45px;
+    opacity: 0.9;
+    width: 76px;
+  }
+
+  .topbar-title {
+    opacity: 0.9;
+    transition: all .25s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+      transition: all .25s ease-in-out;
+    }
+  }
+
+  .title {
+    background: $topbar-background;
+    color: $dark-gray;
+    font-size: 0.8em;
+    padding: 10px;
+    padding-left: 15px;
+  }
+
+  .is-active {
+    a {
+      background: darken($topbar-background, 20%);
+    }
+  }
+
+  .menu:last-child {
+    border-left: 1px solid #3B4951;
+  }
+
+  .menu {
+    li:not(:last-child) {
+      border-right: 1px solid #3B4951;
+    }
+  }
+}

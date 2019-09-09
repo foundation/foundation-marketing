@@ -1,0 +1,88 @@
+.tools-page {
+  ul {
+    list-style: none;
+
+    li {
+      margin-bottom: .25rem !important;
+    }
+  }
+
+  .breadcrumbs {
+    display: inline-block;
+    margin-bottom: 3rem;
+
+    li {
+      margin-bottom: 0 !important;
+    }
+
+    a {
+      font-size: 11px;
+    }
+  }
+
+  @include breakpoint(small only) {
+    .breadcrumbs > * {
+      line-height: 2;
+    }
+  }
+
+  p,
+  a,
+  li {
+    font-size: 14px;
+  }
+
+  img {
+    margin-bottom: 1rem;
+  }
+
+  hr {
+    border-style: dashed;
+    margin: 3rem 0;
+  }
+
+  // Tools-Community Page
+  .toolslist {
+    h3 {
+      margin-top: 2rem;
+
+      &.toolslist-head {
+        border-bottom: 1px dotted #ddd;
+        margin-bottom: -1rem;
+      }
+    }
+
+    .f5 {
+      background: none;
+      border: 0.12rem solid #074E68;
+      border-radius: 8px;
+      color: #074E68;
+      font-weight: bold;
+    }
+
+    .f4 {
+      background: none;
+      border: 0.12rem solid #2284a1;
+      border-radius: 8px;
+      color: #2284a1;
+      font-weight: bold;
+    }
+
+    .f3 {
+      background: none;
+      border: 0.12rem solid #666;
+      border-radius: 8px;
+      color: #666;
+      font-weight: bold;
+    }
+
+    ul,
+    li,
+    ol,
+    dl {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

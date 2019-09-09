@@ -1,0 +1,73 @@
+<!--topic 1-->
+
+<br>
+<br>
+
+<div class="row">
+  <div class="medium-9 medium-centered columns">
+    <div class="row post impressions new post-count-spacing">
+      <% if (comments_count > 0) { %>
+         <div class="columns small-3">
+            <div class="post-count new already-checked test">
+               <a href="<%= url %>">
+                 <div class="post-count-container new already-checked">
+                    <span class="reply-count new-post already-checked">NEW</span>
+                 </div>
+                 <div class="total-post-count new total-replies">
+                    <% if (comments_count == 1) { %>
+                    <%= comments_count %> Reply
+                    <% } else { %>
+                    <%= comments_count %> Replies
+                    <% } %>
+                 </div>
+               </a>
+            </div>
+         </div>
+       <% } else { %>
+        <div class="columns small-3">
+          <div class="post-count new-general">
+            <a href="<%= url %>">
+              <div class="post-count-container new-general">
+                <span class="reply-count new-general">NEW</span>
+              </div>
+            </a>
+          </div>
+          <a href="<%= url %>"></a>
+        </div>
+       <% } %>
+
+       <div class="columns small-9 medium-8 end desc">
+         <div class="post-description">
+             <h5 class="content-title">
+                <a href="<%= url %>"><%= title || "Untitled" %></a>
+             </h5>
+             <p class="author-name">
+                 By
+                 <span class="author">
+                    <strong>
+                      <%= author_name %>
+                      <% if (typeof(latest_comment_author_name) != "undefined") { %>,<% } %>
+                    </strong>
+                 </span>
+                 <% if (typeof(latest_comment_author_name) != "undefined") { %>
+                 <span class="by">last Reply by</span>
+                 <span class="when">
+                    <span class="author">
+                       <strong><%= latest_comment_author_name %></strong>
+                    </span>
+                    <%= latest_comment_created_at_time_ago %> ago
+                 </span>
+                 <% } else { %>
+                 <span class="when"><%= created_at_time_ago %> ago</span>
+                 <% } %>
+             </p>
+
+             <div class="post-description copy show-for-medium">
+                 <p><%= body %></p>
+             </div>
+          </div>
+       </div>
+      <hr>
+    </div>
+  </div>
+</div>

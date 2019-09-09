@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="106px" height="106px" viewBox="0 0 106 106" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>drip</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="drip">
+            <circle id="Oval-1" stroke="#CC7691" stroke-width="4" cx="53" cy="53" r="50"></circle>
+            <g id="Group-2" transform="translate(37.000000, 32.000000)" fill="#CC7691">
+                <ellipse id="Oval-4" cx="16.5" cy="25.4210526" rx="16.5" ry="16.5789474"></ellipse>
+                <polygon id="Triangle-1" points="16.5 0 30.8 16.845735 2.2 16.845735 "></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

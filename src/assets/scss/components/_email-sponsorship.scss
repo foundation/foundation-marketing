@@ -1,0 +1,22 @@
+// TODO: Color Literals
+.email-sponsorship-footer-container {
+  background: $true-white;
+  border-top: 1px solid #ddd;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.email-sponsorship-footer {
+  padding: 10px 0;
+
+  .button {
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+}
+
+.email-sponsorship-footer-label {
+  padding-right: 1rem;
+}

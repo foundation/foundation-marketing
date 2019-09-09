@@ -1,0 +1,59 @@
+// TODO: Color Literals
+
+.inky-comparison-tabs {
+  border: 0;
+  margin: 0 auto 1rem;
+  max-width: 400px;
+  text-align: center;
+
+  .tabs-title {
+    width: 50%;
+
+    a {
+      background: $secondary-color;
+      box-shadow: 0 2px 0 darken($secondary-color, 10%);
+      color: $true-white;
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 0.65rem 1rem;
+      text-align: center;
+    }
+
+    &.is-active {
+      a {
+        background: $emails-accent-color;
+        box-shadow: 0 2px 0 darken($emails-accent-color, 10%);
+      }
+    }
+
+    &:first-child {
+      a {
+        border-radius: 2px 0 0 2px;
+      }
+    }
+
+    &:last-child {
+      a {
+        border-radius: 0 2px 2px 0;
+      }
+    }
+  }
+
+  & + .tabs-content {
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    margin-bottom: 2rem;
+
+    .code-example {
+      max-height: 300px;
+      overflow: auto;
+    }
+
+    code {
+      background: transparent;
+      border: 0;
+      color: $true-black;
+      padding: 0;
+    }
+  }
+}

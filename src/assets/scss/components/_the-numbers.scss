@@ -1,0 +1,94 @@
+.the-numbers {
+  background: url('../img/business/business-hero2.jpg') no-repeat center top #064F68;
+  margin: 40px auto;
+  padding: 40px 0 0;
+  width: 100%;
+
+  h2 {
+    color: $true-white;
+  }
+
+  .stats {
+    text-align: center;
+
+    h2 {
+      color: $true-white;
+      font-size: 3.5em;
+      margin-bottom: 0;
+    }
+
+    h6 {
+      color: $true-white;
+      font-size: 1.25em;
+    }
+  }
+
+  &.emails-stats {
+    background: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
+
+    h2 {
+      color: $emails-accent-color;
+      font-weight: 700;
+    }
+
+    h6 {
+      color: #333;
+      font-weight: 400;
+    }
+  }
+
+  .subheader {
+    background: $white;
+    color: $dark-gray;
+    font-weight: 600;
+    margin-top: -2.7rem;
+  }
+
+  &.case-study-stats {
+    border: 1px solid $medium-gray;
+    height: auto;
+    margin: 2rem 0 6rem 0;
+    padding: 2rem;
+
+    &.arlington {
+      border: 1px solid #F2B600;
+    }
+
+    h2 {
+      color: $dark-gray;
+
+      &.me-undies {
+        color: $me-undies;
+      }
+
+      &.arlington {
+        color: $arlington;
+      }
+
+    }
+
+    @include breakpoint(small only) {
+      h6:last-of-type {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}
+
+#main-content .the-numbers h2 {
+  margin-bottom: 40px;
+}
+
+#main-content .the-numbers .stats h2 {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  #main-content .the-numbers .stats h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+}

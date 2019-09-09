@@ -1,0 +1,35 @@
+.img-panel {
+  img {
+    border: 3px solid $true-white;
+    border-radius: 50%;
+    float: left;
+    left: -3rem;
+    margin-bottom: auto;
+    max-width: 6rem;
+    position: absolute;
+    top: 2rem;
+  }
+}
+
+.border-panel-cert {
+  background: $true-white;
+  margin-left: 4rem;
+  max-width: 16rem;
+  min-height: 10rem;
+  padding: 25px 15px 30px 60px;
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+.panel-bg {
+  background: $secondary-color;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+
+  &.light {
+    background: lighten($secondary-color, 50%);
+  }
+}

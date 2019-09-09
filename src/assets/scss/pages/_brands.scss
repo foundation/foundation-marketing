@@ -1,0 +1,761 @@
+.grayscale {
+  filter: grayscale(100%); /* Current draft standard */
+  -webkit-filter: grayscale(100%); /* New WebKit */
+
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%); /* Not yet supported in Gecko, Opera or IE */
+   /* Gecko */
+  filter: gray; /* IE */
+  -webkit-filter: grayscale(1); /* Old WebKit */
+  -moz-filter: grayscale(100%);
+  &:hover {
+    filter: none; /* Current draft standard */
+    -webkit-filter: none; /* New WebKit */
+    -moz-filter: none;
+    -ms-filter: none;
+    -o-filter: none; /* Not yet supported in Gecko, Opera or IE */
+    filter: none; /* Gecko */
+    filter: none; /* IE */
+    -webkit-filter: none; /* Old WebKit */
+  }
+}
+
+.site-examples {
+  width: 100%;
+  position: relative;
+  height: 222px;
+  margin: 0 0 2rem;
+  text-align: center;
+  border: 1px solid #ddd;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+  .site-examples-icon-box {
+    position: relative;
+    top: 100px;
+    display: inline-block;
+    margin-bottom: 40px;
+    padding: 10px;
+    background: rgba(250,250,250,1);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  .site-examples-heading {
+    position: absolute;
+    top: 85px;
+    left: 1px;
+    width: 100%;
+    color: #fff;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    z-index: 101;
+    margin-left: -1px;
+    margin-right: -1px;
+    // background-color: rgba(250,250,250,0.8);
+     background-color: rgba(0, 140, 186,0.8);
+    -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .site-examples-description {
+    width: 80%;
+    margin: 0 auto;
+    opacity: 0;
+    -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+  }
+
+  .site-examples-icon-box > img.site-examples-icon {
+    width: 40px;
+  }
+
+  &:hover {
+    border-color: $primary-color;
+  }
+
+  &:hover .site-examples-icon-box {
+    top: -30px;
+  }
+
+  &:hover .site-examples-heading {
+    top: -5px;
+  }
+}
+
+.brands-detail-header {
+  margin-bottom: 3rem;
+}
+
+// all the brands - images
+
+.mini {
+  background: url('../img/learn/website-examples/mini.png') no-repeat center center;
+  background-size: cover;
+  height: 220px;
+}
+
+.barclays {
+  background: url('../img/learn/website-examples/barclays.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.urban-d {
+  background: url('../img/learn/website-examples/urban-d.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.fonts {
+  background: url('../img/learn/website-examples/fonts.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.starwars {
+  background: url('../img/learn/website-examples/starwars.png') no-repeat center center;
+  background-size: cover;
+  height: 220px;
+}
+
+.vans {
+  background: url('../img/learn/website-examples/vans.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.express {
+  background: url('../img/learn/website-examples/express.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.marriott-gp {
+  background: url('../img/learn/website-examples/marriott-gp.png') no-repeat top right;
+  background-size: cover;
+  height: 220px;
+}
+
+.herschel {
+  background: url('../img/learn/website-examples/herschel.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.istock {
+  background: url('../img/learn/website-examples/istock.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.toms {
+  background: url('../img/learn/website-examples/toms.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.nature-box {
+  background: url('../img/learn/website-examples/nature-box.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.jquery {
+  background: url('../img/learn/website-examples/jquery.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.parrot {
+  background: url('../img/learn/website-examples/parrot.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.specialized {
+  background: url('../img/learn/website-examples/specialized.png') no-repeat top left;
+  background-size: cover;
+  height: 220px;
+}
+
+.fandango {
+  background: url('../img/learn/website-examples/fandango.png') no-repeat top left;
+  background-size: cover;
+  height: 220px;
+}
+
+.swatch {
+  background: url('../img/learn/website-examples/swatch.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.warby {
+  background: url('../img/learn/website-examples/warby.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.fastco {
+  background: url('../img/learn/website-examples/fastco.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.treehouse {
+  background: url('../img/learn/website-examples/treehouse.png') no-repeat center center;
+  background-size: cover;
+  height: 220px;
+}
+
+.htc {
+  background: url('../img/learn/website-examples/htc.png') no-repeat top left;
+  background-size: cover;
+  height: 220px;
+}
+
+.carhartt {
+  background: url('../img/learn/website-examples/carhartt.png') no-repeat top left;
+  background-size: cover;
+  height: 220px;
+}
+
+.adobe-g {
+  background: url('../img/learn/website-examples/adobe-g.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.olympic-ca {
+  background: url('../img/learn/website-examples/olympics-ca.png') no-repeat top left;
+  background-size: cover;
+  height: 220px;
+}
+
+.pact-coffee {
+  background: url('../img/learn/website-examples/pact-coffee.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.zumba {
+  background: url('../img/learn/website-examples/zumba.png') no-repeat top left;
+  background-size: cover;
+  height: 220px;
+}
+
+.zazzle {
+  background: url('../img/learn/website-examples/zazzle.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.new-balance {
+  background: url('../img/learn/website-examples/new-balance.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.zozi {
+  background: url('../img/learn/website-examples/zozi.png') no-repeat center center;
+  background-size: cover;
+  height: 220px;
+}
+
+.docker {
+  background: url('../img/learn/website-examples/docker.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.us-soccer {
+  background: url('../img/learn/website-examples/us-soccer.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.stance {
+  background: url('../img/learn/website-examples/stance.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.happy-socks {
+  background: url('../img/learn/website-examples/happy-socks.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.wd40 {
+  background: url('../img/learn/website-examples/wd40.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.golden-state-warriors-champs {
+  background: url('../img/learn/website-examples/golden-state-warriors-champs.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.bold-italic {
+  background: url('../img/learn/website-examples/bold-italic.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.recode {
+  background: url('../img/learn/website-examples/recode.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.pixar {
+  background: url('../img/learn/website-examples/pixar.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.car-driver {
+  background: url('../img/learn/website-examples/car-driver.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.polar {
+  background: url('../img/learn/website-examples/polar.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.perry-ellis {
+  background: url('../img/learn/website-examples/perry-ellis.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.denon-dj {
+  background: url('../img/learn/website-examples/denon-dj.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.marantzpro {
+  background: url('../img/learn/website-examples/marantzpro.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.amazon-jobs {
+  background: url('../img/learn/website-examples/amazon-jobs.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.run-dmc {
+  background: url('../img/learn/website-examples/run-dmc.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.comedy-central {
+  background: url('../img/learn/website-examples/comedy-central.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.samsung-milk {
+  background: url('../img/learn/website-examples/samsung-milk.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.skullcandy {
+  background: url('../img/learn/website-examples/skullcandy.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.timberland {
+  background: url('../img/learn/website-examples/timberland.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.pressed-juicery {
+  background: url('../img/learn/website-examples/pressed-juicery.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.ll-cool {
+  background: url('../img/learn/website-examples/ll-cool.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.keurig {
+  background: url('../img/learn/website-examples/keurig.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.mikes-hard {
+  background: url('../img/learn/website-examples/mikes-hard.png') no-repeat center left;
+  background-size: cover;
+  height: 220px;
+}
+
+.hyperlite {
+  background: url('../img/learn/website-examples/hyperlite.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.diamondback {
+  background: url('../img/learn/website-examples/diamondback.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.subaru {
+  background: url('../img/learn/website-examples/subaru.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.lotus {
+  background: url('../img/learn/website-examples/lotus.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.nissan {
+  background: url('../img/learn/website-examples/nissan.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.skittles {
+  background: url('../img/learn/website-examples/skittles.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.coca-cola {
+  background: url('../img/learn/website-examples/coca-cola.png') no-repeat bottom center;
+  background-size: cover;
+  height: 220px;
+}
+
+.ford {
+  background: url('../img/learn/website-examples/ford.png') no-repeat bottom center;
+  background-size: cover;
+  height: 220px;
+}
+
+.plantronics {
+  background: url('../img/learn/website-examples/plantronics.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.chicken-sea {
+  background: url('../img/learn/website-examples/chicken-sea.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.clif {
+  background: url('../img/learn/website-examples/clif.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.sprouts {
+  background: url('../img/learn/website-examples/sprouts.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.outback {
+  background: url('../img/learn/website-examples/outback.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.snapple {
+  background: url('../img/learn/website-examples/snapple.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.ea-starwars {
+  background: url('../img/learn/website-examples/ea-starwars.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.renault-f1 {
+  background: url('../img/learn/website-examples/renault-f1.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.kawasaki {
+  background: url('../img/learn/website-examples/kawasaki.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.ethanallen {
+  background: url('../img/learn/website-examples/ethanallen.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.kellymoore {
+  background: url('../img/learn/website-examples/kellymoore.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.hp-store {
+  background: url('../img/learn/website-examples/hp-store.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.jansport {
+  background: url('../img/learn/website-examples/jansport.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.northface {
+  background: url('../img/learn/website-examples/northface.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.eurosport {
+  background: url('../img/learn/website-examples/eurosport.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.smart-car {
+  background: url('../img/learn/website-examples/smart-car.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.bhg {
+  background: url('../img/learn/website-examples/bhg.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.bmw-blog {
+  background: url('../img/learn/website-examples/bmw-blog.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.maybelline {
+  background: url('../img/learn/website-examples/maybelline.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.smart-car {
+  background: url('../img/learn/website-examples/smart-car.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.meundies {
+  background: url('../img/learn/website-examples/meundies.png') no-repeat top center;
+  background-size: cover;
+  height: 220px;
+}
+
+.washington-post {
+  background: url('../img/learn/website-examples/washington-post.png') no-repeat top right;
+  background-size: cover;
+  height: 220px;
+}
+
+.nat-geo {
+  background: url('../img/learn/website-examples/nat-geo.png') no-repeat top right;
+  background-size: cover;
+  height: 220px;
+}
+
+.honor-society {
+  background: url('../img/learn/website-examples/honor-society.png') no-repeat top left;
+  background-size: cover;
+  height: 220px;
+}
+
+.flite {
+  background: url('../img/learn/website-examples/flite.png') no-repeat center center;
+  background-size: cover;
+  height: 220px;
+}
+
+.mister-jekyll {
+  background: url('../img/learn/website-examples/mister-jekyll.png') no-repeat center center;
+  background-size: cover;
+  height: 220px;
+}
+
+.jacqueline-west {
+  background: url('../img/learn/website-examples/jacqueline-west.png') no-repeat center center;
+  background-size: cover;
+  height: 220px;
+}
+
+.swizzle {
+  background: url('../img/learn/website-examples/swizzle.png') no-repeat center center;
+  background-size: cover;
+  height: 220px;
+}
+
+.wcb {
+  background: url('../img/learn/website-examples/wcb.png') no-repeat center center;
+  background-size: cover;
+  height: 220px;
+}
+
+.drmartens {
+  background: url('../img/learn/website-examples/drmartens.png') no-repeat center center;
+  background-size: cover;
+  height: 220px;
+}
+
+.sonos {
+  background: url('../img/learn/website-examples/sonos.png') no-repeat center center;
+  background-size: cover;
+  height: 220px;
+}
+
+.chasecenter {
+  background: url('../img/learn/website-examples/chasecenter.png') no-repeat center center;
+  background-size: cover;
+  height: 220px;
+}
+
+.smonkey {
+  background: url('../img/learn/website-examples/smonkey.png') no-repeat center center;
+  background-size: cover;
+  height: 220px;
+}
+
+.jet {
+  background: url('../img/learn/website-examples/jet.png') no-repeat center center;
+  background-size: cover;
+  height: 220px;
+}
+
+.acorns {
+  background: url('../img/learn/website-examples/acorns.png') no-repeat center center;
+  background-size: cover;
+  height: 220px;
+}
+
+.trekbikes {
+  background: url('../img/learn/website-examples/trekbikes.png') no-repeat center center;
+  background-size: cover;
+  height: 220px;
+}
+
+.lucy {
+  background: url('../img/learn/website-examples/lucy.png') no-repeat center center;
+  background-size: cover;
+  height: 220px;
+}
+
+.pocket {
+  background: url('../img/learn/website-examples/pocket.png') no-repeat center center;
+  background-size: cover;
+  height: 220px;
+}
+
+.hondaf1 {
+  background: url('../img/learn/website-examples/hondaf1.png') no-repeat center center;
+  background-size: cover;
+  height: 220px;
+}
+
+.turner {
+  background: url('../img/learn/website-examples/turner.png') no-repeat center center;
+  background-size: cover;
+  height: 220px;
+}
+
+
+
+// brand list styles
+
+.brand-list-header {
+  border-bottom: 1px solid #eee;
+  color: #eee;
+  font-weight: 600;
+}
+
+.brand-list {
+  background: $primary-color;
+  width: 100%;
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+  // text-align: center;
+  a {
+    white-space: nowrap;
+    color: #eee;
+    position: relative;
+    text-decoration: none;
+    line-height: 24px;
+
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      transition: transform .5s ease;
+    }
+
+    &::before {
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background: #eee;
+      transform:  scaleX(0);
+    }
+
+    &:hover::before {
+      transform:  scaleX(1);
+    }
+  }
+}
+
+.brand-list-logos {
+  display: block;
+  margin: 0 auto;
+  list-style-type: none;
+
+  li {
+    padding-bottom: 0.4rem;
+  }
+}
+
+.logo-leveler {
+  margin-top: 1rem;
+}
+
+.logo-leveler-up {
+  margin-top: -1rem;
+}

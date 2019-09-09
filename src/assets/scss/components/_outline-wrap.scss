@@ -1,0 +1,84 @@
+.outline-wrap{
+  margin-bottom: 50px;
+  h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .section-title {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    h4 { margin-bottom: 2px; }
+    .desc {
+      @include proxima-nova;
+      font-size: em-calc(16);
+     }
+    .sub-info {
+      font-size: em-calc(14);
+      @include proxima-nova-condensed;
+      text-transform: uppercase;
+      color: #777;
+      margin-bottom: 0;
+      position: relative;
+      top: -14px;
+      font-weight: 600;
+    }
+  }
+
+  .email-lesson-link {
+    color: #d9708b;
+    font-weight: 600;
+  }
+
+  .outline-intro {
+    margin-top: 10px;
+    margin-bottom: 60px;
+    list-style-type: none;
+
+    li {
+      padding: 25px 0;
+
+      &:first-child {
+        padding-top: 0;
+      }
+
+      &:last-child {
+        border-bottom: 0;
+        padding-bottom: 0;
+      }
+
+      img {
+        margin-top: 8px;
+      }
+    }
+    h6 {
+      span {
+        font-style: italic;
+      }
+    }
+    .outline-bullets {
+      list-style: disc;
+      color: #777;
+      li {
+        font-size: emCalc(14px);
+        border: none;
+        padding: 0;
+      }
+    }
+    .outline-bullets.large {
+      color: #333;
+      margin-left: 0.9375em;
+      li {
+        font-size: emCalc(18px);
+      }
+    }
+  }
+}
+
+.outline {
+  list-style-type: none;
+
+  li {
+    font-size: 1.125rem;
+    color: #777;
+  }
+}

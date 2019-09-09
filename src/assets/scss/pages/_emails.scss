@@ -1,0 +1,89 @@
+.emails-intro {
+  p,
+  li {
+    font-size: 1.25rem;
+  }
+
+  p:first-child {
+    margin-bottom: 2rem;
+  }
+
+  ul {
+    list-style-type: none;
+
+    a {
+      font-weight: bold;
+    }
+  }
+}
+
+.floating-inky {
+  @keyframes inky-float {
+    from { transform: translateY(0px); }
+    to   { transform: translateY(-10px) }
+  }
+
+  position: relative;
+  animation-name: inky-float;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.emails-logo-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  img {
+    display: block;
+    height: 30px;
+    margin: 0 auto;
+  }
+
+  #warriors {
+    height: 120px;
+  }
+
+  #express {
+    height: 20px;
+  }
+
+  // The Warriors logo is a bit big
+  .column:nth-child(3) img {
+    width: 55%;
+  }
+}
+
+.emails-subpage-list {
+  li {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+
+    &:hover {
+      opacity: 0.65;
+    }
+  }
+
+  a {
+    color: $emails-accent-color;
+    display: block;
+  }
+
+  img {
+    width: 75px;
+    height: 75px;
+    margin-right: 0.75rem;
+  }
+}
+
+.emails-landing {
+  hr.dotted {
+    max-width: 100%;
+    @include breakpoint(large) {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+    }
+  }
+}

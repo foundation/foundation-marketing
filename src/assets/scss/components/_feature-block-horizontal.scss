@@ -1,0 +1,144 @@
+.features-blocks {
+  ul {
+    li {
+      padding-bottom: 0.75rem;
+    }
+  }
+}
+
+
+.horizontal-feature-block {
+  margin-bottom: 2rem;
+  position: relative;
+
+  .feature-img {
+    border-radius: 50%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 5rem;
+  }
+
+  .feature-text {
+    padding-left: 5rem;
+
+    h5 {
+      a {
+        color: $black;
+        transition: $global-transition;
+
+        &:hover {
+          color: $medium-gray;
+          transition: $global-transition;
+        }
+      }
+    }
+  }
+}
+
+.vertical-feature-block {
+  margin-bottom: 3rem;
+  position: relative;
+
+  img {
+    display: block;
+    margin: 1rem auto 0;
+    padding: 1.25rem;
+
+    &.round-icon {
+      width: 12.5rem;
+    }
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  h4 {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  a {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+}
+
+.homepage-training {
+  .vertical-feature-block {
+    img {
+      width: 80%;
+    }
+  }
+}
+
+.forum-training-icon {
+  background: $primary-color;
+  height: 5rem;
+  width: 5rem;
+
+  &.secondary {
+    background: $secondary-color;
+  }
+
+  &.success {
+    background: $success-color;
+  }
+
+  &.alert {
+    background: $alert-color;
+  }
+
+  &.warning {
+    background: $warning-color;
+    padding: 1rem;
+  }
+}
+
+.contribute-example {
+  border: 1px solid $light-gray;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  width: 600px;
+
+  &.full-width {
+    width: 100%;
+  }
+}
+
+.forum-icon-white {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  width: 70px;
+}
+
+.background-line {
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    border-top: 1px solid $medium-gray;
+    bottom: 0;
+    content: '';
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+.link {
+  color: $anchor-color;
+}

@@ -1,0 +1,69 @@
+$emails-accent-color: #cc7691;
+$emails-link-color: #232547;
+
+//TODO: remove the ID's
+
+.emails-layout {
+  a {
+    color: $emails-accent-color;
+  }
+
+  .button {
+    color: $white;
+
+    &.secondary {
+      background: $secondary-color;
+    }
+
+    &:hover {
+      background: scale-color($emails-accent-color, $lightness: -14%);
+    }
+
+    &:not(.secondary) {
+      background: $emails-accent-color;
+      color: $white;
+    }
+  }
+
+  .marketing-subnav {
+    a {
+      color: $white;
+    }
+  }
+
+  .newsletter-signup {
+    .button {
+      background: $emails-accent-color;
+    }
+  }
+
+  .twitter,
+  #inky-comparison-panel-1-label,
+  #inky-comparison-panel-2-label {
+    color: $white;
+  }
+
+  .stars {
+    .emails {
+      color: $white;
+    }
+  }
+
+  #inky-comparison-panel-1-label {
+    transition: background .5s ease;
+
+    &:hover {
+      background: scale-color($emails-accent-color, $lightness: -14%);
+      transition: background .5s;
+    }
+  }
+}
+
+#inky-comparison-panel-2-label {
+  transition: background .5s ease;
+
+  &:hover {
+    background: scale-color($secondary-color, $lightness: -14%);
+    transition: background .5s;
+  }
+}

@@ -1,0 +1,61 @@
+// University Courses
+
+.top-cta-class {
+  margin-bottom: 50px;
+
+  p { font-size: 0.8125em; color: #777; }
+  h2 { font-weight: 200; }
+
+  .class-price {
+    font-size: 14px;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+}
+
+// Building Blocks
+.building-block-item {
+  padding: 0.5rem 0;
+  text-align: center;
+  border: 1px solid #e7e7e7;
+  max-height: 12rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.building-block-item .building-block-item-header {
+  margin-bottom: 2rem;
+  color: #333;
+  h4 { font-size: 13px; }
+}
+
+.with-icon {
+	text-align: center;
+	& p, ul li {
+		text-align: left;
+	}
+	img {
+		width: 200px;
+		padding: 20px;
+	}
+}
+
+.about-zurb {
+  margin-bottom: 2rem;
+}
+
+.flex-video.vimeo.class {
+  margin-bottom: -4rem;
+}
+
+.lessons-section {
+  img {
+    border: 1px solid #ddd;
+  }
+
+  .lesson-item-header {
+    color: #333;
+    font-size: 1.2rem;
+  }
+}

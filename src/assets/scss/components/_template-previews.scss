@@ -1,0 +1,15 @@
+.transactional-template-preview,
+.drip-template-preview {
+  background-size: 190%;
+  height: 600px;
+  margin-top: -30px;
+  width: 100%;
+}
+
+.transactional-template-preview {
+  background: url('../img/foundation-emails/templates/order.png') top center no-repeat;
+}
+
+.drip-template-preview {
+  background: url('../img/foundation-emails/templates/welcome.png') top center no-repeat;
+}

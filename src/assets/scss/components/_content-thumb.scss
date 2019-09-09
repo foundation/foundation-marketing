@@ -1,0 +1,50 @@
+//TODO: color literal
+.thumb-row {
+  a {
+    .thumb-category {
+      color: $medium-gray;
+      font-size: 0.875rem;
+      font-weight: bold;
+      margin-bottom: 0;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .thumb-description {
+      color: $body-font-color;
+      font-size: 1.0625rem;
+      font-weight: 300;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      text-align: center;
+      text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+
+      .thumb-author {
+        display: block;
+        font-size: 0.75rem;
+      }
+    }
+  }
+
+  img {
+    margin-bottom: 2rem;
+
+    &.tuts-img {
+      display: block;
+      height: 157px;
+      margin: 0 auto 2rem;
+      width: 278px;
+    }
+  }
+
+  .column {
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    transition: $global-transition;
+
+    &:hover {
+      background-color: $light-gray;
+      transition: $global-transition;
+    }
+  }
+}

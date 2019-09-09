@@ -1,0 +1,85 @@
+@import 'settings';
+@import 'foundation';
+@include foundation-everything;
+
+// Removed including the commented-out individual Foundation components for brevity.
+
+// Mixins
+@import'mixins/colors';
+
+// Components
+@import 'components/typography';
+@import 'components/buttons';
+
+@import 'components/avatar';
+@import 'components/colors-apps';
+@import 'components/colors-emails';
+@import 'components/colors-sites';
+@import 'components/colors-case-studies';
+@import 'components/container-hover';
+@import 'components/content-feature-side-text';
+@import 'components/content-thumb';
+@import 'components/countdown-banner';
+@import 'components/credibility-blocks';
+@import 'components/email-sponsorship';
+@import 'components/emails';
+@import 'components/faq';
+@import 'components/feature-block-horizontal';
+@import 'components/feature-block-main';
+@import 'components/feature-block-vertical';
+@import 'components/feature-callout';
+@import 'components/filter-list';
+@import 'components/footer';
+@import 'components/footer-banner';
+@import 'components/forum_posts';
+@import 'components/github-updates';
+@import 'components/hero';
+@import 'components/info-banner';
+@import 'components/inky-comparison';
+@import 'components/inliner';
+@import 'components/main-nav';
+@import 'components/newsletter-signup';
+@import 'components/newsletter-signup-form';
+@import 'components/off-canvas-nav';
+@import 'components/panel';
+@import 'components/partners';
+@import 'components/signup-modal';
+@import 'components/small-feature-icons';
+@import 'components/studios-callout';
+@import 'components/subnav';
+@import 'components/template-previews';
+@import 'components/templates';
+@import 'components/terminal-window';
+@import 'components/the-numbers';
+@import 'components/timeline';
+@import 'components/timeline-list';
+@import 'components/tools-list';
+@import 'components/tutorial-course-callout';
+@import 'components/tweet-card';
+@import 'components/twenty-twenty';
+@import 'components/upload-box';
+@import 'components/banner-label';
+@import 'components/benefits';
+@import 'components/instructor-wrap';
+@import 'components/format-wrap';
+@import 'components/as-seen-in';
+@import 'components/outline-wrap';
+
+// Pages
+@import 'pages/404';
+@import 'pages/anniversary';
+@import 'pages/brands';
+@import 'pages/buzz';
+@import 'pages/case-studies';
+@import 'pages/certification';
+@import 'pages/email-sponsorship';
+@import 'pages/emails';
+@import 'pages/emails-course';
+@import 'pages/events';
+@import 'pages/f-apps';
+@import 'pages/learn';
+@import 'pages/resources';
+@import 'pages/tutorials';
+
+// TODO: Figure this out
+@import 'components/shame';

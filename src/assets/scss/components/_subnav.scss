@@ -1,0 +1,49 @@
+.marketing-subnav {
+  bottom: 0;
+  float: none;
+  margin: 0 auto;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+
+  li {
+    display: inline-block;
+    float: none;
+
+    a {
+      color: $true-white;
+      display: block;
+      font-family: 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      padding: 0.9rem 1rem 0.75rem;
+      text-transform: uppercase;
+
+      &.lower-case {
+        text-transform: none;
+      }
+
+      &.is-active {
+        background: rgba($true-white, 0.15);
+      }
+
+      &:hover {
+        background: rgba($true-white, 0.15);
+        transition: all .25s ease-in-out;
+      }
+    }
+
+    @include breakpoint(small only) {
+      display: none;
+    }
+  }
+
+  @media only screen and (min-width: 640px) and (max-width: 851px) {
+    li {
+      a {
+        font-size: 0.5rem;
+      }
+    }
+  }
+}

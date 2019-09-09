@@ -1,0 +1,109 @@
+//TODO: Color literals
+.vertical-feature-block {
+  margin-bottom: 3rem;
+  text-align: center;
+
+  img {
+    display: block;
+    height: 90%;
+    margin: 1rem auto 0;
+    padding: 1.25rem;
+    width: 90%;
+
+    &.round-icon {
+      width: 12.5rem;
+    }
+  }
+
+  .tiny-icons {
+    width: 27%;
+  }
+
+  .feature-block-header {
+    color: $body-font-color;
+    font-size: rem-calc(28);
+    font-weight: 200;
+  }
+
+  h3 {
+    color: #333;
+  }
+
+  h4 {
+    color: #8a8a8a;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  a {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+}
+
+
+.framework-callouts {
+  h2 {
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  h6 {
+    color: #7e7e7e;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    margin: 0;
+    margin-top: -10px;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: #222222;
+    margin-top: 20px;
+  }
+
+  img {
+    text-align: center;
+  }
+
+  .link {
+    color: $anchor-color;
+    text-align: center;
+  }
+
+  .framework-mascot {
+    img {
+      height: 300px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .button {
+    font-size: 0.95em;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+}
+
+.vertical-feature-block-basic {
+  img {
+    display: block;
+    margin-bottom: $global-margin;
+  }
+
+  h3 {
+    color: #333;
+  }
+
+  h4 {
+    color: #8a8a8a;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}

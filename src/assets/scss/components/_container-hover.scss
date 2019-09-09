@@ -1,0 +1,37 @@
+// this component can be added to a parent container to add a hover background
+// and make a text "link" look like an anchor
+
+//TODO: Fix color literals
+.container-hover {
+  border-radius: 3px;
+  margin-bottom: 2rem;
+  padding-bottom: 0.25rem;
+  padding-left: 1.5rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  transition: background .25s ease-in-out;
+
+  &.horizontal {
+    padding: 2.5rem 0;
+  }
+
+  &:hover {
+    background: #f8f8f8;
+    transition: background .25s ease-in-out;
+  }
+
+  p {
+    color: #333;
+    margin-bottom: 0;
+  }
+
+  a {
+    .thumb-description {
+      color: $body-font-color;
+    }
+  }
+
+  .link {
+    color: $anchor-color;
+  }
+}

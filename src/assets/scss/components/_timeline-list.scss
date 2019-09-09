@@ -1,0 +1,62 @@
+.timeline-list {
+  list-style-type: none;
+}
+
+ul {
+  &.timeline-list {
+    font-size: 0.875em;
+
+    li {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+h5,
+h6 {
+  .pnc {
+    font-family: 'Proxima Nova Condensed Bold', 'Proxima Nova Condensed', 'proxima-nova-condensed', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+  }
+}
+
+.dropcap {
+  color: #ddd;
+  display: block;
+  float: left;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 2rem;
+  margin: 0.25rem 0.75rem 0.5rem 0;
+  text-align: center;
+  width: 2rem;
+}
+
+.yeti-about {
+  display: block;
+  height: 10rem;
+  margin: 0 auto;
+  position: relative;
+  top: -2rem;
+  z-index: 0;
+
+  @include breakpoint(medium only) {
+    left: 4rem;
+    margin: 3rem 0 0;
+  }
+}
+
+.yeti-about-1 {
+  height: 15rem;
+  left: 4rem;
+  top: -2rem;
+  z-index: -1;
+
+  @include breakpoint(medium only) {
+    margin: 3rem 0 0;
+  }
+}
+
+.light {
+  font-weight: 200 !important;
+}

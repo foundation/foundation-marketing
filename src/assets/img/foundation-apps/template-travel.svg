@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="325.979px" height="179.323px" viewBox="0 0 325.979 179.323" enable-background="new 0 0 325.979 179.323"
+	 xml:space="preserve">
+<rect x="79.707" y="20.852" fill="#FFFFFF" width="246.272" height="158.472"/>
+<rect x="0.218" y="20.852" fill="#FFFFFF" width="325.979" height="158.472"/>
+<rect x="179.079" y="20.852" fill="#ECECEC" width="147.118" height="158.472"/>
+<rect x="277.899" y="158.472" opacity="0.5" fill="#CFD5D8" width="48.298" height="20.852"/>
+<rect x="228.489" y="158.472" opacity="0.5" fill="#CFD5D8" width="48.298" height="20.852"/>
+<rect x="179.079" y="158.472" opacity="0.5" fill="#CFD5D8" width="48.298" height="20.852"/>
+<path opacity="0.5" fill="#FFFFFF" d="M245.633,34.675h-50.751c-0.768,0-1.39,0.622-1.39,1.39v35.646v12.085
+	c0,0.768,0.622,1.39,1.39,1.39h50.751c0.768,0,1.39-0.622,1.39-1.39V71.711V36.065C247.023,35.297,246.401,34.675,245.633,34.675z"
+	/>
+<path opacity="0.5" fill="#FFFFFF" d="M311.481,34.675H260.73c-0.768,0-1.39,0.622-1.39,1.39v35.646v12.085
+	c0,0.768,0.622,1.39,1.39,1.39h50.751c0.768,0,1.39-0.622,1.39-1.39V71.711V36.065C312.872,35.297,312.249,34.675,311.481,34.675z"
+	/>
+<path opacity="0.5" fill="#FFFFFF" d="M245.633,94.219h-50.751c-0.768,0-1.39,0.622-1.39,1.39v35.646v12.085
+	c0,0.768,0.622,1.39,1.39,1.39h50.751c0.768,0,1.39-0.622,1.39-1.39v-12.085V95.609C247.023,94.842,246.401,94.219,245.633,94.219z"
+	/>
+<path opacity="0.5" fill="#FFFFFF" d="M311.481,94.219H260.73c-0.768,0-1.39,0.622-1.39,1.39v35.646v12.085
+	c0,0.768,0.622,1.39,1.39,1.39h50.751c0.768,0,1.39-0.622,1.39-1.39v-12.085V95.609C312.872,94.842,312.249,94.219,311.481,94.219z"
+	/>
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="0.218" y="20.852" width="178.861" height="158.472"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<g opacity="0.5" clip-path="url(#SVGID_2_)">
+		
+			<line fill="none" stroke="#CFD5D8" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" x1="51.392" y1="17.847" x2="119.537" y2="181.957"/>
+		
+			<line fill="none" stroke="#CFD5D8" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" x1="-2.205" y1="119.475" x2="182.578" y2="70.678"/>
+		
+			<line fill="none" stroke="#CFD5D8" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" x1="123.621" y1="17.847" x2="139.445" y2="179.706"/>
+		<path fill="none" stroke="#CFD5D8" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" d="M-3.992,59.94
+			c0,0,37.773,19.914,85.756,3.318c49.503-17.123,62.786-52.832,62.786-52.832"/>
+		<path fill="none" stroke="#CFD5D8" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" d="M104.937,181.244
+			c0,0-22.379-36.367-72.129-46.502c-51.327-10.456-80.934,13.522-80.934,13.522"/>
+	</g>
+	<g opacity="0.5" clip-path="url(#SVGID_2_)">
+		<path fill="none" stroke="#CFD5D8" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" d="M90.186,74.296
+			c-2.319,0-4.199,1.88-4.199,4.199c0,4.009,4.199,9.238,4.199,9.238s4.199-5.229,4.199-9.238
+			C94.386,76.177,92.505,74.296,90.186,74.296z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path fill="#CFD5D8" d="M324.979,1v177.323H1V1H324.979 M325.979,0H0v179.323h325.979V0L325.979,0z"/>
+	</g>
+</g>
+<rect y="0" fill="#08536B" width="325.979" height="20.852"/>
+<g>
+	<rect x="0.218" y="0" fill="#08536B" width="178.861" height="20.852"/>
+	<rect x="179.079" y="0" fill="#9FAEB4" width="147.118" height="20.852"/>
+</g>
+<g opacity="0.2">
+	<rect x="10.202" y="8.688" fill="#ECECEC" width="43.996" height="3.475"/>
+	<path fill="#ECECEC" d="M55.588,12.163c0,0.768-0.622,1.39-1.39,1.39H10.202c-0.768,0-1.39-0.622-1.39-1.39V8.688
+		c0-0.768,0.622-1.39,1.39-1.39h43.996c0.768,0,1.39,0.622,1.39,1.39V12.163z M11.592,10.773h41.216v-0.695H11.592V10.773z"/>
+</g>
+<line opacity="0.2" fill="none" stroke="#ECECEC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="95.08" y1="12.163" x2="114.069" y2="12.163"/>
+<line opacity="0.2" fill="none" stroke="#ECECEC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="122.39" y1="12.163" x2="141.379" y2="12.163"/>
+<line opacity="0.2" fill="none" stroke="#ECECEC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="149.7" y1="12.163" x2="168.689" y2="12.163"/>
+</svg>

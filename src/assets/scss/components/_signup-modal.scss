@@ -1,0 +1,119 @@
+.signup-modal.reveal {
+  background: $light-gray;
+  border: 0;
+  padding: 0;
+
+  @include breakpoint (medium) {
+    width: 45vw;
+  }
+
+  hr {
+    border-bottom: 2px solid #2f2f53;
+    margin: 0;
+  }
+}
+
+.signup-modal-header {
+  padding: 1rem;
+  text-align: center;
+
+  h3 {
+    color: #2f2f53;
+    font-weight: light;
+    margin: 0;
+    text-align: center;
+  }
+
+  h5 {
+    text-align: center;
+  }
+
+  &.sites {
+    h3 {
+      color: #666;
+      font-size: 1.6875rem;
+    }
+  }
+}
+
+form {
+  &.emails {
+    padding: 1rem 1rem 2rem;
+
+    [type='text'] {
+      border-radius: 0;
+    }
+
+    [type='submit'] {
+      font-weight: normal;
+      margin-bottom: 0;
+      margin-top: .5rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
+
+      &:hover {
+        background: scale-color($emails-accent-color, $lightness: -14%);;
+      }
+    }
+
+    [for='opt-in'] {
+      margin: 0;
+    }
+  }
+}
+
+.signup-modal-alt {
+  &.reveal {
+    border: 0;
+    padding: 0.75rem 0 0.5rem;
+
+    hr {
+      border-bottom: 2px solid #2f2f53;
+      margin: 0;
+    }
+
+    &.sites {
+      hr {
+        border-bottom: 2px solid $dark-gray;
+      }
+    }
+  }
+}
+
+#subForm {
+  margin: 0;
+}
+
+.signup-modal-alt.reveal form {
+  padding: 0 1rem 2rem;
+
+  [type='text'],
+  [type='email'] {
+    border-radius: 0;
+    height: 2rem;
+  }
+
+  [type='submit'] {
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-top: .5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+    &:hover {
+      background: scale-color($emails-accent-color, $lightness: -14%);
+    }
+
+    &.sites {
+      font-size: 14px;
+
+      &:hover {
+        background: scale-color($sites-accent-color, $lightness: -14%);
+      }
+    }
+  }
+
+  [for='opt-in'] {
+    margin: 0;
+  }
+}

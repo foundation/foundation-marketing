@@ -1,0 +1,235 @@
+//TODO: No more importants!!!!
+
+$gray: #666666;
+$forumblue: #074e68;
+
+.row {
+  &.post {
+    h5 {
+      margin-top: 0 !important;
+    }
+  }
+}
+
+// Post List Columns Spacing
+.post-count-spacing {
+  form {
+    margin-bottom: 0 !important;
+  }
+
+  > .column.desc {
+    line-height: 1.2em;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    padding-left: emCalc(10px);
+  }
+}
+
+// Post Count Stub
+.post-count {
+  max-width: 80px;
+  margin-left: auto;
+  margin-bottom: 10px;
+  @include breakpoint(medium) {
+    max-width: 95px;
+  }
+  height: 80px;
+  border:none !important;
+  background-color:lighten($gray, 50%);
+  text-align:center;
+  &.new {
+  }
+
+  &.new-general {
+    background-color:$forumblue;
+    color:lighten($forumblue,70%);
+  }
+  &.old-general {
+    background-color:lighten($gray, 55%) !important;
+  }
+
+  .post-count-container {
+    height: 50px;
+    &.old-general {
+      background-color:lighten($gray, 55%) !important;
+    }
+
+    background-color:lighten($gray, 55%);
+    &.new {
+      background-color:$forumblue;
+      color:lighten($forumblue, 70%);
+    }
+
+    &.new-general {
+      background-color:$forumblue;
+      color:lighten($forumblue,70%);
+    }
+
+
+    span.reply-count {
+      position:relative;
+      top: 4px;
+      color:$gray;
+      @include proxima-nova;
+      font-size: 1.75em;
+      font-weight:700;
+      &.old-general {
+        background-color:lighten($gray, 55%) !important;
+        top: 18px;
+        font-size:1.75em;
+      }
+
+      &.new-general {
+        top: 18px;
+        color:lighten($forumblue,70%);
+        font-size:1.75em;
+
+        &.with-replies {
+          top: 6px;
+        }
+      }
+
+      &.new-post {
+        color:lighten($forumblue, 70%);
+        top:6px;
+
+        &.already-checked {
+          top:0.2em !important;
+        }
+      }
+
+    }
+
+    .label {
+      display:block;
+      background-color: transparent !important;
+      text-transform:uppercase;
+      @include proxima-nova;
+      color:lighten($forumblue, 50%);
+      position:relative;
+      top:emCalc(-15px);
+      &.new-post { }
+    }
+  }
+
+  .total-post-count {
+    @include proxima-nova;
+
+    color: lighten($gray, 10%);
+    font-size: 11px;
+    font-weight: 700;
+    height: 30px;
+    padding: 8px 3px 3px 3px;
+    text-transform: uppercase;
+
+    &.total-replies {
+      color: lighten($gray, 10%);
+
+      &.new {
+        background-color: darken($forumblue, 5%);
+        color: lighten($forumblue, 70%);
+      }
+    }
+  }
+}
+
+
+.post-count-spacing {
+  @include breakpoint(small only) {
+    margin: 0;
+  }
+
+  .post-description {
+    @include breakpoint(small only) {
+      margin-top: 0 !important;
+    }
+  }
+
+  .author-name {
+    font-size: 11px;
+    line-height: 13px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-transform: uppercase;
+
+    a {
+      color: $gray !important;
+
+      &:hover {
+        color: lighten($gray, 10%) !important;
+      }
+    }
+  }
+
+  .last-reply-by {
+    a {
+      color: lighten($gray, 15%);
+    }
+  }
+
+  h5 {
+    font-size: 18px !important;
+    line-height: 1em;
+    margin-bottom: 5px;
+    margin-top: -4px;
+
+    @include breakpoint(small only) {
+      font-size: 1.5em !important;
+      margin-top: -2px;
+    }
+  }
+
+  p {
+    color: #666;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+
+  p.moderator-links {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  p.tags {
+    line-height: 28px;
+    margin-bottom: 5px !important;
+    margin-top: 2px !important;
+
+    a {
+      @media screen and (min-width:767px) {
+        margin: emCalc(0px) emCalc(5px) emCalc(15px) 0 !important;
+      }
+
+      @media screen and (min-width:0px) and (max-width:767px) {
+        margin: emCalc(15px) emCalc(5px) emCalc(15px) 0 !important;
+      }
+
+    }
+  }
+
+  span.when {
+    @media screen and (min-width:0px) and (max-width:767px) {
+      margin-top:emCalc(15px);
+    }
+
+    color:lighten($gray, 25%);
+    @media screen and (min-width:0px) and (max-width:767px) {
+      @include proxima-nova;
+      color: $gray;
+      font-size: emCalc(13px);
+      font-weight: 400;
+    }
+  }
+}
+
+.row.posts {
+  .row.post.impressions {
+    &.old {
+      a {
+        color: lighten($gray, 20%);
+      }
+    }
+    hr { margin: 1.25em 0 1.1875em; }
+  }
+}

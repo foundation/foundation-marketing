@@ -1,0 +1,1908 @@
+---
+layout: emails-docs
+name: Ink 1.0 Documentation
+---
+
+<style type="text/css">
+  /* iframe sizes */
+  iframe {width: 100%;}
+  #if-basicGrid {height: 200px;}
+  #if-evenColumns {height: 260px;}
+  #if-centerClass {height: 220px;}
+  #if-offsetColumns {height: 165px;}
+  #if-textPad {height: 440px;}
+  #if-fullWidth {height: 280px;}
+  #if-subGrid {height: 140px;}
+  #if-blockGrid {height: 540px;}
+  #if-visibilityClasses {height: 110px;}
+  #if-panels {height: 110px;}
+  #if-panelSubGrid {height: 110px;}
+  #if-panelSidebar {height: 420px;}
+  #if-buttons{height: 325px;}
+  #if-images{height: 250px;}
+
+  @media only screen and (max-width: 632px), only screen and (min-width: 768px) and (max-width: 843px) {
+    #if-basicGrid {height: 225px;}
+    #if-evenColumns {height: 570px;}
+    #if-centerClass {height: 270px;}
+    #if-offsetColumns {height: 165px;}
+    #if-textPad {height: 480px;}
+    #if-fullWidth {height: 320px;}
+    #if-subGrid {height: 210px;}
+    #if-blockGrid {height: 1000px;}
+    #if-visibilityClasses {height: 110px;}
+    #if-panels {height: 110px;}
+    #if-panelSubGrid {height: 110px;}
+    #if-panelSidebar {height: 400px;}
+    #if-buttons{height: 650px;}
+    #if-images{height: 800px;}
+  }
+
+  pre code {
+    display: block;
+    padding: 0.5em;
+    background: #FAFAFA;
+    color: #333;
+    font-size: 14px;
+  }
+// github.com style for highlight.js
+// Created by Vasily Polovnyov <vast@whiteants.net>
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #333;
+  background: #f8f8f8;
+  -webkit-text-size-adjust: none;
+}
+
+.hljs-comment,
+.diff .hljs-header,
+.hljs-javadoc {
+  color: #998;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.css .rule .hljs-keyword,
+.hljs-winutils,
+.nginx .hljs-title,
+.hljs-subst,
+.hljs-request,
+.hljs-status {
+  color: #333;
+  font-weight: bold;
+}
+
+.hljs-number,
+.hljs-hexcolor,
+.ruby .hljs-constant {
+  color: #008080;
+}
+
+.hljs-string,
+.hljs-tag .hljs-value,
+.hljs-phpdoc,
+.hljs-dartdoc,
+.tex .hljs-formula {
+  color: #d14;
+}
+
+.hljs-title,
+.hljs-id,
+.scss .hljs-preprocessor {
+  color: #900;
+  font-weight: bold;
+}
+
+.hljs-list .hljs-keyword,
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-class .hljs-title,
+.hljs-type,
+.vhdl .hljs-literal,
+.tex .hljs-command {
+  color: #458;
+  font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-tag .hljs-title,
+.hljs-rule .hljs-property,
+.django .hljs-tag .hljs-keyword {
+  color: #000080;
+  font-weight: normal;
+}
+
+.hljs-attribute,
+.hljs-variable,
+.lisp .hljs-body,
+.hljs-name {
+  color: #008080;
+}
+
+.hljs-regexp {
+  color: #009926;
+}
+
+.hljs-symbol,
+.ruby .hljs-symbol .hljs-string,
+.lisp .hljs-keyword,
+.clojure .hljs-keyword,
+.scheme .hljs-keyword,
+.tex .hljs-special,
+.hljs-prompt {
+  color: #990073;
+}
+
+.hljs-built_in {
+  color: #0086b3;
+}
+
+.hljs-preprocessor,
+.hljs-pragma,
+.hljs-pi,
+.hljs-doctype,
+.hljs-shebang,
+.hljs-cdata {
+  color: #999;
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  background: #fdd;
+}
+
+.hljs-addition {
+  background: #dfd;
+}
+
+.diff .hljs-change {
+  background: #0086b3;
+}
+
+.hljs-chunk {
+  color: #aaa;
+}
+
+.hljs-at_rule {
+  color: #333;
+}
+.hljs-at_rule .hljs-keyword {
+  color: #a71d5d;
+  font-weight: normal;
+}
+.hljs-at_rule .hljs-preprocessor {
+  color: #0086b3;
+  font-weight: normal;
+}
+.scss .hljs-attribute {
+  color: #008080;
+}
+.scss .hljs-function {
+  color: #008080;
+}
+.scss .hljs-class {
+  color: #795da3;
+}
+</style>
+
+<header class="marketing-hero foundation-emails">
+
+  <div class="row">
+    <div class="small-12 columns">
+      <a href="{{root}}emails.html"><p>Foundation for Emails</p></a>
+      <h1>Ink 1.0.5 Documentation</h1>
+    </div>
+  </div>
+
+  <ul class="marketing-subnav">
+    <li><a href="{{root}}emails.html">Home</a></li>
+    <li><a href="{{root}}emails/getting-started.html">Getting Started</a></li>
+    <li><a href="{{root}}emails/inliner.html">Inliner</a></li>
+    <li><a href="{{root}}emails/email-templates.html">Email Templates</a></li>
+    <li><a href="{{root}}emails/resources.html">Resources</a></li>
+    <li><a href="{{root}}emails/zurb-template.html">ZURB Template</a></li>
+    <li><a href="{{root}}emails/process.html">Process</a></li>
+    <li><a href="{{root}}emails/docs" class="is-active" target="_blank">Docs</a></li>
+  </ul>
+
+</header>
+
+<article class="main-content" id="main-content">
+
+  <div class="row docs">
+    <div class="large-3 columns doc-nav show-for-large" data-sticky-container>
+    <div class="sticky show-for-large" data-sticky data-margin-top="2.5" data-top-anchor="start" data-btm-anchor="training:bottom">
+      <!-- <div class="doc-nav"> -->
+        <ul class="sub-nav show-for-large" data-magellan>
+          <li><a href="#start">Getting Started</a></li>
+          <li><a href="#grid">Grid</a></li>
+          <li><a href="#sub-grid">Sub-Grid</a></li>
+          <li><a href="#block-grid">Block-Grid</a></li>
+          <li><a href="#visibility-classes">Visibility Classes</a></li>
+          <li><a href="#panels">Panels</a></li>
+          <li><a href="#buttons">Buttons</a></li>
+          <li><a href="#images">Retina Images</a></li>
+          <li><a href="#compatibility">Supported Clients</a></li>
+          <li><a href="#changes">Changelog</a></li>
+          <li><hr></li>
+          <li><a href="#training">Training</a></li>
+        </ul>
+      <!-- </div> -->
+    </div>
+    </div>
+    <div class="large-9 columns">
+
+      <h1 id="start" data-magellan-target="start" class="light">Getting Started</h1>
+      <p class="lead">Dive into creating your responsive email.</p>
+      <hr>
+      <h2 class="light">The Boilerplate</h2>
+      <p>
+        Starting a new Foundation for Emails project is fairly straightforward. If you aren&#8217;t using one of our <a href="{{root}}emails/email-templates.html">templates</a>, grab the boilerplate code from below to use as a starting point. While you can reference <code>ink.css</code> using a <kbd>&lt;link&gt;</kbd> tag for testing purposes, be sure to remove the <kbd>&lt;link rel="stylesheet" href="ink.css" /&gt;</kbd> statement and paste your CSS into the <kbd>&lt;style&gt;</kbd> tag in the head before running your email through an inliner.
+      </p>
+      <h6>Boilerplate.html</h6>
+      {{#code 'html'}}
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width"/>
+        <link rel="stylesheet" href="ink.css"> <!-- For testing only -->
+        <style type="text/css">
+
+          /* Ink styles go here in production */
+
+        </style>
+        <style type="text/css">
+          /* Your custom styles go here */
+        </style>
+      </head>
+      <body>
+        <table class="body">
+          <tr>
+            <td class="center" align="center" valign="top">
+              <center>
+              <!-- Email Content -->
+              </center>
+            </td>
+          </tr>
+        </table>
+      </body>
+    </html>
+      {{/code}}
+      <br>
+      <p>
+        If you&#8217;re applying a background color to your entire email, be sure to attach it to the table with a class of <code>body</code> as well as to the actual <kbd>&lt;body&gt;</kbd> tag, since some clients remove this by default.
+      </p>
+      <h6>Inline Styles</h6>
+      {{#code 'html'}}
+    <html>
+
+    ...
+
+    <body style="background:#ddd">
+      <table class="body" style="background:#ddd"> <!-- Background goes here too -->
+
+        ...
+
+      </table>
+    </body>
+      {{/code}}
+      <br>
+      <h6>CSS</h6>
+      {{#code 'html'}}
+    body, .body {
+      background: #ddd;
+    }
+      {{/code}}
+      <br>
+      <hr>
+      <h2 class="light">Sending Your Email</h2>
+      <p>Sending HTML email is a lot different than sending plain text email. While it may be tempting to just open the email in a browser and click &#8220;share&#8221; or to use the &#8220;Insert HTML&#8221; function of your favorite email client, this often strips off a lot of the styling and makes your email completely unusable on mobile devices.</p>
+      <p>To get the best results, we recommend that you send your HTML email using an <a href="http://en.wikipedia.org/wiki/Email_service_provider_(marketing)">Email Service Provider (ESP)</a> such as <a href="http://mailchimp.com">Mailchimp</a> or <a href="http://campaignmonitor.com">Campaign Monitor</a>. If you&#8217;re just running a quick test and don't want to sign up for an ESP, sending from the command line using a scripting language like <a href="http://php.net/manual/en/function.mail.php">PHP</a> or <a href="http://ruby-doc.org/stdlib-2.0/libdoc/net/smtp/rdoc/Net/SMTP.html">Ruby</a> usually works fine.</p>
+      <hr>
+      <h2 class="light">Testing and Troubleshooting</h2>
+      <p>Since targeting a <a href="#compatibility">diverse range of email clients</a> requires some specific and rather quirky markup, Foundation for Emails doesn&#8217;t always preview properly in the browser. When doing browser tests, we recommend using the latest version of <a href="http://google.com/chrome">Chrome</a>, <a href="http://www.apple.com/safari/">Safari</a> or <a href="http://www.opera.com/">Opera</a>, since Foundation for Emails doesn&#8217;t always display properly in Firefox or Internet Explorer.</p>
+      <p>Testing in the browser isn't enough, however, and you should always test in actual email clients. If you don't have access to the actual clients you want to test, a testing service like <a href="https://litmus.com/">Litmus</a> or <a href="http://www.emailonacid.com/">Email on Acid</a> can help.</p>
+      <p>If you're having trouble with an email, the first thing to check is the markup. Often times a simple error like a forgotten <kbd>&lt;tr&gt;</kbd> or a nested tag that&#8217;s been closed in the wrong order can wreak havoc on your design. If that&#8217;s not the problem, it could be an issue with your ESP. <strong>Some senders prepend an <kbd>&lt;html&gt;</kbd> tag to your message, which causes the DOCTYPE tag to not be interpreted by the email recipient.</strong> To see if this is what&#8217;s happening, try sending a test email to yourself and using the &#8220;show original&#8221; or &#8220;raw source&#8221; option in your mail client to manually inspect the code.</p>
+
+
+      <hr class="">
+
+      <h1 id="grid" data-magellan-target="grid" class="light">Grid</h1>
+      <p class="lead">Create powerful multi-device layouts quickly and easily.</p>
+      <hr>
+      <h2 class="light">Structure</h2>
+      <p>Foundation for Emails uses a 12-column grid with a 580px wrapper. On mobile devices (under 580px wide), columns become full width and stack vertically.</p>
+      <p>Foundation for Emails' grid can be thought of in terms of three components:</p>
+      <h4 class="normal">Containers</h4>
+      <p>Foundation for Emails containers wrap the content and maintain a fixed, 580px layout on large displays. Below 580px, containers take up 95% of the screen's width, ensuring that your content doesn't run right up against the edges of the user's screen.</p>
+      <h4 class="normal">Rows</h4>
+      <p>Rows are used to separate blocks of content vertically. In addition to the vertical separation, the <kbd>&lt;td&gt;</kbd> tags of <code>.row</code> tables use the wrapper class to maintain a gutter between columns. Note: the last <code>.wrapper</code> <kbd>&lt;td&gt;</kbd> in a row MUST have a class of <code>.last</code> applied to it, even if it's the only wrapper in the row (ex. for a row with a single, twelve-column wide content area).</p>
+      <h4 class="normal">Columns</h4>
+      <p>Columns denote the width of the content, as based on a 12-column system. The content inside them will expand to cover n-columns, assuming that the number of columns in one row adds up to 12.</p>
+      <h6>The Three Grid Components</h6>
+      <p>Basic example of the three main grid components.</p>
+      {{#code 'html'}}
+    <table class="container">
+      <tr>
+        <td>
+          <table class="row">
+            <tr>
+              <td class="wrapper">
+                <table class="eight columns">
+                  <tr>
+                    <td>
+                      Eight Columns
+                    </td>
+                    <td class="expander"></td>
+                  </tr>
+                </table>
+              </td>
+              <td class="wrapper last">
+                <table class="four columns">
+                  <tr>
+                    <td>
+                      Four Columns
+                    </td>
+                    <td class="expander"></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+      {{/code}}
+      <br>
+      <h6>Visual Explanation of Grid</h6>
+      <p>Diagram of how the basic grid is laid out. While Foundation for Emails was used to create the example (and therefore it responds to the correct media queries), extra coloring and spacing was added for clarity.</p>
+      <iframe id="if-basicGrid" src="examples/basic-grid.html"></iframe>
+      <br>
+      <hr>
+      <h2 class="light">Breakdown</h2>
+      <p>The main elements in the grid and how they're used:</p>
+      <table>
+        <thead>
+          <tr>
+            <td>Element Type</td>
+            <td>Class Name</td>
+            <td>Description</td>
+          </tr>
+        </thead>
+        <tr>
+          <td>table</td>
+          <td>container</td>
+          <td>Constrains the content to a 580px wrapper on large screens (95% on small screens) and centers it within the body.</td>
+        </tr>
+        <tr>
+          <td>table</td>
+          <td>row</td>
+          <td>Separates each row of content.</td>
+        </tr>
+        <tr>
+          <td>td</td>
+          <td>wrapper</td>
+          <td>Wraps each <code>.columns</code> table, in order to create a gutter between columns and force them to expand to full width on small screens.</td>
+        </tr>
+        <tr>
+          <td>td</td>
+          <td>last</td>
+          <td>Class applied to the last <code>.wrapper</code> td in each row in order for the gutter to work properly. If you only have one (presumably full-width) <code>.columns</code> table (and therefore one <code>.wrapper</code> td) in a row, the <code>.wrapper</code> td still needs to have the last class applied to it.</td>
+        </tr>
+        <tr>
+          <td>table</td>
+          <td>{number}</td>
+          <td>Can be any number between one and twelve (spelled out). Used to determine how wide your <code>.columns</code> tables are. The number of columns in each row should add up to 12, including <!-- <a href="#offsets"> -->offset columns<!-- </a> -->.</td>
+        </tr>
+        <tr>
+          <td>table</td>
+          <td>columns</td>
+          <td>Table that displays as n-twelfths of the width of the 580px <code>.container</code> table on large screens, and expands to the full width of the <code>.container</code> table on small screens.</td>
+        </tr>
+        <tr>
+          <td>td</td>
+          <td>expander</td>
+          <td>An empty (and invisible) element added after the content element in a <code>.columns</code> table. It forces the content <code>td</code> to expand to the full width of the screen on small devices, instead of just the width of the content within the <code>td</code>.</td>
+        </tr>
+      </table>
+      <hr>
+
+      <h2 class="light">Examples</h2>
+      <h4 class="normal">Even Columns</h4>
+      <p>Foundation for Emails' 12-column grid makes creating even column layouts a snap. Just use one <code>.twelve.columns</code>, two <code>.six.columns</code>, three <code>.four.columns</code> or four <code>.three.columns</code> classes to create your layout. Appearing as multiple, even columns on large screens, the layout will fold into a single column on small (mobile) screens.</p>
+      <h6>Code for Even Columns</h6>
+      {{#code 'html'}}
+    <table class="container">
+      <tr>
+        <td>
+          <table class="row">
+            <tr>
+              <td class="wrapper last">
+                <table class="twelve columns">
+                  <tr>
+                    <td class="panel">
+                      twelve.columns
+
+                    </td>
+                    <td class="expander"></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <table class="row">
+            <tr>
+              <td class="wrapper">
+                <table class="six columns">
+                  <tr>
+                    <td class="panel">
+                      .six.columns
+
+                    </td>
+                    <td class="expander"></td>
+                  </tr>
+                </table>
+              </td>
+              <td class="wrapper last">
+                <table class="six columns">
+                  <tr>
+                    <td class="panel">
+                      .six.columns
+                    </td>
+                    <td class="expander"></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          ...
+        </td>
+      </tr>
+    </table>
+      {{/code}}
+      <br>
+      <h6>Even 1, 2, 3 and 4 Column Layouts</h6>
+      <iframe id="if-evenColumns" src="examples/even-columns.html"></iframe>
+      <br>
+      <br>
+      <!-- <h4 class="normal">Rows Within Columns</h4>
+      <p>Unlike the <a href="http://foundation.zurb.com/docs/components/grid.html">Foundation grid</a>, Ink's grid cannot be nested. A layout simulating rows within columns is possible, however, by placing multiple <code>.columns</code> tables (with the same number of columns) within the same <code>.wrapper</code> td.</p> -->
+      <!-- <script type="text/javascript" src="https://snipt.net/embed/01eb0d482e77ef8e25e40e6d1dae49d1/"></script> -->
+      <h4 class="normal">Centered Content</h4>
+      <p>To center the content of a column, apply a class of <code>center</code> to the <kbd>&lt;td&gt;</kbd> that contains the content. If you want to center an image, you should also apply a class of <code>center</code> to the image itself. For maximum client support, we also recommend using the HTML <kbd>&lt;center&gt;</kbd> tag around the content you wish to center.</p>
+      <h6>The Center Class</h6>
+      {{#code 'html'}}
+    <table class="row">
+      <tr>
+        <td class="wrapper">
+          <table class="six columns">
+            <tr>
+              <td class="center panel">
+                <center>
+                  Centered content
+                </center>
+              </td>
+              <td class="expander"></td>
+            </tr>
+          </table>
+        </td>
+        <td class="wrapper last">
+          <table class="six columns">
+            <tr>
+              <td class="center panel">
+                <center>
+                  <!-- Centered image -->
+                  <img class="center" src="https://placehold.it/125x125&text=Centered%20Image">
+                </center>
+              </td>
+              <td class="expander"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+      {{/code}}
+      <br>
+      <h6>Centered Text and Images</h6>
+      <iframe id="if-centerClass" src="examples/center-class.html"></iframe>
+      <br>
+      <br>
+      <h4 class="normal">Offset Columns</h4>
+      <p>In lieu of using empty columns to offset content, one can use the <code>.offset-by-{number of columns}</code> helper class (ex,<code>.offset-by-two</code>, <code>.offset-by-three</code>, etc).  By applying the class to the wrapper surrounding a column section, the content will be pushed to the left by the specified number of columns.  Remember to count any column offsets towards the total number of columns in a row when making sure that they add up to 12.</p>
+      <h6>Offset Columns Markup</h6>
+      {{#code 'html'}}
+    <table class="row">
+      <tr>
+        <td class="wrapper offset-by-four">
+
+          <table class="eight columns">
+            <tr>
+              <td class="panel">
+                Offset Content
+              </td>
+              <td class="expander"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+      {{/code}}
+      <br>
+      <h6>Offset Example</h6>
+      <iframe id="if-offsetColumns" src="examples/offset-columns.html"></iframe>
+      <br>
+      <br>
+      <h4 class="normal">Text Padding</h4>
+      <p>A fairly common use case for the container is to give your text a white background to separate it from a colored email body. To assist with this design pattern, we've included three helper classes with Foundation for Emails: <code>.text-pad</code>, <code>.left-text-pad</code> and <code>.right-text-pad</code>.</p>
+      <p>The <code>.text-pad</code> class provides 10px of padding on either side of the content (while it's named <strong>text</strong>-pad, it works just as well on buttons or images), making sure it doesn't butt right up against the edge of your container. The <code>.text-pad</code> class should be applied to the <kbd>&lt;td&gt;</kbd> of a <code>.columns</code> <kbd>&lt;table&gt;</kbd>.</p>
+      <p>The <code>.left-text-pad</code> and <code>.right-text-pad</code> do the same thing as the <code>.text-pad</code> class, but are meant to be applied to content that doesn't extend across the entire row (in other words, content that isn't twelve columns wide). The directional text-padding classes only apply the padding to the side of the content near the edge of the container on large screens, but apply it to both sides on small screens, when the columns expand to fill the full width of the row.</p>
+      <h6>The Text-Pad Class</h6>
+      {{#code 'html'}}
+    <table class="row">
+      <tr>
+        <td class="wrapper">
+          <table class="four columns">
+            <tr>
+              <td class="left-text-pad">
+                Text
+              </td>
+              <td class="expander"></td>
+            </tr>
+          </table>
+        </td>
+        <td class="wrapper">
+          <table class="four columns">
+            <tr>
+              <td>
+                Text
+              </td>
+              <td class="expander"></td>
+            </tr>
+          </table>
+        </td>
+        <td class="wrapper last">
+          <table class="four columns">
+            <tr>
+              <td class="right-text-pad">
+                Text
+              </td>
+              <td class="expander"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+      {{/code}}
+      <br>
+      <h6>Container Backgrounds</h6>
+      <p>Visual example of the body and the container having different colored backgrounds, the main use case for <code>.text-pad</code>.</p>
+      <iframe id="if-textPad" src="examples/text-pad.html"></iframe>
+      <br>
+      <br>
+      <h4 class="normal">Full-Width Rows</h4>
+      <p>When working with designs that call for a container that's colored to stand out from the background (like the example above), it can often be helpful to have full-width rows that can be styled separately, especially for elements like headers or ad breaks. Since the rows of the Foundation for Emails grid are usually restrained to the width of the container, this design pattern requires a slightly different syntax than normal.</p>
+      <p>To create a full-width row, just follow this process:</p>
+      <ol>
+        <li>Create a standard &#8220;container > row > column&#8221; block.</li>
+        <li>Swap the <code>.row</code> and <code>.container</code> classes, keeping the tables in the same place.</li>
+        <li>Add center code to the outside (<code>.row</code>) table.</li>
+      </ol>
+      <p>The row should now extend to the edge of the viewport, while the content is still restricted to the width of the container, so both can be styled accordingly.</p>
+      <h6>Reverse Row Syntax</h6>
+      {{#code 'html'}}
+    <table class="row"> <!-- Styles go on the row -->
+      <tr>
+        <td class="center" align="center"> <!-- Center the container -->
+          <center>
+            <table class="container"> <!-- Container restricts the content width -->
+              <tr>
+                <td class="wrapper last"> <!-- Wrapper stays on the inner table -->
+                  <table class="twelve columns">
+                    <tr>
+                      <td>
+                        Content
+                      </td>
+                      <td class="expander"></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </center>
+        </td>
+      </tr>
+    </table>
+      {{/code}}
+      <br>
+      <h6>Full Width Row</h6>
+      <p>In the example below, the rows have a white background, while the body is light blue.</p>
+      <iframe id="if-fullWidth" src="examples/full-width.html"></iframe>
+      <br>
+      <br>
+      <h4 class="normal">Expanders</h4>
+      <p>When the Foundation for Emails grid is shown on a small screen, the <code>.columns</code> tables expand to the full width of the container and stack vertically. On some clients, however, the columns don't expand properly if the content isn't as wide as the screen. While this might not seem so bad, it can cause your layout to appear broken if you are using a background color on the <code>.columns</code> table or are centering the content.</p>
+      <p>To get around this, an empty <kbd>&lt;td&gt;</kbd> with a class of <code>expander</code> is used after the <kbd>&lt;td&gt;</kbd> containing the actual content in the <code>.columns</code> table. This extra <kbd>&lt;td&gt;</kbd> isn't displayed, but it forces the content <kbd>&lt;td&gt;</kbd> to expand to full width.</p>
+      <h6>Expander TDs</h6>
+      {{#code 'html'}}
+    <table class="columns">
+      <tr>
+        <td>
+          <!-- Content not large enough to "prop" the container open all the way -->
+        </td>
+        <td class="expander"></td> <!-- Used to fix columns on small screens -->
+      </tr>
+    </table>
+      {{/code}}
+      <br>
+      <hr />
+      <h2 class="light">Compatibility</h2>
+      <div class="compatibility-section">
+        <div class="row">
+          <div class="large-9 columns">
+            <p>The grid works as expected in most major email clients, with some caveats in <strong>Gmail (Mobile, iOS, Android)</strong>.</p>
+          </div>
+          <div class="large-3 columns">
+            <a class="reveal-table" data-toggle="gridTable">Toggle Full Table</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="small-12 columns">
+            <table class="comp-table" id="gridTable" data-toggler=".show-table">
+              <thead>
+                <tr>
+                  <th width="30%">Client</th>
+                  <th width="10%"><span>Supported</span></th>
+                  <th width="60%"><span>Notes</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Apple Mail (Desktop)</td>
+                  <td><span class="check">&#10004;</span></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Apple Mail (iOS)</td>
+                  <td><span class="check">&#10004;</span></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Outlook (2000, 2002, 2003)</td>
+                  <td><span class="check">&#10004;</span></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Outlook (2007, 2010, 2013)</td>
+                  <td><span class="check">&#10004;</span></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Outlook (2011)</td>
+                  <td><span class="check">&#10004;</span></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Thunderbird</td>
+                  <td><span class="check">&#10004;</span></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Android</td>
+                  <td><span class="check">&#10004;</span></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Gmail (Desktop)</td>
+                  <td><span class="check">&#10004;</span></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Gmail (Mobile, iOS, Android)</td>
+                  <td><span class="x">&#10008;</span></td>
+                  <td>Since Gmail doesn't support media queries, users will be presented with the desktop view. If mobile Gmail is a large part of your audience, we'd suggest using a layout based on the <a href="#block-grid">block-grid</a>.</td>
+                </tr>
+                <tr>
+                  <td>Outlook 2011 for Mac</td>
+                  <td><span class="check">&#10004;</span></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>AOL Mail</td>
+                  <td><span class="check">&#10004;</span></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Hotmail</td>
+                  <td><span class="check">&#10004;</span></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Outlook.com</td>
+                  <td><span class="check">&#10004;</span></td>
+                  <td>Be sure to use <kbd>&lt;center&gt;</kbd> tags in addition to the <code>center</code> class in order to center content properly.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <hr class="">
+
+      <h1 id="sub-grid" data-magellan-target="sub-grid" class="light">Sub-Grid</h1>
+<p class="lead">A non-stacking grid for even more versatile layouts.</p>
+<hr />
+
+<h4 class="normal">Grids Within Grids</h4>
+<p>While the Foundation for Emails grid can't be nested like its <a href="http://foundation.zurb.com/docs/components/grid.html">Foundation counterpart</a>, Foundation for Emails does provide a nestable sub-grid for when one grid just isn't enough. By applying a <code>.sub-columns</code> class (as well as a numbered class, same as the primary grid) to a <kbd>&lt;td&gt;</kbd> tag underneath a <code>.columns</code> table, you can sub-divide the <code>.columns</code> table into sub-columns.</p>
+<p>The last <code>.sub-columns</code> <kbd>&lt;td&gt;</kbd> in the <code>.columns</code> <kbd>&lt;table&gt;</kbd> should be given a class of <code>last</code> in order for the gutter padding to be properly maintained.</p>
+  <h6>Basic Sub-Grid Example</h6>
+    {{#code 'html'}}
+    <table class="row">
+      <tr>
+        <td class="wrapper">
+          <table class="eight columns">
+            <tr>
+              <td class="eight sub-columns">
+                .eight.sub-columns
+              </td>
+              <td class="four sub-columns last">
+                .four.sub-columns
+              </td>
+              <td class="expander"></td>
+            </tr>
+          </table>
+        </td>
+        <td class="wrapper last">
+          <table class="four columns">
+            <tr>
+              <td>
+                .four columns
+              </td>
+              <td class="expander"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    {{/code}}
+              <br>
+<h6>Non-Collapsing Sub-Grid Columns</h6>
+<iframe id="if-subGrid" src="examples/basic-sub-grid.html"></iframe>
+<br>
+<hr />
+<h2 class="light">Compatibility</h2>
+<div class="compatibility-section">
+  <div class="row">
+    <div class="large-9 columns">
+      <p>The sub-grid works as expected in most major email clients.</p>
+    </div>
+    <div class="large-3 columns">
+      <a class="reveal-table" data-toggle="subGridTable">Toggle Full Table</a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-12 columns">
+      <table class="comp-table" id="subGridTable" data-toggler=".show-table">
+        <thead>
+          <tr>
+            <th width="30%">Client</th>
+            <th width="10%"><span>Supported</span></th>
+            <th width="60%"><span>Notes</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Apple Mail (Desktop)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Apple Mail (iOS)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Outlook (2000, 2002, 2003)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Outlook (2007, 2010, 2013)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Outlook (2011)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Thunderbird</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Android</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Gmail (Desktop)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Gmail (Mobile, iOS, Android)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Outlook 2011 for Mac</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>AOL Mail</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Hotmail</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Outlook.com</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+      <hr class="">
+
+      <h1 id="block-grid" data-magellan-target="block-grid" class="light">Block-Grid</h1>
+<p class="lead">An even-width element grid that doesn't use media queries.</p>
+<hr />
+<h2 class="light">Evenly Spaced Blocks</h2>
+<p>For cases where neither the Foundation for Emails grid nor the Foundation for Emails sub-grid is appropriate, the block-grid can often be quite useful. Block-grid elements automatically align to the left and are pushed down to the next row individually as the viewport gets smaller...all without using media queries.</p>
+<p>Block-grids consist of a table with class <code>block-grid</code> applied to it, along with a class in the pattern 'number-up' (ex. <code>.two-up</code>, <code>.three-up</code>, etc.) to describe how many even-sized elements should be placed per row. Extra care should be taken to ensure that there aren't any whitespace characters or newlines between the closing <code>&lt;td&gt;</code> of a block-grid element and the opening <code>&lt;td&gt;</code> of the preceding element, since some clients will render the whitespace as a gap between the elements.</p>
+<h6>Basic Block-Grid Markup</h6>
+    {{#code 'html'}}
+    <table class="container">
+      <tr>
+        <td>
+          <table class="block-grid two-up">
+            <tr>
+              <td>
+                Column #1
+              </td><td> <!-- Make sure the tags are directly next to each other -->
+                Column #2
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    {{/code}}
+<br>
+<h6>Visual Example of Block-Grids</h6>
+<iframe id="if-blockGrid" src="examples/basic-block-grid.html"></iframe>
+<br>
+<hr />
+<h2 class="light">Examples</h2>
+<h4 id="gmail" class="normal">Multi-column Layouts in Gmail</h4>
+<p>A major use case for block-grids, since they don't rely on media queries, is to create multi-column layouts for Gmail. The simplest way to accomplish this is to create a <code>.two-up</code> block-grid and use the block-grid elements as your column structures. As a progressive enhancement, adding a media query that expands the columns to 100% width under 600px would cause the columns to take up the whole screen on mobile clients that support media queries, while not breaking the reflow pattern for those that don't.</p>
+<h6>Gmail Two Column Layout</h6>
+    {{#code 'html'}}
+    <table class="container">
+      <tr>
+        <td>
+          <table class="block-grid two-up">
+            <tr>
+              <td>
+                Main Content
+              </td><td>
+                Right Sidebar
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    {{/code}}
+<br>
+<h6>Block-Grid Column Progressive Enhancement (Optional)</h6>
+    {{#code 'html'}}
+    @media only screen and (max-width: 600px) {
+      table[class="container"] .block-grid td {
+        width: 100% !important;
+      }
+    }
+    {{/code}}
+<br>
+<!-- <h4 class="normal">Horizontal Navigation</h4>
+<p></p> -->
+<hr />
+<h2 class="light">Compatibility</h2>
+<div class="compatibility-section">
+  <div class="row">
+    <div class="large-9 columns">
+      <p>The block-grid works as expected in most major email clients.</p>
+    </div>
+    <div class="large-3 columns">
+      <a class="reveal-table" data-toggle="blockTable" >Toggle Full Table</a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-12 columns">
+      <table class="comp-table" id="blockTable" data-toggler=".show-table">
+        <thead>
+          <tr>
+            <th width="30%">Client</th>
+            <th width="10%"><span>Supported</span></th>
+            <th width="60%"><span>Notes</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Apple Mail (Desktop)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Apple Mail (iOS)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Outlook (2000, 2002, 2003)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Outlook (2007, 2010, 2013)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Outlook (2011)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Thunderbird</td>
+            <td><span class="check">&#10004;</span></td>
+            <td>Make sure that there isn't any whitespace between your <kbd>&lt;td&gt;</kbd> elements, otherwise Thunderbird will add a gap between your block-grid elements.</td>
+          </tr>
+          <tr>
+            <td>Android</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Gmail (Desktop)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Gmail (Mobile, iOS, Android)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Outlook 2011 for Mac</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>AOL Mail</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Hotmail</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Outlook.com</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+      <hr class="">
+
+      <h1 id="visibility-classes" data-magellan-target="visibility-classes" class="light">Visibility Classes</h1>
+<p class="lead">Selectively show content for different screen sizes.</p>
+<hr />
+
+<p>By adding a visibility class to an element, you can show or hide it based on screen size. Visibility classes can be used on any element. Due to Outlook's lack of support for certain CSS properties, the Foundation for Emails visibiility classes should be used in conjunction with conditional comments to ensure that the content is properly hidden (or shown) in Outlook 2007/2010/2013.</p>
+<p>Note: If you're using a visibility class on an image, be sure to apply it to the parent element, not to the image itself.</p>
+<h6>Using Visibility Classes</h6>
+
+    {{#code 'html'}}
+
+    <table class="row">
+      <tr>
+        <td class="wrapper last">
+          <!--[if !mso]><!-- -->
+            <table class="twelve columns show-for-small">
+              <tr>
+                <td class="panel">
+                  .show-for-small
+
+                </td>
+                <td class="expander"></td>
+              </tr>
+            </table>
+          <!--<![endif]-->
+          <table class="twelve columns hide-for-small">
+            <tr>
+              <td class="panel">
+                .hide-for-small
+              </td>
+              <td class="expander"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    {{/code}}
+
+<br>
+<h6>Content Visibility</h6>
+<iframe id="if-visibilityClasses" src="examples/visibility-classes.html"></iframe>
+<br>
+<hr />
+<h2 class="light">Breakdown</h2>
+<p>Available visibility classes:</p>
+<table>
+  <tr>
+    <td><code>.hide-for-small</code></td>
+  </tr>
+  <tr>
+    <td><code>.show-for-small</code></td>
+  </tr>
+</table>
+<br>
+<hr />
+<h2 class="light">Compatibility</h2>
+<div class="compatibility-section">
+  <div class="row">
+    <div class="large-9 columns">
+      <p>Visibility classes work as expected in most major email clients, but do not currently support <strong>Gmail</strong>.</p>
+    </div>
+    <div class="large-3 columns">
+      <a class="reveal-table" data-toggle="visiTable">Toggle Full Table</a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-12 columns">
+      <table class="comp-table" id="visiTable" data-toggler=".show-table">
+        <thead>
+          <tr>
+            <th width="30%">Client</th>
+            <th width="10%"><span>Supported</span></th>
+            <th width="60%"><span>Notes</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Apple Mail (Desktop)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Apple Mail (iOS)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Outlook (2000, 2002, 2003)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Outlook (2007, 2010, 2013)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Outlook (2011)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Thunderbird</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Android</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Gmail (Desktop)</td>
+            <td><span class="x">&#10008;</span></td>
+            <td>Not yet implemented. Support will be added soon.</td>
+          </tr>
+          <tr>
+            <td>Gmail (Mobile, iOS, Android)</td>
+            <td><span class="x">&#10008;</span></td>
+            <td>Not yet implemented. Support will be added soon.</td>
+          </tr>
+          <tr>
+            <td>Outlook 2011 for Mac</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>AOL Mail</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Hotmail</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Outlook.com</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+      <hr class="">
+
+      <h1 id="panels" data-magellan-target="panels" class="light">Panels</h1>
+<p class="lead">Quickly highlight important content.</p>
+<hr />
+
+<p>Add a class of <code>panel</code> to a <kbd>&lt;td&gt;</kbd> in a <code>.columns</code> table in order to give it a default border and background color. Great for offsetting important content or for quickly prototyping a layout.</p>
+<h6>Panel Markup</h6>
+    {{#code 'html'}}
+    <table class="twelve columns">
+      <tr>
+        <td class="panel">
+          Panel content
+        </td>
+        <td class="expander"></td>
+      </tr>
+    </table>
+    {{/code}}
+<br>
+<h6>Panel Example</h6>
+<iframe id="if-panels" src="examples/panels.html"></iframe>
+<br>
+<hr>
+<h2 class="light">Examples</h2>
+<h4 class="normal">Sidebar Panel</h4>
+<p>A common patten is to have a panel section serve as a sidebar to offset it from the primary content.</p>
+<h6>Sidebar Panel Markup</h6>
+    {{#code 'html'}}
+    <table class="row">
+      <tr>
+        <td class="wrapper">
+          <table class="eight columns">
+            <tr>
+              <td>
+                Main content
+              </td>
+              <td class="expander"></td>
+            </tr>
+          </table>
+        </td>
+        <td class="wrapper last">
+          <table class="four columns">
+            <tr>
+              <td class="panel">
+                Panel content
+              </td>
+              <td class="expander"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    {{/code}}
+<br>
+<h6>Sidebar Panel</h6>
+<iframe id="if-panelSidebar" src="examples/panel-sidebar.html"></iframe>
+<br>
+<br>
+<h4 class="normal">Panels With Sub-grids</h4>
+<p>Nesting a sub-grid under a panel is non-intuitive, since the sub-grid columns would normally be applied to the <kbd>&lt;td&gt;</kbd> elements directly under the <code>.columns</code> table. To get around this, give the <kbd>&lt;td&gt;</kbd> a class of <code>.panel</code> and a class of <code>.sub-grid</code>. You can then put a <kbd>&lt;table&gt;</kbd> inside the <kbd>&lt;td&gt;</kbd> and create the sub-columns using the <kbd>&lt;td&gt;</kbd> elements of the inner table, as shown below.</p>
+<h6>Panel Sub-Grid Markup</h6>
+    {{#code 'html'}}
+    <table class="twelve columns">
+      <tr>
+        <td class="panel sub-grid">
+          <table>
+            <tr>
+              <td class="six sub-columns">
+
+                Left Sub-Column
+              </td>
+              <td class="six sub-columns">
+
+                Right Sub-Column
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td class="expander"></td>
+      </tr>
+    </table>
+    {{/code}}
+<br>
+<h6>Sub-Grid Panel</h6>
+<iframe id="if-panelSubGrid" src="examples/panel-sub-grid.html"></iframe>
+<br>
+<hr />
+<h2 class="light">Compatibility</h2>
+<div class="compatibility-section">
+  <div class="row">
+    <div class="large-9 columns">
+      <p>Panels work as expected in most major email clients.</p>
+    </div>
+    <div class="large-3 columns">
+      <a class="reveal-table" data-toggle="subGridTable">Toggle Full Table</a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-12 columns">
+      <table class="comp-table" data-toggler=".show-table" id="subGridTable">
+        <thead>
+          <tr>
+            <th width="30%">Client</th>
+            <th width="10%"><span>Supported</span></th>
+            <th width="60%"><span>Notes</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Apple Mail (Desktop)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Apple Mail (iOS)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Outlook (2000, 2002, 2003)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Outlook (2007, 2010, 2013)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Outlook (2011)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Thunderbird</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Android</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Gmail (Desktop)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Gmail (Mobile, iOS, Android)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Outlook 2011 for Mac</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>AOL Mail</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Hotmail</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Outlook.com</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+      <hr class="">
+
+      <h1 id="buttons" data-magellan-target="buttons" class="light">Buttons</h1>
+<p class="lead">Dynamic and effective calls to action.</p>
+<hr />
+<h2 class="light">Structure</h2>
+<p>To create buttons that look great in most clients, make a table of class <code>button</code> to wrap your <kbd>&lt;a&gt;</kbd> tag. Buttons expand to the full width of their container by default, so if you don't want them to expand all the way, consider placing them in a <a href="#sub-grid">sub-grid</a> or <a href="#block-grid">block-grid</a> element.</p>
+<h6>A Basic Button</h6>
+    {{#code 'html'}}
+    <table class="button">
+      <tr>
+        <td>
+          <a href="#">Button Label</a>
+        </td>
+      </tr>
+    </table>
+    {{/code}}
+<br>
+<hr />
+<h2 class="light">Style Classes</h2>
+<p>Several built in styling classes can be applied to the same element as the <code>button</code> class is applied to in order to adjust the button's appearance.</p>
+<h4 class="normal">Size</h4>
+<p>Size classes affect the button's vertical padding. The available size classes are:</p>
+<table>
+  <tr>
+    <td><code>.button</code> (same as <code>.small-button</code>)</td>
+  </tr>
+  <tr>
+    <td><code>.tiny-button</code></td>
+  </tr>
+  <tr>
+    <td><code>.small-button</code></td>
+  </tr>
+  <tr>
+    <td><code>.medium-button</code></td>
+  </tr>
+  <tr>
+    <td><code>.large-button</code></td>
+  </tr>
+</table>
+<h4 class="normal">Color</h4>
+<p>Color classes denote the purpose of the button, and are used to change its background color. The available color classes are:</p>
+<table>
+  <tr>
+    <td>none (same as <code>.primary</code>)</td>
+  </tr>
+  <tr>
+    <td><code>.primary</code></td>
+  </tr>
+  <tr>
+    <td><code>.secondary</code></td>
+  </tr>
+  <tr>
+    <td><code>.alert</code></td>
+  </tr>
+  <tr>
+    <td><code>.success</code></td>
+  </tr>
+</table>
+<h4 class="normal">Border Radius</h4>
+<p>Radius classes cause the corners of the buttons to be rounded in clients that support the <kbd>border-radius</kbd> property. The available radius classes are:</p>
+<table>
+  <tr>
+    <td>none (no border-radius)</td>
+  </tr>
+  <tr>
+    <td><code>.radius</code></td>
+  </tr>
+  <tr>
+    <td><code>.round</code></td>
+  </tr>
+</table>
+<hr />
+<h2 class="light">Examples</h2>
+<p>Buttons expand to the width of their parent container by default, so it's recommended that you contain them within a sub-grid or a relatively small number of columns on the main grid.</p>
+<h6>Button Demo</h6>
+<p>All the button modifiers demonstrated. The rows of buttons are contained to <code>.four.columns</code> or <code>.six.columns</code> sections of the grid for clarity.</p>
+<iframe id="if-buttons" src="examples/buttons.html"></iframe>
+<br>
+<hr />
+<h2 class="light">Compatibility</h2>
+<div class="compatibility-section">
+  <div class="row">
+    <div class="large-9 columns">
+      <p>The buttons are compatible with most major clients.</p>
+    </div>
+    <div class="large-3 columns">
+      <a class="reveal-table" data-toggle="buttonTable">Toggle Full Table</a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-12 columns">
+      <table class="comp-table" data-toggler=".show-table" id="buttonTable">
+        <thead>
+          <tr>
+            <th width="30%">Client</th>
+            <th width="10%"><span>Supported</span></th>
+            <th width="60%"><span>Notes</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Apple Mail (Desktop)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Apple Mail (iOS)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Outlook (2000, 2002, 2003)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Outlook (2007, 2010, 2013)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Outlook (2011)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Thunderbird</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Android</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Gmail (Desktop)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Gmail (Mobile, iOS, Android)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Outlook 2011 for Mac</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>AOL Mail</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Hotmail</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Outlook.com</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+      <hr class="">
+
+      <h1 id="images" data-magellan-target="images" class="light">Retina Images</h1>
+<p class="lead">Accent your emails with rich, high resolution images.</p>
+<hr />
+<h2 class="light">Markup</h2>
+<p>The days of having to choose between supporting Outlook or retina devices are over. To use high resolution images, put <code>height</code> and <code>width</code> HTML attributes on the <kbd>&lt;img&gt;</kbd> tag, corresponding to the scaled size of the image in a desktop view (the width of its <code>.columns</code> container). On small screen devices, Foundation for Emails will cause the image to expand to its full width (or the width of its parent element, whichever is smaller).</p>
+<h6>Image Markup</h6>
+    {{#code 'html'}}
+    <table class="three columns">
+      <tr>
+        <td>
+          <img height="130" width="130" src="https://placehold.it/600x600&text=Retina">
+        </td>
+        <td class="expander"></td>
+      </tr>
+    </table>
+    {{/code}}
+<br>
+<hr />
+<h2 class="light">Column Sizes</h2>
+<p>Below is a chart of the sizes images should be to fully fit various sizes of grid columns on a desktop (larger than 600px) view. Height should be determined with respect to width and should also be explicitly declared on the <kbd>&lt;img&gt;</kbd> tag.</p>
+<table>
+  <thead>
+    <td>Number of Columns</td>
+    <td>Internal Width (in px)</td>
+  </thead>
+  <tr>
+    <td>1</td>
+    <td>30</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>80</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>130</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>180</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>230</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>280</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>330</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>380</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>430</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>480</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>530</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>580</td>
+  </tr>
+</table>
+<hr />
+<h2 class="light">Examples</h2>
+<h4 class="normal">Newsletter Images</h4>
+<p>A common pattern in email newsletters is to have an image on the left with description text next to it. We use this layout quite frequently on ZURB emails and thought that it looked awkward when the small image begins to float in the center of the screen on mobile devices. To compensate for this, we use a full-width image that's scaled down on the desktop view.</p>
+<h6>Newsletter 3-9 Image</h6>
+    {{#code 'html'}}
+    <table class="row">
+      <tr>
+        <td class="wrapper">
+          <table class="three columns">
+            <tr>
+              <td>
+                <img height="130" width="130"
+                src="https://placehold.it/600x600&text=Retina%20Image">
+              </td>
+              <td class="expander"></td>
+            </tr>
+          </table>
+        </td>
+        <td class="wrapper last">
+          <table class="nine columns">
+            <tr>
+              <td>
+                Text Content
+              </td>
+              <td class="expander"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    {{/code}}
+<br>
+<h6>Retina Newsletter Image Demo</h6>
+<iframe id="if-images" src="examples/images.html"></iframe>
+<br>
+<hr />
+<h2 class="light">Compatibility</h2>
+<div class="compatibility-section">
+  <div class="row">
+    <div class="large-9 columns">
+      <p>Retina images work as expected in most major email clients, with some caveats in <strong>Gmail (Mobile, iOS, Android)</strong>.</p>
+    </div>
+    <div class="large-3 columns">
+      <a class="reveal-table" data-toggle="retinaTable">Toggle Full Table</a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-12 columns">
+      <table class="comp-table" id="retinaTable" data-toggler=".show-table">
+        <thead>
+          <tr>
+            <th width="30%">Client</th>
+            <th width="10%"><span>Supported</span></th>
+            <th width="60%"><span>Notes</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Apple Mail (Desktop)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Apple Mail (iOS)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Outlook (2000, 2002, 2003)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Outlook (2007, 2010, 2013)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Outlook (2011)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Thunderbird</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Android</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Gmail (Desktop)</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Gmail (Mobile, iOS, Android)</td>
+            <td><span class="x">&#10008;</span></td>
+            <td>Since the inline sizing will not be overwritten in mobile Gmail, retina images should not be used with <a href="#gmail">block-grid</a> based layouts (they're fine with the <a href="#grid">standard grid</a>.</td>
+          </tr>
+          <tr>
+            <td>Outlook 2011 for Mac</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>AOL Mail</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Hotmail</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Outlook.com</td>
+            <td><span class="check">&#10004;</span></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+      <hr class="">
+
+      <h1 id="compatibility" data-magellan-target="compatability" class="light">Supported Clients</h1>
+<p class="lead">We test and support all the major email clients &hellip; even Outlook.</p>
+<hr />
+<p>We support as many email clients and as much of the market as possible, however, we simply can't test for everything. As a result, we've decided to test the following clients, based on a combination of their <a href="http://emailclientmarketshare.com/">market share</a> and our ability to reliably test them with the devices and software we have access to.</p>
+<p>While we will help out as much as possible with issues regarding other clients (and are more than willing to accept <a href="https://github.com/zurb/ink/blob/master/CONTRIBUTING.md">pull requests</a> that add support for additional clients), we can't devote a lot of time or effort at this point to fixing issues related to email clients not in the following table.</p>
+<h2 class="light">Tested Clients</h2>
+<table>
+  <thead>
+    <tr>
+      <th width="30%">Client</th>
+      <th width="10%"><span>Supported</span></th>
+      <th width="60%"><span>Notes</span></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Apple Mail (Desktop)</td>
+      <td><span class="check">&#10004;</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Apple Mail (iOS)</td>
+      <td><span class="check">&#10004;</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Outlook (2000, 2002, 2003)</td>
+      <td><span class="check">&#10004;</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Outlook (2007, 2010, 2013)</td>
+      <td><span class="check">&#10004;</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Outlook (2011)</td>
+      <td><span class="check">&#10004;</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Thunderbird</td>
+      <td><span class="check">&#10004;</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Android</td>
+      <td><span class="check">&#10004;</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gmail (Desktop)</td>
+      <td><span class="check">&#10004;</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gmail (Mobile, iOS, Android)</td>
+      <td><span class="check">&#10004;</span></td>
+      <td>Does not fully support the Foundation for Emails <a href="#grid">grid</a>. Responsive layouts should be accomplished using the <a href="#gmail">block-grid</a>.</td>
+    </tr>
+    <tr>
+      <td>Outlook 2011 for Mac</td>
+      <td><span class="check">&#10004;</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AOL Mail</td>
+      <td><span class="check">&#10004;</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hotmail</td>
+      <td><span class="check">&#10004;</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Outlook.com</td>
+      <td><span class="check">&#10004;</span></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+      <hr class="">
+
+      <h1 id="changes" data-magellan-target="changes" class="light">Changelog</h1>
+<p class="lead">All the latest and greatest changes to Foundation for Emails.</p>
+<hr>
+<h2 class="light">1.0 - Public Release</h2>
+<h6 id="v1-0-5">1.0.5</h6>
+<ul>
+  <li>Add <code>.sub-grid</code> class to enable the use of sub-grids with panels</li>
+  <li>Add paragraph <code>.lede</code> class</li>
+  <li>Lower specificity on <code>.panel</code> class to allw its use on <kbd>&lt;div&gt;</kbd>s</li>
+  <li>Partially patch docs examples to work in Firefox</li>
+  <li>Normalize font rendering in <kbd>&lt;td&gt;</kbd>s for Outlook 2007/2010/2013</li>
+  <li>Fix 100% width issue on iPad</li>
+  <li>Remove offset-sub-columns</li>
+  <li>Remove proprietary <kbd>&lt;unsubscribe&gt;</kbd> tags from templates</li>
+  <li>Fix issue with <code>.one.sub-columns</code> sections</li>
+  <li>Expand the Getting Started section of the docs</li>
+  <li>Add full-width row example to the docs</li>
+  <li>Add offset-columns example to the docs</li>
+  <li>Add additional panel examples to the docs</li>
+  <li>Miscellaneous bug fixes and typo fixes</li>
+</ul>
+<h6 id="v1-0-4">1.0.4</h6>
+<ul>
+  <li>Apply font styles more uniformly to fix clients that strip out the <kbd>&lt;body&gt;</kbd> tag (fixes inliner preview)</li>
+  <li>Remove percentage based padding on sub-grid (fixes Outlook 2000/2002/2003)</li>
+  <li>Add Bower package metadata</li>
+  <li>Remove min-width for <kbd>&lt;center&gt;</kbd> tags nested under the sub-grid</li>
+  <li>Add helper aliases to <code>.text-pad</code> classes (ex. <code>.left-text-pad</code> can now be called using <code>.text-pad-left</code>)</li>
+  <li>Fix <code>.text-pad</code> classes nested under aliased <code>.column</code> tables</li>
+  <li>Remove deprecated button syntax</li>
+  <li>Fix link color in headings for Outlook 2007/2010/2013</li>
+</ul>
+<h6 id="v1-0-3">1.0.3</h6>
+<ul>
+  <li>Add text-pad classes</li>
+  <li>Lower heading sizes to more reasonable defaults</li>
+  <li>Add compatibility chart of supported/tested clients to the docs</li>
+</ul>
+<h6 id="v1-0-2">1.0.2</h6>
+<ul>
+  <li>Switch to new button syntax to fully support Microsoft Outlook</li>
+  <li>Add changelog to Docs</li>
+</ul>
+<h6 id="v1-0-1">1.0.1</h6>
+<ul>
+  <li>Fix crushed-image issue in Gmail (mobile, Android, iOS) by adding a min-width to <kbd>&lt;center&gt;</kbd> tags</li>
+</ul>
+<h6 id="v1-0-0">1.0.0</h6>
+<ul>
+  <li>Initial Launch</li>
+  <li>Grid</li>
+  <li>Sub-Grid</li>
+  <li>Block-Grid</li>
+  <li>Buttons</li>
+  <li>Panels</li>
+  <li>Retina Images</li>
+</ul>
+
+    </div>
+  </div>
+
+</article>
+
+<div id="training" data-magellan-target="training" class="light"></div>
+
+<section class="callout course">
+  <div class="row">
+    <div class="large-4 columns">
+      <div class="course-image">
+        <a href="http://zurb.com/university/responsive-emails-intro?utm_source=Ink%20Marketing%20Site&utm_medium=Marketing%20Site&utm_content=Ink%20Download%20Page&utm_campaign=Introduction%20to%20Responsive%20Emails" target="_blank"><img style="width: 303px; height: 197px;" src="http://zurb.com/university/assets/courses/responsive-emails-intro.png"/></a>
+      </div>
+    </div>
+    <div class="large-7 columns">
+      <div class="course-callout">
+        <h3 class="light">Responsive Email Master Class</h3>
+        <p>In this online class, you’ll conquer responsive emails by learning how to rapidly design and develop well-targeted emails that look beautiful on just about every screen, browser, and email client out there—even Outlook. Get the training and coaching you need to take your email marketing workflow to the next level.</p>
+        <a href="http://zurb.com/university/responsive-emails-intro?utm_source=Ink%20Marketing%20Site&utm_medium=Marketing%20Site&utm_content=Ink%20Download%20Page&utm_campaign=Introduction%20to%20Responsive%20Emails" class="button primary" target="_blank">View Course</a>
+      </div>
+    </div>
+  </div>
+</section>

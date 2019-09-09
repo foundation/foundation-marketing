@@ -1,0 +1,18 @@
+.feature-block-horizontal {
+  margin-bottom: $global-margin;
+  position: relative;
+
+  .emails {
+    margin-bottom: 0;
+  }
+
+  @include breakpoint(medium) {
+    margin-bottom: 3rem;
+  }
+}
+
+.feature-side-text {
+  @include breakpoint(medium) {
+    @include vertical-center;
+  }
+}

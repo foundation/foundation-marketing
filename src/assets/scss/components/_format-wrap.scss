@@ -1,0 +1,62 @@
+.format-wrap {
+  background: #f5f5f5;
+  padding: 75px 0 50px;
+  margin-bottom: 2rem;
+
+
+  @include breakpoint(medium) {
+    margin-bottom: 2rem;
+  }
+
+  .img-wrap {
+    height: 55px;
+    margin-bottom: 10px;
+    }
+
+    img {
+      &.mic {
+        height: 52px;
+        width: auto;
+      }
+
+      &.question {
+        height: 52px;
+        width: auto;
+      }
+
+      &.video {
+        height: 40px;
+        margin-top: 5px;
+        width: auto;
+      }
+
+      &.web {
+        height: 52px;
+        width: auto;
+      }
+    }
+
+  h3 {
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    font-size: 1.3em;
+
+    @include breakpoint(medium) {
+      margin-bottom: 3rem;
+      font-size: 1.8em;
+    }
+  }
+
+  h5 {
+    line-height: 1.2;
+  }
+
+  p {
+    font-size: em-calc(14);
+    margin-bottom: 2.5rem;
+  }
+
+  .lms-content {
+    padding-top: 70px;
+  }
+}

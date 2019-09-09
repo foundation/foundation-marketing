@@ -1,0 +1,20 @@
+$apps-accent-color: #3FC380;
+
+.apps-layout {
+  a {
+    &:not(.button) {
+      color: $apps-accent-color;
+    }
+  }
+
+  .marketing-subnav,
+  .header-social-links {
+    a {
+      color: $true-white;
+    }
+  }
+
+  .button {
+    background: $apps-accent-color;
+  }
+}

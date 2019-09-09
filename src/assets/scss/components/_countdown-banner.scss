@@ -1,0 +1,65 @@
+//TODO: color literals and ID's
+a#notice {
+  background-color: #0078AB;
+  background-image: url('https://zurb.com/university/assets/zurbwired2016-web-banner-a95e5d17264e3617a2ae4f34e84f973b.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 70px;
+  overflow: hidden;
+  padding: 1rem 0;
+  position: relative;
+  width: 100%;
+
+  .countdown {
+    background-color: rgba(0, 120, 171, 0.7);
+    box-shadow: 0 0 16px 7px rgba(0, 120, 171, 0.7);
+    color: $true-white;
+    display: none;
+    font-family: 'Proxima-Nova', 'Proxima', 'proxima-nova', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    margin-left: -50%;
+  }
+
+  .timer-colon {
+    margin: 0 -2px 0 -4px;
+    padding: 0;
+  }
+
+  .timer-hour,
+  .timer-minute,
+  .timer-second {
+    letter-spacing: 2px;
+  }
+
+  .info {
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -8px;
+    right: 0;
+    text-align: center;
+    z-index: 20;
+
+    h5 {
+      color: $true-white;
+      font-size: 18px;
+    }
+
+    @media only screen and (max-width: 675px) {
+      padding: 0 15px;
+      position: relative;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 676px) {
+    background-position: 51.2% 0;
+
+    .countdown {
+      display: none;
+    }
+  }
+}

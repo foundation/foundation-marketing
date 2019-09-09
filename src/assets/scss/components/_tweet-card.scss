@@ -1,0 +1,31 @@
+.tweet-card {
+  @include callout;
+
+  margin-bottom: 0;
+
+  i {
+    border-bottom: 1px solid $primary-color;
+    color: $twitter;
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .tweet-card-content {
+    padding-top: 0.75rem;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    img {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.tweet-card-footer {
+  background: $topbar-background;
+  border: 1px solid $topbar-background;
+  color: $white;
+  padding: 0.75rem;
+}

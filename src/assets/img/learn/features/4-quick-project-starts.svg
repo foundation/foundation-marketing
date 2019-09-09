@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="270px" height="270px" viewBox="0 0 270 270" style="enable-background:new 0 0 270 270;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.16;}
+	.st1{fill:none;stroke:#26373E;stroke-width:0.6387;stroke-miterlimit:10;}
+	.st2{fill:#4F5764;}
+	.st3{fill:url(#SVGID_1_);}
+	.st4{fill:url(#SVGID_2_);}
+	.st5{fill:#FFFFFF;}
+	.st6{fill:url(#SVGID_3_);}
+</style>
+<g class="st0">
+	<polyline class="st1" points="223.4,245.2 245.5,82.2 11.2,74.6 219.9,245 36.7,216.2 128.7,19 263.2,122.4 75.1,257.7 224.1,42.2 
+			"/>
+	<polyline class="st1" points="36.7,216.2 11.2,74.6 128.7,19 224.1,42.2 245.5,82.2 	"/>
+	<g>
+		<circle class="st2" cx="36.7" cy="216.2" r="5.1"/>
+		<circle class="st2" cx="11.2" cy="74.6" r="5.1"/>
+		<circle class="st2" cx="128.7" cy="19" r="5.7"/>
+		<circle class="st2" cx="245.5" cy="82.2" r="5.1"/>
+		<circle class="st2" cx="224.1" cy="42.2" r="4.2"/>
+		<circle class="st2" cx="263.2" cy="122.4" r="4.8"/>
+		<circle class="st2" cx="75.1" cy="257.7" r="5.9"/>
+		<circle class="st2" cx="219.9" cy="245" r="6.7"/>
+	</g>
+</g>
+<g>
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="79.924" y1="100.5344" x2="189.7949" y2="186.3203">
+		<stop  offset="0" style="stop-color:#4F5764"/>
+		<stop  offset="0.6682" style="stop-color:#293942"/>
+		<stop  offset="1" style="stop-color:#111C21"/>
+	</linearGradient>
+	<rect x="81.3" y="102.4" class="st3" width="108.5" height="83.1"/>
+	<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="91.7999" y1="175.7972" x2="181.1038" y2="110.8489">
+		<stop  offset="0" style="stop-color:#F5A842"/>
+		<stop  offset="0.4914" style="stop-color:#F16724"/>
+		<stop  offset="1" style="stop-color:#E83F39"/>
+	</linearGradient>
+	<rect x="90.6" y="111.7" class="st4" width="89.9" height="64.6"/>
+	<g>
+		<polygon class="st5" points="111.5,158.9 106.1,153.5 118.5,141 106.1,128.6 111.5,123.2 129.3,141 		"/>
+	</g>
+	<g>
+		<rect x="132.1" y="155.6" class="st5" width="23.9" height="5.7"/>
+	</g>
+	<g>
+		<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="81.3026" y1="94.5887" x2="189.8138" y2="94.5887">
+			<stop  offset="0" style="stop-color:#D0D1D3"/>
+			<stop  offset="1" style="stop-color:#CDD2D1"/>
+		</linearGradient>
+		<rect x="81.3" y="86.8" class="st6" width="108.5" height="15.6"/>
+		<circle class="st5" cx="91" cy="94.6" r="2.8"/>
+		<circle class="st5" cx="100.4" cy="94.6" r="2.8"/>
+		<circle class="st5" cx="109.8" cy="94.6" r="2.8"/>
+	</g>
+</g>
+</svg>

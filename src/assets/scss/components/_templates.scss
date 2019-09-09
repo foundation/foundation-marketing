@@ -1,0 +1,135 @@
+.main-content.template-block {
+  text-align: center;
+
+  .column {
+    text-align: center;
+  }
+
+  .column:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  .column:last-child {
+    margin-bottom: -50px;
+  }
+
+  .callout {
+    margin-bottom: 50px;
+
+    .column {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    &.preview {
+      display: block;
+      text-align: center;
+    }
+
+    &.img-link {
+      display: block;
+      float: none;
+      text-align: center;
+    }
+  }
+
+  img {
+    width: 80%;
+  }
+}
+
+span {
+  &.notes {
+    background: url('../img/brand-logos/notable-icon.png') 0 2px no-repeat;
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+    height: 22px;
+    padding-left: 20px;
+  }
+}
+
+.drip-callout-info {
+  padding-left: 130px;
+  padding-top: 80px;
+  position: relative;
+
+  img {
+    left: 0;
+    position: absolute;
+    top: 30px;
+  }
+}
+
+.signup-modal-alt.reveal {
+  border: 0;
+  padding: 0.75rem 0 0.5rem;
+
+  hr {
+    border-bottom: 2px solid #2f2f53;
+    margin: 0;
+  }
+
+  &.sites hr {
+    border-bottom: 2px solid #8a8a8a;
+  }
+}
+
+.signup-modal-header {
+  padding-bottom: 1rem;
+  text-align: center;
+
+  h3 {
+    color: #2f2f53;
+    font-weight: light;
+    margin: 0;
+  }
+
+  &.sites h3 {
+    color: #666;
+    font-size: 1.6875rem;
+  }
+}
+
+#subForm {
+  margin: 0;
+
+  .button {
+    font-size: 14px;
+  }
+}
+
+.signup-modal-alt.reveal form {
+  padding: 0 1rem 2rem;
+}
+
+.signup-modal-alt.reveal form [type='text'],
+.signup-modal-alt.reveal form [type='email'] {
+  border-radius: 0;
+  height: 2rem;
+}
+
+.signup-modal-alt.reveal form [type='submit'] {
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-top: .5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+
+  &:hover {
+    background: #c05577;
+  }
+
+  &.sites {
+    font-size: 14px;
+
+    &:hover {
+      background: #1271af;
+    }
+  }
+}
+
+.signup-modal-alt.reveal form [for="opt-in"] {
+  margin: 0;
+}

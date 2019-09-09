@@ -1,0 +1,32 @@
+.smallfeaturesicons {
+  .img {
+    margin-top: 500px;
+    position: relative;
+  }
+
+  h5,
+  p,
+  a {
+    color: $body-font-color;
+    margin-top: 10px;
+  }
+
+  @include breakpoint (small only) {
+    text-align: center;
+
+    .tiny-feature-icon {
+      display: block;
+      margin: 0 auto;
+      padding: 0;
+      position: relative;
+      width: 100px;
+    }
+
+    h5,
+    p,
+    a {
+      color: $body-font-color;
+      margin-top: 0;
+    }
+  }
+}

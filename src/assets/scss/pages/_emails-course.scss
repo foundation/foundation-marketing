@@ -1,0 +1,35 @@
+.emails-course {
+  background: #252849; /* Old browsers */
+  background: -moz-linear-gradient(45deg,  #252849 0%, #36365a 34%, #4c3d66 100%);
+  background: -webkit-linear-gradient(45deg,  #252849 0%,#36365a 34%,#4c3d66 100%);
+  background: linear-gradient(45deg,  #252849 0%,#36365a 34%,#4c3d66 100%);
+  color: #fff;
+  margin: 3rem 0;
+    .button {
+      background: #d46e88;
+      &:hover {
+        background: darken(#d46e88, 10%);
+      }
+    }
+}
+
+.emails-course-title {
+  color: #fff;
+  font-size: 36px;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+  span {
+    text-transform: uppercase;
+    font-size: rem-calc(17px);
+    font-weight: bold;
+    display: block;
+    margin-bottom: -5px;
+    letter-spacing: 3px;
+  }
+}
+
+.footer-ad {
+  .emails-course {
+    margin: 0;
+  }
+}

@@ -1,0 +1,216 @@
+.inliner-container {
+  margin-bottom: 2rem;
+
+  [data-tooltip] {
+    color: $emails-accent-color;
+    cursor: pointer;
+    font-weight: bold;
+  }
+}
+
+.inliner-textarea {
+  font-family: 'Courier New', monospace;
+  height: 250px;
+  margin-bottom: 1rem;
+
+  &::placeholder {
+    color: #333;
+    font-family: 'Proxima Nova', 'Helvetica Neue', 'Helvetica', sans-serif;
+    transition: color 0.15s linear;
+  }
+
+  &:focus::placeholder {
+    color: #ccc;
+  }
+}
+
+.inliner-checkbox {
+  color: #333;
+  font-size: 1rem;
+  line-height: 54px;
+
+  &::before {
+    content: '';
+  }
+
+  input {
+    @include element-invisible;
+  }
+
+  label {
+    margin-left: 0;
+    cursor: pointer;
+
+    &::before {
+      background-color: transparent;
+      border: 1px solid #999;
+      border-radius: 1000px;
+      color: transparent;
+      content: '\2713';
+      display: inline-block;
+      font-size: 1.1rem;
+      font-weight: bold;
+      height: 20px;
+      line-height: 1.3;
+      margin-right: 10px;
+      margin-top: -4px;
+      text-align: center;
+      transition: all 0.1s linear;
+      vertical-align: middle;
+      width: 20px;
+    }
+  }
+}
+
+.inliner-checkbox input:checked + label::before {
+  background-color: #333;
+  border-color: #333;
+  color: $true-white;
+}
+
+.inliner-output {
+  border: 1px solid #ccc;
+  font-family: 'Courier New', monospace;
+  height: 540px;
+  overflow: auto;
+  padding: 1rem;
+  white-space: pre-wrap;
+}
+
+.inliner-output-placeholder {
+  @include vertical-center;
+  left: 15%;
+  right: 15%;
+  text-align: center;
+
+  .inliner-output:not(:empty) ~ & {
+    display: none;
+  }
+
+  // Inky
+  img {
+    width: 230px;
+  }
+
+  // Text
+  p {
+    font-size: 1.25rem;
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+  }
+
+  small {
+    color: #666;
+  }
+}
+
+.inliner-output-copybutton {
+  position: absolute;
+  right: 26px;
+  top: 36px;
+
+  .inliner-output:empty ~ & {
+    display: none;
+  }
+}
+
+.inliner-benefits {
+  margin-left: 1rem;
+
+  code {
+    background: transparent;
+    border: 0;
+    padding: 0;
+  }
+}
+
+.is-not-loaded .columns {
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.inliner-loading-indicator {
+  @keyframes fish-hover {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(10px); }
+    100% { transform: translateY(0); }
+  }
+
+  display: none;
+  left: 50%;
+  margin-left: -150px;
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+
+  .is-not-loaded & {
+    display: block;
+  }
+
+  img {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: 'fish-hover';
+    animation-timing-function: ease-in-out;
+    margin-bottom: 1rem;
+    width: 300px;
+  }
+
+  p {
+    color: #666;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+
+.inliner-message {
+  background: $success-color;
+  border-radius: 2px;
+  bottom: 20px;
+  color: $true-white;
+  display: none;
+  font-weight: bold;
+  left: 30px;
+  padding: 10px 0;
+  position: absolute;
+  right: 30px;
+  text-align: center;
+}
+
+.inliner-error {
+  background: rgba($white, 0.85);
+  bottom: 0;
+  display: none;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.inliner-error-inner {
+  @include vertical-center;
+
+  background: $alert-color;
+  border-radius: 4px;
+  color: $white;
+  left: 15%;
+  padding: 1rem;
+  position: absolute;
+  right: 15%;
+
+  p {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    color: $white;
+    font-weight: bold;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

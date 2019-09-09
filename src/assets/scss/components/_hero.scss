@@ -1,0 +1,306 @@
+.marketing-hero {
+  background: #074E68;
+  overflow: visible;
+  padding: 2.5rem 0 4.5rem;
+  position: relative;
+  text-align: center;
+
+  @include breakpoint(small only) {
+    padding: rem-calc(30) 0;
+  }
+
+  &.upload {
+    padding: 1.8rem 0;
+
+    @include breakpoint(medium) {
+      padding: 3rem 0 3.2rem;
+    }
+  }
+
+  .hero-main-header {
+    color: $white;
+    font-size: rem-calc(46);
+    font-weight: 200;
+    margin: 0;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+      font-size: rem-calc(30);
+      font-weight: 200;
+    }
+
+    &.upload {
+      line-height: 1.3em;
+    }
+  }
+
+  .hero-subheader {
+    color: $white;
+    font-size: rem-calc(21);
+    font-weight: 200;
+  }
+
+  .hero-framework-link {
+    color: $white;
+    font-size: 0.8em;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  #stargazers a, #twitter a {
+    color: $white;
+    font-size: rem-calc(13);
+    font-weight: 200;
+  }
+
+  &.home-large-hero {
+
+    @include breakpoint (medium) {
+      background: url('../img/home-bg-01.svg') bottom center;
+      background-position: center;
+      background-size: cover;
+      padding-bottom: 250px;
+      padding-top: 180px;
+    }
+
+    @include breakpoint (small) {
+      background: url('../img/home-bg-small-02.svg') bottom center;
+      background-size: cover;
+    }
+
+  }
+
+  &.sites-large-hero {
+    @include breakpoint (medium) {
+      background: url('../img/foundationsites-home-hero2.svg') bottom center;
+      background-size: cover;
+      padding-bottom: 250px;
+      padding-top: 180px;
+    }
+    @include breakpoint (small) {
+      background: url(../img/foundationsites-home-hero-small-02.svg) bottom center;
+      background-size: cover;
+    }
+  }
+
+  &.upload-large-hero {
+    @include breakpoint (medium) {
+      background: url(../img/upload-bg.svg) bottom center;
+      background-size: cover;
+      padding-bottom: 130px;
+      padding-top: 90px;
+
+      p {
+        font-size: 0.85em;
+      }
+
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &.sites {
+    background: url('../img/mars-bg.svg') center 30% repeat-x;
+  }
+
+  &.upload {
+    text-align: left;
+  }
+
+  &.sites-insider-hero {
+
+    @include breakpoint (medium) {
+      background: url('../img/sites-insider/insider-hero.svg') center center;
+      background-size: cover;
+      padding-bottom: 250px;
+      padding-top: 180px;
+    }
+
+    @include breakpoint (small) {
+      background: url('../img/sites-insider/insider-hero-small.svg') center center;
+      background-size: cover;
+      padding-bottom: 190px;
+      padding-top: 40px;
+    }
+  }
+
+  &.emails-insider-hero{
+    background: linear-gradient(45deg, #252849 0%, #36365a 34%, #4c3d66 100%);
+    background-color: #002b35;
+    background-size: cover;
+    padding-bottom: 80px;
+    padding-top: 150px;
+
+    @include breakpoint (small only) {
+      padding-bottom: 80px;
+      padding-top: 40px;
+    }
+
+    + .newsletter-signup {
+      display: none;
+    }
+  }
+
+  &.yeti-launch-hero {
+    background: url('../img/yeti-launch-hero-01.svg') bottom center;
+    background-size: cover;
+    padding-bottom: 250px;
+    padding-top: 180px;
+  }
+
+  &.without-subnav {
+    padding-bottom: 2.5rem;
+  }
+
+  &.foundation-apps {
+    animation: snow 10s linear infinite;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 0;
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  &.foundation-emails{
+    background-color: #002b35;
+    background-image: url('../img/foundation-emails/foundationemails-sub-hero-1.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0;
+    padding: 2.5rem 0 4.5rem;
+
+    &.index {
+      background-image: url('../img/foundation-emails/foundationemails-home-hero.svg');
+      padding: 8.5rem 0 10.5rem;
+    }
+  }
+
+
+  h1 {
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 1;
+  }
+
+  h1,
+  h3,
+  h4 {
+    color: $true-white;
+  }
+
+  h3 {
+    font-size: 1.35em;
+    font-weight: 300;
+  }
+
+  h6 {
+    color: rgba(#fff, .4);
+    font-size: 1.2em;
+  }
+
+  p {
+    color: rgba(#fff, 1);
+    font-size: 1.3em;
+    line-height: 1.5em;
+    margin-top: 10px;
+  }
+
+  a {
+    color: rgba(#fff, 1);
+
+    &:hover {
+      color: rgba(#fff, 1);
+    }
+  }
+
+  .yeti {
+    bottom: -115px;
+    position: absolute;
+    right: -3rem;
+    width: 570px;
+  }
+
+  .sub-header {
+    background: darken($primary-color, 13%);
+    margin-top: 2.5rem;
+    padding-bottom: 6rem;
+    padding-top: 2rem;
+
+    p {
+      color: $true-white;
+      margin: 0;
+      opacity: 0.7;
+    }
+  }
+}
+
+.homepage {
+  text-align: left !important;
+
+  .hero-main-header {
+    text-align: left !important;
+  }
+}
+
+.marketing-hero.foundation-emails {
+  @include breakpoint(small only) {
+    overflow: hidden;
+    padding-top: 1rem;
+  }
+}
+
+.hero-inky {
+  @keyframes inky-hover {
+    from { margin-top: 0; }
+    to { margin-top: -25px; }
+  }
+
+  @include horizontal-center;
+  bottom: -100px;
+  width: 190px;
+
+  @include breakpoint(medium) {
+    @include vertical-center;
+
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: inky-hover;
+    animation-timing-function: ease-in-out;
+    left: auto;
+    right: 5%;
+    width: 200px;
+  }
+
+  @include breakpoint(large) {
+    @include absolute-center;
+    margin-left: 390px;
+    right: auto;
+    width: 300px;
+  }
+}
+
+.hero-subheader {
+  position: relative;
+}
+
+.emails-insider-hero-image {
+  bottom: 0;
+  display: block;
+  height: 500px;
+  position: absolute;
+  right: 10px;
+  width: auto;
+}
+
+@media only screen and (max-width: 923px) {
+  .emails-insider-hero-image {
+    display: none;
+  }
+}

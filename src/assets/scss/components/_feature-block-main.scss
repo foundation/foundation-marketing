@@ -1,0 +1,96 @@
+.main-feature-block {
+  text-align: center;
+}
+
+.large-feature {
+  margin-bottom: 5rem;
+
+  .large-feature-header {
+    font-size: 2.25rem;
+    margin-bottom: -0.2rem;
+  }
+
+  .subheader {
+    margin-bottom: 1rem;
+  }
+
+  @include breakpoint (small only) {
+    img {
+      text-align: center;
+      width: 15rem;
+    }
+  }
+  @include breakpoint (small only) {
+    text-align: center;
+  }
+}
+
+@include breakpoint (small) {
+  .code-reduction {
+    padding-top: 1rem;
+  }
+
+  .a11y {
+    padding-top: 1rem;
+  }
+
+  .fewer-styles {
+    padding-top: 1rem;
+  }
+
+  .mui {
+    padding-top: 0.9rem;
+  }
+
+  .sass-grid {
+    padding-top: 1rem;
+  }
+
+  .dev-stack {
+    padding-top: 0.8rem;
+  }
+
+  .yeti-launch {
+    padding-top: 0.8rem;
+  }
+}
+
+@include breakpoint (medium) {
+  .code-reduction {
+    padding-top: 5.2rem;
+  }
+
+  .a11y {
+    padding-top: 5rem;
+  }
+
+  .fewer-styles {
+    padding-top: 5.2rem;
+  }
+
+  .mui {
+    padding-top: 4.5rem;
+  }
+
+  .sass-grid {
+    padding-top: 5rem;
+  }
+
+  .dev-stack {
+    padding-top: 3.7rem;
+  }
+
+  .yeti-launch {
+    padding-top: 3.6rem;
+  }
+}
+
+
+.features-grid {
+  margin-bottom: 3rem;
+}
+
+.normal-grid {
+  margin-bottom: 2rem;
+}
+

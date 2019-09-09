@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>inliner</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="12.7747406%" x2="11.7424911%" y2="65.7311425%" id="linearGradient-1">
+            <stop stop-color="#3D3D64" offset="0%"></stop>
+            <stop stop-color="#88727D" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="inliner">
+            <circle id="Oval-16" fill="#E8E8E8" cx="22" cy="22" r="22"></circle>
+            <path d="M8.30252874,22.3951724 L15.0464368,26.7629885 L15.0464368,24.4393103 L10.4165517,21.5390805 L10.4165517,21.4691954 L15.0464368,18.5689655 L15.0464368,16.2452874 L8.30252874,20.6131034 L8.30252874,22.3951724 Z M25.9485057,14.9 L23.7995402,14.9 L18.0514943,30.1 L20.2004598,30.1 L25.9485057,14.9 Z M35.6974713,20.6131034 L28.9535632,16.2452874 L28.9535632,18.5689655 L33.5834483,21.4691954 L33.5834483,21.5390805 L28.9535632,24.4393103 L28.9535632,26.7629885 L35.6974713,22.3951724 L35.6974713,20.6131034 Z" id="&lt;/&gt;" fill="url(#linearGradient-1)"></path>
+        </g>
+    </g>
+</svg>

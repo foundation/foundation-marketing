@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="960px" height="678px" viewBox="-38 112 960 678" style="enable-background:new -38 112 960 678;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#78878C;}
+	.st1{fill:#EBEBEB;}
+	.st2{fill:#9EADB2;}
+	.st3{fill:#FFFFFF;}
+	.st4{fill:#CC7691;}
+	.st5{fill:#ECECEC;}
+	.st6{fill:none;stroke:#CED4D7;stroke-width:1.1864;stroke-miterlimit:10;}
+	.st7{opacity:0.2;fill:#78878C;enable-background:new    ;}
+	.st8{opacity:0.1;enable-background:new    ;}
+	.st9{fill:#586366;}
+</style>
+<g id="iMac">
+	<path class="st0" d="M53.3,555.5h578.6h18v-18V221.6v-14c0-9.9-8.1-18-18-18H53.3c-9.9,0-18,8.1-18,18v14v315.9v18H53.3L53.3,555.5
+		z"/>
+	<path class="st1" d="M631.9,555.5H53.3h-18v18v13.9v14c0,9.9,8.1,18,18,18h209.5c-3.1,52.1-34.1,94.9-34.1,94.9h107.4H349h107.4
+		c0,0-31-42.7-34.1-94.9h209.5c9.9,0,18-8.1,18-18v-14v-13.9v-18L631.9,555.5L631.9,555.5L631.9,555.5z"/>
+	<rect x="220.2" y="701.2" class="st2" width="244.8" height="13"/>
+	<rect x="65.2" y="255.4" class="st3" width="554.7" height="269.7"/>
+	<rect x="65.2" y="219.9" class="st4" width="554.7" height="35.5"/>
+	<rect x="65.2" y="255.4" class="st5" width="150.4" height="269.7"/>
+	<line class="st6" x1="65.2" y1="302.3" x2="215.6" y2="302.3"/>
+	<line class="st6" x1="65.2" y1="348.4" x2="215.6" y2="348.4"/>
+	<line class="st6" x1="65.2" y1="394.4" x2="215.6" y2="394.4"/>
+	<line class="st6" x1="65.2" y1="440.4" x2="215.6" y2="440.4"/>
+	<line class="st6" x1="65.2" y1="486.5" x2="215.6" y2="486.5"/>
+	<path class="st7" d="M422.4,619.4H262.8c-0.2,3.2-0.5,6.5-0.9,9.6h161.4C422.9,625.8,422.6,622.6,422.4,619.4z"/>
+	<g>
+		<rect x="233" y="269.4" class="st8" width="73.9" height="20.9"/>
+		<rect x="349" y="273" class="st8" width="132.9" height="13.6"/>
+		<rect x="233" y="429.6" class="st8" width="240.1" height="8.4"/>
+		<rect x="233" y="445.9" class="st8" width="228.5" height="8.4"/>
+		<rect x="233" y="462.4" class="st8" width="196.8" height="8.4"/>
+		<rect x="233" y="480.3" class="st8" width="240.1" height="8.4"/>
+		<rect x="233" y="496.7" class="st8" width="228.5" height="8.4"/>
+		<rect x="233" y="513.2" class="st8" width="196.8" height="8.4"/>
+		<rect x="232.3" y="304" class="st8" width="249.6" height="113.2"/>
+	</g>
+</g>
+<g id="iPad">
+	<path class="st7" d="M664.6,351.9v267.5H509.8V367.6c0-11.6,2.2-15.7,10.8-15.7H664.6L664.6,351.9z"/>
+	<path class="st9" d="M767,351.9c8.7,0,15.7,7.1,15.7,15.7v330.9c0,8.7-7.1,15.7-15.7,15.7H533.7c-8.7,0-15.7-7.1-15.7-15.7V367.6
+		c0-8.7,7.1-15.7,15.7-15.7H767L767,351.9z"/>
+	<rect x="544.9" y="389.6" class="st3" width="210.9" height="287"/>
+	<path class="st2" d="M650.3,689.6c4,0,7.3,3.2,7.3,7.3l0,0c0,4-3.2,7.3-7.3,7.3l0,0c-4,0-7.3-3.2-7.3-7.3l0,0
+		C643.1,692.8,646.3,689.6,650.3,689.6L650.3,689.6z"/>
+	<path class="st2" d="M664.9,374.2h-29.2c-1.6,0-2.9-1.3-2.9-2.9c0-1.6,1.3-2.9,2.9-2.9h29.2c1.6,0,2.9,1.3,2.9,2.9
+		C667.7,372.9,666.4,374.2,664.9,374.2z"/>
+	<rect x="544.9" y="389.6" class="st4" width="210.9" height="23.8"/>
+	<g>
+		<rect x="554.2" y="423.1" class="st8" width="57" height="20.9"/>
+		<rect x="643.8" y="426.7" class="st8" width="102.6" height="13.6"/>
+		<rect x="554.2" y="583.2" class="st8" width="185.4" height="8.4"/>
+		<rect x="554.2" y="599.6" class="st8" width="176.5" height="8.4"/>
+		<rect x="554.2" y="616.1" class="st8" width="152" height="8.4"/>
+		<rect x="554.2" y="634.1" class="st8" width="185.4" height="8.4"/>
+		<rect x="554.2" y="650.3" class="st8" width="176.5" height="8.4"/>
+		<rect x="554.2" y="666.9" class="st8" width="152" height="8.4"/>
+		<rect x="553.7" y="457.6" class="st8" width="192.7" height="113.2"/>
+	</g>
+</g>
+<g id="iPhone">
+	<path class="st7" d="M800.6,456.4v257.9l-94.9,0.1V475.9c0-10.8,8.8-19.5,19.5-19.5H800.6L800.6,456.4z"/>
+	<path class="st0" d="M850,700c0,7.8-5.9,14.3-13.6,14.3H727.7c-7.8,0-14.2-6.6-14.2-14.3V470.1c0-7.8,6.5-14.2,14.2-14.2h108.7
+		c7.8,0,13.6,6.5,13.6,14.2V700L850,700z"/>
+	<path class="st2" d="M782.1,700c-5.7,0-10.4-4.6-10.4-10.4c0-5.7,4.6-10.4,10.4-10.4c5.7,0,10.4,4.6,10.4,10.4
+		C792.4,695.2,787.8,700,782.1,700z"/>
+	<rect x="726.3" y="503.6" class="st3" width="111.8" height="163.1"/>
+	<rect x="726.3" y="481.5" class="st4" width="111.8" height="22"/>
+	<g>
+		<rect x="732.6" y="508" class="st8" width="29.7" height="11.1"/>
+		<rect x="779.4" y="509.9" class="st8" width="53.5" height="7.2"/>
+		<rect x="732.6" y="592.9" class="st8" width="96.7" height="4.4"/>
+		<rect x="732.6" y="601.7" class="st8" width="92.1" height="4.4"/>
+		<rect x="732.6" y="610.4" class="st8" width="79.2" height="4.4"/>
+		<rect x="732.6" y="620" class="st8" width="96.7" height="4.4"/>
+		<rect x="732.6" y="628.6" class="st8" width="92.1" height="4.4"/>
+		<rect x="732.6" y="637.3" class="st8" width="79.2" height="4.4"/>
+		<rect x="732.3" y="526.3" class="st8" width="100.6" height="60.1"/>
+		<rect x="732.3" y="649.1" class="st8" width="49.1" height="17.8"/>
+		<rect x="786.6" y="649.1" class="st8" width="46.3" height="17.8"/>
+	</g>
+</g>
+</svg>

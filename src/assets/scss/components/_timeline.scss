@@ -1,0 +1,153 @@
+// No!
+$red: #ee4d4d;
+$blue: #2b2e48;
+
+// Typography
+$base-font: helvetica, arial, tahoma, verdana;
+$base-font-title: "Dosis", arial, tahoma, verdana;
+$base-font-color: #726f77;
+
+// Timeline
+$timeline-color: $primary-color;
+
+%clearfix {
+  &::after,
+  &::before {
+    clear: both;
+    content: '';
+    display: block;
+    width: 100%;
+  }
+}
+
+// Timeline
+#timeline {
+  margin: 30px auto;
+  padding: 0 10px;
+  position: relative;
+  transition: $global-transition;
+  width: 100%;
+
+  &::before {
+    background: $timeline-color;
+    content: '';
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    width: 3px;
+  }
+
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+    width: 100%;
+  }
+
+  a {
+    color: $white;
+    font-weight: bold;
+    transition: $global-transition;
+
+    &:hover {
+      box-shadow: 0 1px 0px 0px $white;
+      transition: $global-transition;
+    }
+  }
+
+  .timeline-item {
+    margin-bottom: 50px;
+    position: relative;
+    @extend %clearfix;
+
+    .timeline-icon {
+      background: $timeline-color;
+      border-radius: 50%;
+      height: 50px;
+      left: 50%;
+      margin-left: -23px;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      width: 50px;
+
+      img {
+        left: 14px;
+        position: relative;
+        top: 11px;
+
+        &.sites {
+          left: 14px;
+          position: relative;
+          top: 11px;
+        }
+      }
+    }
+
+    .timeline-content {
+      padding: 20px;
+      text-align: right;
+      transition: $global-transition;
+      width: 45%;
+
+      p {
+        color: $white;
+        font-size: rem-calc(16);
+        line-height: 1.4;
+        margin-bottom: 0;
+      }
+
+      .timeline-content-date {
+        color: $white;
+        font-size: rem-calc(16);
+        font-weight: bold;
+        margin-bottom: 0;
+        text-shadow: 0 1px 0 $primary-color;
+      }
+
+      .timeline-content-month {
+        font-size: rem-calc(14);
+        text-transform: uppercase;
+        font-weight: 400;
+      }
+
+      &.right {
+        float: right;
+        text-align: left;
+      }
+    }
+  }
+}
+
+@include breakpoint(small only) {
+  #timeline {
+    margin: 30px;
+    padding: 0;
+    width: 90%;
+
+    &::before {
+      left: 0;
+    }
+
+    .timeline-item {
+      .timeline-content {
+        float: right;
+        text-align: left;
+        width: 90%;
+
+        &::before,
+        &.right::before {
+          border-left: 0;
+          border-right: 7px solid $timeline-color;
+          left: 10%;
+          margin-left: -6px;
+        }
+      }
+
+      .timeline-icon {
+        left: 0;
+      }
+    }
+  }
+}

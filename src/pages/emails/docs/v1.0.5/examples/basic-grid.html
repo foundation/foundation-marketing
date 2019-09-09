@@ -1,0 +1,81 @@
+---
+layout: emails-docs-example
+---
+<style>
+    /* Custom styles go here */
+    body {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+    span { color: #FFF; display: block; font-size: 12px;  padding: 5px 10px; font-family: Courier, monospace; }
+    table, tr, td { vertical-align: middle; }
+    table.columns td, table.column td { padding: 0; }
+    td.wrapper { padding-top: 0; }
+    /* Firefox display hack */
+    @media only screen and (max-width: 600px) {
+      table[class="body"] .row tr,
+      table[class="body"] .row tbody {
+        display: block;
+      }
+    }
+</style>
+
+<table class="body">
+  <tr>
+    <td class="center" align="center" valign="top">
+      <center>
+
+
+        <!-- EXAMPLE CODE -->
+        <table class="container" style="background:#002B35;">
+          <tr>
+            <td><span>table.container</span></td>
+          </tr>
+          <tr>
+            <td>
+              <table class="row" style="background:#28A9C5;">
+                <tr>
+                  <td><span>table.row</span></td>
+                </tr>
+                <tr>
+                  <td class="wrapper">
+
+                    <table class="eight columns" style="background:#82CCE5;">
+                      <tr>
+                        <td>
+                          <span>.eight.columns</span>
+                        </td>
+                        <td class="expander"></td>
+                      </tr>
+                    </table>
+
+                  </td>
+                  <td class="wrapper last">
+
+                    <table class="four columns" style="background:#82CCE5;">
+                      <tr>
+                        <td>
+                          <span>.four.columns</span>
+                        </td>
+                        <td class="expander"></td>
+                      </tr>
+                    </table>
+
+                  </td>
+                </tr>
+                <tr>
+                  <td><span>&nbsp;</span></td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+          <tr>
+            <td><span>&nbsp;</span></td>
+          </tr>
+        </table>
+
+      </center>
+    </td>
+  </tr>
+</table>

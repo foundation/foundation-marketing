@@ -1,0 +1,75 @@
+// Banner for announcements
+a {
+  &.meundies-banner {
+    background: url('../img/yeti-undies-icon.png') no-repeat 10px center;
+    background-color: #f3b789;
+    display: block;
+    overflow: hidden;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+    height: 60px;
+    h5 {
+      color: $true-white;
+      margin-bottom: 0 !important;
+      text-align: center;
+    }
+  }
+  &.docs-banner {
+    display: block;
+    overflow: hidden;
+    padding: 0.4rem 0;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: $success-color;
+    color: $white;
+    h5 {
+      margin-bottom: 0 !important;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  }
+
+
+  &.notice {
+    background: url('../img/foundation-emails/banner/inky-banner-bg-boat.svg') no-repeat center center;
+    background-size: cover;
+    display: block;
+    overflow: hidden;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+
+    @include breakpoint(medium down) {
+      background: url('../img/foundation-emails/banner/inky-banner-bg-clear.svg') no-repeat center center;
+      background-size: cover;
+    }
+
+    .info {
+      left: 0;
+      margin-left: auto;
+      margin-right: auto;
+      right: 0;
+      z-index: 20;
+
+      h5 {
+        color: $true-white;
+        margin-bottom: 0 !important;
+        text-align: center;
+      }
+    }
+  }
+}
+
+a.docs-banner {
+  padding: 1.1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h5 {
+    // opacity: 0.8;
+    font-size: 1rem;
+  }
+}

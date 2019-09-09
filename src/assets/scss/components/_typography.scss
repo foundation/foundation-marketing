@@ -1,0 +1,190 @@
+@mixin proxima-nova {
+  font-family: 'Proxima Nova', 'proxima-nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@mixin proxima-nova-condensed {
+  font-family: 'Proxima Nova Condensed', 'proxima-nova-condensed', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  src: font-url('OpenSans-Regular-webfont.eot'),
+  font-url('OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+  font-url('OpenSans-Regular-webfont.woff') format('woff'),
+  font-url('OpenSans-Regular-webfont.ttf') format('truetype'),
+  font-url('OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: font-url('OpenSans-Light-webfont.eot'),
+  font-url('OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+  font-url('OpenSans-Light-webfont.woff') format('woff'),
+  font-url('OpenSans-Light-webfont.ttf') format('truetype'),
+  font-url('OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: font-url('OpenSans-Semibold-webfont.eot'),
+  font-url('OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+  font-url('OpenSans-Semibold-webfont.woff') format('woff'),
+  font-url('OpenSans-Semibold-webfont.ttf') format('truetype'),
+  font-url('OpenSans-Semibold-webfont.svg#open_sanssemibold') format('svg');
+}
+
+// page sub-head styles
+.section-header {
+  margin-bottom: 3rem;
+}
+
+.section-headlines {
+  text-align: center;
+
+  .subheader {
+    margin-bottom: 3rem;
+  }
+}
+
+.page-content {
+  h2 {
+    color: $true-black;
+    font-weight: 200;
+  }
+}
+
+.button-subtext {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.page-intro {
+  color: $secondary-color;
+  font-size: rem-calc(18);
+  line-height: 1.6;
+
+  & + & {
+    @include breakpoint(medium) {
+      margin-top: -2rem;
+    }
+  }
+
+  a {
+    &:not(.sites) {
+      color: $secondary-color;
+
+      &:hover {
+        color: scale-color($secondary-color, $lightness: -14%);
+      }
+    }
+  }
+
+  @include breakpoint(medium) {
+    margin-bottom: 2rem;
+  }
+}
+
+// dotted hr
+hr {
+  &.dotted {
+    border-style: dashed;
+    margin: 2rem 0;
+    max-width: 100%;
+
+  }
+}
+
+p {
+  font-size: rem-calc(15);
+}
+
+.page-subheader {
+  margin-bottom: 3rem;
+  font-size: 1.125rem;
+
+  &.with-subheader {
+    margin-bottom: 0.35rem;
+    text-align: center;
+  }
+
+  + .subheader {
+    margin-bottom: 3rem;
+  }
+}
+
+.page-subheader-large {
+  color: $secondary-color;
+  font-weight: 200;
+  margin-bottom: 0.5rem;
+}
+
+.thank-you-icon {
+  height: 100px;
+  width: 100px;
+}
+
+.feature-bullet-list {
+  list-style: none;
+  text-align: left;
+
+  li {
+    padding-bottom: 0.75rem;
+  }
+}
+
+.callout {
+  ul {
+    margin-left: 1rem;
+  }
+}
+
+.case-study-wrapper {
+  .case-study-header {
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  h2 {
+    .subheader {
+      margin-bottom: 0;
+    }
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .orbit {
+    .orbit-slide {
+      padding-top: 0;
+
+    }
+  }
+
+  .media-object {
+    // margin-bottom: 0;
+  }
+}
+.case-study-logo {
+  max-height: 4rem;
+  margin-bottom: 1rem;
+
+  &.arlington {
+    max-height: 3.5rem;
+  }
+}
+.spaced-list {
+  li {
+    margin-bottom: 1rem;
+  }
+}
+
+.page-intro + .page-intro {
+  margin-top: -1rem;
+}

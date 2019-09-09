@@ -1,0 +1,18 @@
+.button {
+  border: 0;
+  box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.2) inset;
+  font-weight: bold;
+}
+
+.secondary-demo-button {
+  background-color: $dark-gray;
+
+  &:hover {
+    background-color: scale-color($dark-gray, $lightness: 14%);
+  }
+}
+
+// TODO: write a better rule
+#sites form.newsletter-signup-form .sites.button.expanded [type='submit']:hover {
+  background-color: scale-color($primary-color, $lightness: 14%);
+}
