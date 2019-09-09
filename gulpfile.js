@@ -10,12 +10,6 @@ var sassLint = require("gulp-sass-lint");
 // Check for --production flag
 var isProduction = !!argv.production;
 
-var remoteServer = isProduction
-  ? "/home/deployer/sites/foundation-sites-6-marketing"
-  : "/home/deployer/sites/foundation6-marketing-march16";
-
-console.log(remoteServer);
-
 // File paths to various assets are defined here.
 var paths = {
   assets: ["src/assets/**/*", "!src/assets/{img,js,scss}/**/*"],
@@ -170,22 +164,6 @@ gulp.task("images", function() {
       // .pipe(imagemin)
       .pipe(gulp.dest("./dist/assets/img"))
   );
-});
-
-// Deploy to the live server
-gulp.task("deploy", ["build"], function() {
-  return gulp
-    .src("./dist/**")
-    .pipe(
-      $.prompt.confirm("Make sure everything looks right before you deploy.")
-    )
-    .pipe(
-      $.rsync({
-        root: "./dist",
-        hostname: "ADD_DEPLOYER_NAME_AND_ADDRESS",
-        destination: remoteServer
-      })
-    );
 });
 
 // Build the "dist" folder by running all of the above tasks
