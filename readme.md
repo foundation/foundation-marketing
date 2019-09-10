@@ -1,4 +1,4 @@
-# Foundation marketing site.
+# Foundation marketing site. [![Netlify Status](https://api.netlify.com/api/v1/badges/c9ef828c-8929-4695-aaef-cb93f182bda8/deploy-status)](https://app.netlify.com/sites/cocky-darwin-207fbd/deploys)
 
 Notes:  To generate partner badge, use this template, substituting in partner slug
 
