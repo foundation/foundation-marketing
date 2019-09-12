@@ -12,18 +12,18 @@ var isProduction = !!argv.production;
 
 // File paths to various assets are defined here.
 var paths = {
-  assets: ["src/assets/**/*", "!src/assets/{img,js,scss}/**/*"],
-  downloads: ["src/downloads/**/*.*"],
-  sass: ["bower_components/foundation-sites/scss"],
-  javascript: [
+  assets     : ["src/assets/**/*", "!src/assets/{img,js,scss}/**/*"],
+  downloads  : ["src/downloads/**/*.*"],
+  sass       : ["node_modules/foundation-sites/scss"],
+  javascript : [
     "node_modules/jquery/dist/jquery.js",
-    "bower_components/foundation-sites/dist/js/foundation.js",
-    "bower_components/what-input/what-input.js",
-    "bower_components/typed.js/js/typed.js",
-    "bower_components/waypoints/lib/jquery.waypoints.js",
-    "bower_components/chart.js/dist/Chart.js",
+    "node_modules/foundation-sites/dist/js/foundation.js",
+    "node_modules/what-input/what-input.js",
+    "node_modules/typed.js/lib/typed.js",
+    "node_modules/waypoints/lib/jquery.waypoints.js",
+    "node_modules/chart.js/dist/Chart.js",
     "src/assets/js/**/*.js",
-    "bower_components/lodash/lodash.js",
+    "node_modules/lodash/lodash.js",
     "src/assets/js/app.js"
   ]
 };
@@ -204,7 +204,7 @@ gulp.task("default", ["build", "server"], function() {
   gulp.watch(["./src/assets/scss/**/*.scss"], ["sass"]);
   gulp.watch(["./src/assets/js/**/*.js"], ["javascript"]);
   gulp.watch(
-    ["bower_components/foundation-sites/dist/foundation.js"],
+    ["node_modules/foundation-sites/dist/foundation.js"],
     ["javascript"]
   );
   gulp.watch(["./src/assets/img/**/*"], ["images"]);
