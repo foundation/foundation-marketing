@@ -8,7 +8,7 @@
     "deploy": "gulp deploy --production",
     "deploy:staging": "gulp deploy"
   },
-  "author": "ZURB <foundation@zurb.com>",
+  "author": "ZURB <contact@get.foundation>",
   "license": "MIT",
   "devDependencies": {
     "gulp": "^3.9.0",
