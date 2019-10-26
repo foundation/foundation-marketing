@@ -61,7 +61,7 @@ if ($('[data-forum-posts]').length > 0) {
     });
   };
   $.ajax({
-    url:'https://foundation.discourse.group',
+    url:'https://foundation.zurb.com/forum/api/v1/posts.json?strip_tags=true',
     dataType:'json',
     success: cb
   });
