@@ -1,7 +1,7 @@
 /**
  * jQuery color contrast
  * @Author:     Jochen Vandendriessche <jochen@builtbyrobot.com>
- * @Author URI:   http://builtbyrobot.com
+ * @Author URI:   //builtbyrobot.com
  **/
 
 function debug(o){
