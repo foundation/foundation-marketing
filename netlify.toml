@@ -24,7 +24,7 @@
 
 [[redirects]]
   from = "https://foundation-marketing.netlify.com/*"
-  to = "https://www.get.foundation/:splat"
+  to = "https://get.foundation/:splat"
   status = 301
   force = true
   [redirects.headers]

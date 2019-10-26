@@ -1197,7 +1197,7 @@ $(function () {
       if (data.Status === 400) {
         alert("Error: " + data.Message);
       } else { // 200
-        window.location = 'https://www.get.foundation/sites/insider-thanks.html';
+        window.location = 'https://get.foundation/sites/insider-thanks.html';
       }
     });
   });
