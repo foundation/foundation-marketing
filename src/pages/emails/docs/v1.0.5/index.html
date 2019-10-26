@@ -246,8 +246,8 @@ name: Ink 1.0 Documentation
       <h6>Boilerplate.html</h6>
       {{#code 'html'}}
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "//www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-    <html xmlns="//www.w3.org/1999/xhtml">
+    "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+    <html xmlns="https://www.w3.org/1999/xhtml">
       <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width"/>
@@ -303,11 +303,11 @@ name: Ink 1.0 Documentation
       <hr>
       <h2 class="light">Sending Your Email</h2>
       <p>Sending HTML email is a lot different than sending plain text email. While it may be tempting to just open the email in a browser and click &#8220;share&#8221; or to use the &#8220;Insert HTML&#8221; function of your favorite email client, this often strips off a lot of the styling and makes your email completely unusable on mobile devices.</p>
-      <p>To get the best results, we recommend that you send your HTML email using an <a href="//en.wikipedia.org/wiki/Email_service_provider_(marketing)">Email Service Provider (ESP)</a> such as <a href="//mailchimp.com">Mailchimp</a> or <a href="//campaignmonitor.com">Campaign Monitor</a>. If you&#8217;re just running a quick test and don't want to sign up for an ESP, sending from the command line using a scripting language like <a href="//php.net/manual/en/function.mail.php">PHP</a> or <a href="//ruby-doc.org/stdlib-2.0/libdoc/net/smtp/rdoc/Net/SMTP.html">Ruby</a> usually works fine.</p>
+      <p>To get the best results, we recommend that you send your HTML email using an <a href="https://en.wikipedia.org/wiki/Email_service_provider_(marketing)">Email Service Provider (ESP)</a> such as <a href="https://mailchimp.com">Mailchimp</a> or <a href="https://campaignmonitor.com">Campaign Monitor</a>. If you&#8217;re just running a quick test and don't want to sign up for an ESP, sending from the command line using a scripting language like <a href="https://php.net/manual/en/function.mail.php">PHP</a> or <a href="https://ruby-doc.org/stdlib-2.0/libdoc/net/smtp/rdoc/Net/SMTP.html">Ruby</a> usually works fine.</p>
       <hr>
       <h2 class="light">Testing and Troubleshooting</h2>
-      <p>Since targeting a <a href="#compatibility">diverse range of email clients</a> requires some specific and rather quirky markup, Foundation for Emails doesn&#8217;t always preview properly in the browser. When doing browser tests, we recommend using the latest version of <a href="//google.com/chrome">Chrome</a>, <a href="//www.apple.com/safari/">Safari</a> or <a href="//www.opera.com/">Opera</a>, since Foundation for Emails doesn&#8217;t always display properly in Firefox or Internet Explorer.</p>
-      <p>Testing in the browser isn't enough, however, and you should always test in actual email clients. If you don't have access to the actual clients you want to test, a testing service like <a href="https://litmus.com/">Litmus</a> or <a href="//www.emailonacid.com/">Email on Acid</a> can help.</p>
+      <p>Since targeting a <a href="#compatibility">diverse range of email clients</a> requires some specific and rather quirky markup, Foundation for Emails doesn&#8217;t always preview properly in the browser. When doing browser tests, we recommend using the latest version of <a href="https://google.com/chrome">Chrome</a>, <a href="https://www.apple.com/safari/">Safari</a> or <a href="https://www.opera.com/">Opera</a>, since Foundation for Emails doesn&#8217;t always display properly in Firefox or Internet Explorer.</p>
+      <p>Testing in the browser isn't enough, however, and you should always test in actual email clients. If you don't have access to the actual clients you want to test, a testing service like <a href="https://litmus.com/">Litmus</a> or <a href="https://www.emailonacid.com/">Email on Acid</a> can help.</p>
       <p>If you're having trouble with an email, the first thing to check is the markup. Often times a simple error like a forgotten <kbd>&lt;tr&gt;</kbd> or a nested tag that&#8217;s been closed in the wrong order can wreak havoc on your design. If that&#8217;s not the problem, it could be an issue with your ESP. <strong>Some senders prepend an <kbd>&lt;html&gt;</kbd> tag to your message, which causes the DOCTYPE tag to not be interpreted by the email recipient.</strong> To see if this is what&#8217;s happening, try sending a test email to yourself and using the &#8220;show original&#8221; or &#8220;raw source&#8221; option in your mail client to manually inspect the code.</p>
 
 
@@ -472,7 +472,7 @@ name: Ink 1.0 Documentation
       <br>
       <br>
       <!-- <h4 class="normal">Rows Within Columns</h4>
-      <p>Unlike the <a href="//www.get.foundation/docs/components/grid.html">Foundation grid</a>, Ink's grid cannot be nested. A layout simulating rows within columns is possible, however, by placing multiple <code>.columns</code> tables (with the same number of columns) within the same <code>.wrapper</code> td.</p> -->
+      <p>Unlike the <a href="https://www.get.foundation/docs/components/grid.html">Foundation grid</a>, Ink's grid cannot be nested. A layout simulating rows within columns is possible, however, by placing multiple <code>.columns</code> tables (with the same number of columns) within the same <code>.wrapper</code> td.</p> -->
       <!-- <script type="text/javascript" src="https://snipt.net/embed/01eb0d482e77ef8e25e40e6d1dae49d1/"></script> -->
       <h4 class="normal">Centered Content</h4>
       <p>To center the content of a column, apply a class of <code>center</code> to the <kbd>&lt;td&gt;</kbd> that contains the content. If you want to center an image, you should also apply a class of <code>center</code> to the image itself. For maximum client support, we also recommend using the HTML <kbd>&lt;center&gt;</kbd> tag around the content you wish to center.</p>
@@ -741,7 +741,7 @@ name: Ink 1.0 Documentation
 <hr />
 
 <h4 class="normal">Grids Within Grids</h4>
-<p>While the Foundation for Emails grid can't be nested like its <a href="//www.get.foundation/docs/components/grid.html">Foundation counterpart</a>, Foundation for Emails does provide a nestable sub-grid for when one grid just isn't enough. By applying a <code>.sub-columns</code> class (as well as a numbered class, same as the primary grid) to a <kbd>&lt;td&gt;</kbd> tag underneath a <code>.columns</code> table, you can sub-divide the <code>.columns</code> table into sub-columns.</p>
+<p>While the Foundation for Emails grid can't be nested like its <a href="https://www.get.foundation/docs/components/grid.html">Foundation counterpart</a>, Foundation for Emails does provide a nestable sub-grid for when one grid just isn't enough. By applying a <code>.sub-columns</code> class (as well as a numbered class, same as the primary grid) to a <kbd>&lt;td&gt;</kbd> tag underneath a <code>.columns</code> table, you can sub-divide the <code>.columns</code> table into sub-columns.</p>
 <p>The last <code>.sub-columns</code> <kbd>&lt;td&gt;</kbd> in the <code>.columns</code> <kbd>&lt;table&gt;</kbd> should be given a class of <code>last</code> in order for the gutter padding to be properly maintained.</p>
   <h6>Basic Sub-Grid Example</h6>
     {{#code 'html'}}
@@ -1743,7 +1743,7 @@ name: Ink 1.0 Documentation
       <h1 id="compatibility" data-magellan-target="compatability" class="light">Supported Clients</h1>
 <p class="lead">We test and support all the major email clients &hellip; even Outlook.</p>
 <hr />
-<p>We support as many email clients and as much of the market as possible, however, we simply can't test for everything. As a result, we've decided to test the following clients, based on a combination of their <a href="//emailclientmarketshare.com/">market share</a> and our ability to reliably test them with the devices and software we have access to.</p>
+<p>We support as many email clients and as much of the market as possible, however, we simply can't test for everything. As a result, we've decided to test the following clients, based on a combination of their <a href="https://emailclientmarketshare.com/">market share</a> and our ability to reliably test them with the devices and software we have access to.</p>
 <p>While we will help out as much as possible with issues regarding other clients (and are more than willing to accept <a href="https://github.com/zurb/ink/blob/master/CONTRIBUTING.md">pull requests</a> that add support for additional clients), we can't devote a lot of time or effort at this point to fixing issues related to email clients not in the following table.</p>
 <h2 class="light">Tested Clients</h2>
 <table>
@@ -1894,14 +1894,14 @@ name: Ink 1.0 Documentation
   <div class="row">
     <div class="large-4 columns">
       <div class="course-image">
-        <a href="//zurb.com/university/responsive-emails-intro?utm_source=Ink%20Marketing%20Site&utm_medium=Marketing%20Site&utm_content=Ink%20Download%20Page&utm_campaign=Introduction%20to%20Responsive%20Emails" target="_blank"><img style="width: 303px; height: 197px;" src="//zurb.com/university/assets/courses/responsive-emails-intro.png"/></a>
+        <a href="https://zurb.com/university/responsive-emails-intro?utm_source=Ink%20Marketing%20Site&utm_medium=Marketing%20Site&utm_content=Ink%20Download%20Page&utm_campaign=Introduction%20to%20Responsive%20Emails" target="_blank"><img style="width: 303px; height: 197px;" src="https://zurb.com/university/assets/courses/responsive-emails-intro.png"/></a>
       </div>
     </div>
     <div class="large-7 columns">
       <div class="course-callout">
         <h3 class="light">Responsive Email Master Class</h3>
         <p>In this online class, you’ll conquer responsive emails by learning how to rapidly design and develop well-targeted emails that look beautiful on just about every screen, browser, and email client out there—even Outlook. Get the training and coaching you need to take your email marketing workflow to the next level.</p>
-        <a href="//zurb.com/university/responsive-emails-intro?utm_source=Ink%20Marketing%20Site&utm_medium=Marketing%20Site&utm_content=Ink%20Download%20Page&utm_campaign=Introduction%20to%20Responsive%20Emails" class="button primary" target="_blank">View Course</a>
+        <a href="https://zurb.com/university/responsive-emails-intro?utm_source=Ink%20Marketing%20Site&utm_medium=Marketing%20Site&utm_content=Ink%20Download%20Page&utm_campaign=Introduction%20to%20Responsive%20Emails" class="button primary" target="_blank">View Course</a>
       </div>
     </div>
   </div>
