@@ -61,7 +61,7 @@ if ($('[data-forum-posts]').length > 0) {
     });
   };
   $.ajax({
-    url:'https://foundation.zurb.com/forum/api/v1/posts.json?strip_tags=true',
+    url:'https://www.get.foundation/forum/api/v1/posts.json?strip_tags=true',
     dataType:'json',
     success: cb
   });
@@ -1197,7 +1197,7 @@ $(function () {
       if (data.Status === 400) {
         alert("Error: " + data.Message);
       } else { // 200
-        window.location = 'https://foundation.zurb.com/sites/insider-thanks.html';
+        window.location = 'https://www.get.foundation/sites/insider-thanks.html';
       }
     });
   });
