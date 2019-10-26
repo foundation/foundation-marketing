@@ -61,7 +61,7 @@ if ($('[data-forum-posts]').length > 0) {
     });
   };
   $.ajax({
-    url:'https://www.get.foundation/forum/api/v1/posts.json?strip_tags=true',
+    url:'https://foundation.discourse.group',
     dataType:'json',
     success: cb
   });
