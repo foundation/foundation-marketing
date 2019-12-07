@@ -31,7 +31,7 @@
     X-From = "Netlify"
 
 [[redirects]]
-  from = "/sites/docs/v/5.5.3/*"
+  from = "/sites/docs-v5/*"
   to = "https://foundation-sites-v5.netlify.com/:splat"
   status = 200
   force = true
