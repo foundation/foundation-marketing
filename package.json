@@ -39,7 +39,7 @@
   "dependencies": {
     "chart.js": "^2.8.0",
     "foundation-sites": "6.3.1",
-    "jquery": "^2.2.4",
+    "jquery": "^3.4.0",
     "lodash": "^4.17.15",
     "typed.js": "^2.0.11",
     "waypoints": "^4.0.1",
