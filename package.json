@@ -41,7 +41,7 @@
     "foundation-sites": "6.3.1",
     "jquery": "^2.2.4",
     "lodash": "^4.17.15",
-    "typed.js": "^2.0.10",
+    "typed.js": "^2.0.11",
     "waypoints": "^4.0.1",
     "what-input": "^5.2.3"
   }

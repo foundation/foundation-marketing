@@ -6242,10 +6242,10 @@ type@^1.0.1:
   resolved "https://registry.yarnpkg.com/type/-/type-1.0.3.tgz#16f5d39f27a2d28d86e48f8981859e9d3296c179"
   integrity sha512-51IMtNfVcee8+9GJvj0spSuFcZHe9vSib6Xtgsny1Km9ugyz2mbS08I3rsUIRYgJohFRFU1160sgRodYz378Hg==
 
-typed.js@^2.0.10:
-  version "2.0.10"
-  resolved "https://registry.yarnpkg.com/typed.js/-/typed.js-2.0.10.tgz#70a1c1ad11965923bc9e52f851d1891b0ca1316f"
-  integrity sha512-tpK+LRm5FM2GAIWWWogbOc4QRlctS425Ef1PCQKbj/G9wyig+Zt+20eLruK7CBPR+DEl/ou4uSfpwRETCSmk4A==
+typed.js@^2.0.11:
+  version "2.0.11"
+  resolved "https://registry.yarnpkg.com/typed.js/-/typed.js-2.0.11.tgz#d298a91f959f11a3803bf48b841a6fadd29640d9"
+  integrity sha512-1ZORHalEyLob34q738mqmwp0pT6syMigB1SZuTItqdhovWBKFIt7I5uVALXAGQZCg2MCtihCt6uqkoqPJK+9iQ==
 
 typedarray@^0.0.6:
   version "0.0.6"
