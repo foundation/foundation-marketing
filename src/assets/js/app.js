@@ -1,20 +1,3 @@
-//Kissmetrics
-
-var _kmq = _kmq || [];
-var _kmk = _kmk || "d945f04ff5e68057c85f5323b46f185efb3826b3";
-function _kms(u){
-  setTimeout(function(){
-    var d = document, f = d.getElementsByTagName('script')[0],
-    s = d.createElement('script');
-    s.type = 'text/javascript'; s.async = true; s.src = u;
-    f.parentNode.insertBefore(s, f);
-  }, 1);
-}
-_kms('//i.kissmetrics.com/i.js');
-_kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
-
-
-
 $(document).foundation();
 
 var doc = document.documentElement;
@@ -246,98 +229,6 @@ function addIntercom(appId) {
   };
   (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/'+appId;var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
 }
-
-// If we're on upload page
-if ($('#upload-progress-details').is('*')) {
-  _kmq.push(['record', 'Viewed Foundation Upload Page']);
-
-  addIntercom("kqake8un");
-}
-
-// If we're on yeti-launch page
-if ($('.yeti-launch-download').is('*')) {
-  _kmq.push(['record', 'Viewed Yeti Launch Page']);
-  $('.yeti-launch-download').click(function() {
-    _kmq.push(['record', 'Started Yeti Launch Download']);
-  });
-}
-
-// If we're on premium support page
-if ($('#premium-support-page').is('*')) {
-  // Temporarily disabled
-  //addIntercom("hrdngkdu");
-}
-
-// ---------------------------------------
-// ---------- ** INK INLINER ** ----------
-// ---------------------------------------
-$('#appendQuery').on('click', function(){
-  $('#linkAppend').toggleClass('inactive', !$(this).is(':checked'));
-});
-
-// $(document).on('click', '#previewModal .close-btn', function(e) {
-//   e.preventDefault();
-//   $('#previewModal').delay(100).removeClass('active');
-//   $('html, body').css('max-height', 'none').css('overflow', 'scroll');
-//   $('#skateForm textarea').show();
-// });
-
-$(document).on('click', '#showPreview', function(e) {
-  e.preventDefault();
-  $('html, body').animate({
-    scrollTop : 0
-  }, 700);
-  // $('#previewModal').delay(100).addClass('active');
-  $('#skateForm textarea').hide();
-  $('html, body').css('max-height', $(window).height()).css('overflow', 'hidden');
-  $('#previewModal iframe').height($(window).height() - 47);
-});
-
-$(document).on('click', '#inlinerReset', function(e) {
-  e.preventDefault();
-  $('.show-on-submit').fadeOut(700);
-  $('.hide-on-submit').fadeIn(700);
-  $('#emailSource').removeClass('result').val(original);
-  $('#skateForm textarea').attr('readonly', false);
-});
-
-$('#skateForm').on('submit', function(e){
-  e.preventDefault();
-  original = $('#emailSource').val();
-  var data = {
-    source: original,
-  };
-
-  $('#skateForm textarea').attr('readonly', true);
-  $('#emailSource').val('Loading...');
-  $('html, body').animate({
-    scrollTop : $('.top-headlines').offset().top
-  }, 700);
-  $('#emailSource').addClass('result');
-  $('.hide-on-submit').fadeOut(700);
-
-  if ($('#linkAppend').val() && $('#appendQuery').is(':checked')) {
-    data.linkAppend = $('#linkAppend').val();
-  }
-
-
-  $.post("https://inky-direct.zurb.com/ink/skate-proxy.php", data, function(resp){
-    $('.show-on-submit').fadeIn(700);
-    $('#previewModal').foundation('open');
-    $('#emailSource').val(resp.html);
-    $('#previewModal').css('z-index', '99999').find('iframe').contents().find('html').html(resp.html);
-  }, "json");
-
-  var email = $('#inlinerEmailSignup').val();
-  if (email) {
-    $('#emailBox input').attr("disabled", "disabled");
-    var data = {
-      email: email
-    };
-    $.post("https://zurb.com/ink/newsletter.php", data, function(resp){$('#emailBox').html('<div data-alert class="alert-box">Congratulations, '+email+' is signed up for the list!<a href="#" class="close">&times;</a></div>');});
-  }
-});
-
 
 // ----------------------------------------
 // -------- ** GITHUB STARGAZER ** --------
@@ -1198,52 +1089,6 @@ $("[data-count]").each(function() {
   var count = $('#' + id).children().length;
   $(this).text(count);
 })
-
-
-// COUNTDOWN TIMER for Events banner
-// function getTimeRemaining(endtime){
-//  var t = Date.parse(endtime) - Date.parse(new Date());
-//  var minutes = Math.floor( (t/1000/60) % 60 );
-//  var days = Math.floor( (t/(1000*60*60)/24) );
-//  var hours = Math.floor( (t/(1000*60*60)) % 24 );
-//  var seconds = Math.floor( (t/1000) % 60 );
-//
-//  return {
-//    'total': t,
-//    'hours': hours,
-//    'days': days,
-//    'minutes': minutes,
-//    'seconds': seconds
-//  };
-// }
-//
-// function initializeClock(id, endtime){
-//  var clock = document.getElementById(id);
-//  var daysSpan = clock.querySelector('.days');
-//  var hoursSpan = clock.querySelector('.hours');
-//  var minutesSpan = clock.querySelector('.minutes');
-//  var secondsSpan = clock.querySelector('.seconds');
-//
-//  function updateClock(){
-//    var t = getTimeRemaining(endtime);
-//
-//    daysSpan.innerHTML = ('0' + t.days).slice(-2);
-//    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-//    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-//    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-//
-//    if(t.total<=0){
-//      clearInterval(timeinterval);
-//    }
-//  }
-//
-//  updateClock();
-//  var timeinterval = setInterval(updateClock,1000);
-// }
-//
-// var deadline = 'Thurs, 25 Aug 2016 8:00:00 PDT';
-// initializeClock('clockdiv', deadline);
-//
 
 if($('#email-sponsorship-main-button').length) {
   var position = $('#email-sponsorship-main-button').offset().top;
