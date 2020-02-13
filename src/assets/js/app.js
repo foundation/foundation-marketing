@@ -15,66 +15,6 @@ var case_studies = $('.case-study'),
 
 $(study_arr[r(0, study_length - 1)]).addClass('active');
 
-// Fetch forum posts
-if ($('[data-forum-posts]').length > 0) {
-  var cb = function(data) {
-    var html = '';
-    $.each(data, function(idx, el) {
-      html += JST['src/templates/forum_post.html'](el);
-    });
-    $('[data-forum-posts]').each(function() {
-      $(this).html(html);
-    });
-  };
-  $.ajax({
-    url:'https://foundation.zurb.com/forum/api/v1/posts.json?strip_tags=true',
-    dataType:'json',
-    success: cb
-  });
-}
-
-// Fetch Delicious links
-if ($('[data-delicious-links]').length > 0) {
-  var cb = function(data) {
-    var html = '';
-    $.each(data, function(idx, el) {
-      var date = moment(el.dt)
-      el.formattedDate = date.format('MMMM Do YYYY');
-      html += JST['src/templates/delicious_posts.html'](el);
-    });
-    $('[data-delicious-links]').each(function() {
-      $(this).html(html);
-    });
-  };
-  $.ajax({
-    url:'https://feeds.del.icio.us/v2/json/zurb/foundation?count=15',
-    dataType:'jsonp',
-    success: cb
-  });
-}
-
-// Fetch Foundation Blog Posts
-if ($('[data-foundation-blog]').length > 0) {
-  var cb = function(data) {
-    var html = '';
-    $.each(data, function(idx, el) {
-      var date = moment(el.dt)
-      el.formattedDate = date.format('MMMM Do YYYY');
-      html += JST['src/templates/foundation_posts.html'](el);
-    });
-    $('[data-foundation-blog]').each(function() {
-      $(this).html(html);
-    });
-  };
-  $.ajax({
-    url:'https://zurb.com/blog/rss/foundation/json?count=10&topic=foundation',
-    dataType:'jsonp',
-    crossDomain: 'true',
-    success: cb
-  });
-}
-
-
 // Fetch BuildingBlocks
 if ($('[data-building-blocks]').length > 0) {
   var cb = function(data) {
@@ -229,71 +169,6 @@ function addIntercom(appId) {
   };
   (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/'+appId;var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
 }
-
-// ----------------------------------------
-// -------- ** GITHUB STARGAZER ** --------
-// ----------------------------------------
-
-var month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-function app_commit_check(){
-  if ($('#github').hasClass('apps')){
-    app_commit_check.button_link = "https://github.com/zurb/foundation-apps/issues";
-    app_commit_check.stars_count_url = "https://api.github.com/repos/zurb/foundation-apps?callback=foundationGithub&access_token=77fc5b560afc85a498dcbbb8e3de52abfacc0fbe";
-    app_commit_check.stars_url = "https://api.github.com/repos/zurb/foundation-apps/stargazers";
-    return "https://api.github.com/repos/zurb/foundation-apps/commits?access_token=77fc5b560afc85a498dcbbb8e3de52abfacc0fbe";
-  } else if ($('#github').hasClass('ink')){
-    app_commit_check.button_link = "https://github.com/zurb/ink/issues";
-    return "https://api.github.com/repos/zurb/ink/commits?access_token=df62fea6b2bfa73e9bcc43154cb593d224dc5c7b";
-  } else {
-    app_commit_check.button_link = "https://github.com/zurb/foundation/issues";
-    return "https://api.github.com/repos/zurb/foundation/commits?access_token=8e0dfc559d22265208b2924266c8b15b60fd9b85";
-  }
-}
-
-$.ajax({
-  url: app_commit_check(),
-  dataType: 'jsonp',
-  success: function (json) {
-    var latest = json.data[0];
-    if (!latest) return;
-    var stamp = new Date(latest.commit.committer.date),
-        stampString = month[stamp.getMonth()] + ' ' + stamp.getDate() + ', ' + stamp.getFullYear();
-    var shortText = jQuery.trim(latest.commit.message).substring(0, 77) + ' ...';
-
-    $('#github .description').html(shortText + ' &raquo;');
-    $('#github .description').attr('href', latest.html_url);
-    $('#github .date').text(stampString);
-    $('#github .commit-name').html('Commit ' + latest.sha + ' &raquo;');
-    $('#github .commit-name').attr('href', latest.html_url);
-    $('#github .button.app').attr('href', app_commit_check.button_link);
-  }
-});
-
-// FETCH STARGAZERS FROM GITHUB
-function app_stargazers_check(){
-  if ($('a#stars').hasClass('apps')){
-    app_stargazers_check.stars_url = "https://github.com/zurb/foundation-apps/stargazers";
-    return "https://api.github.com/repos/zurb/foundation-apps?callback=foundationGithub&access_token=77fc5b560afc85a498dcbbb8e3de52abfacc0fbe";
-  } else if ($('a#stars').hasClass('emails')){
-    app_stargazers_check.stars_url = "https://github.com/zurb/ink/stargazers";
-    return "https://api.github.com/repos/zurb/ink?callback=foundationGithub&access_token=df62fea6b2bfa73e9bcc43154cb593d224dc5c7b";
-  } else {
-    app_stargazers_check.stars_url = "https://github.com/zurb/foundation/stargazers";
-    return "https://api.github.com/repositories/2573058?callback=foundationGithub&access_token=77fc5b560afc85a498dcbbb8e3de52abfacc0fbe";
-  }
-}
-$.ajax({
-  url: app_stargazers_check(),
-  dataType: 'jsonp',
-  success: function (response) {
-    if (response && response.data.watchers) {
-      var watchers = (Math.round((response.data.watchers / 100), 10) / 10).toFixed(1);
-
-      $('#stars').html(watchers + 'k GitHub stars');
-      $('#stars').attr('href', app_stargazers_check.stars_url);
-    }
-  }
-});
 
 // twenty-twenty
 ///////////////////////////////////

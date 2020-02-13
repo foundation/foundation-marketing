@@ -323,17 +323,4 @@ function setColor($this) {
     },1500);
   });
 
-  // $('[data-src-download="4.0"]').on('click', function(e){
-  //   e.preventDefault();
-  //   $("form#customBuild").trigger('reset').trigger('submit');
-  // });
-
 })(jQuery);
-
-
-
-$(document).on('click', '[data-src-download]', function(event){
-   var version = $(event.currentTarget).attr('data-src-download');
-   ga('send', 'event', 'Foundation', 'Downloaded', version);
-   // _gaq.push(['_trackEvent', 'Foundation', 'Downloaded', version]);
-});
