@@ -37,9 +37,3 @@
   force = true
   [redirects.headers]
     X-From = "Netlify"
-
-[[redirects]]
-  from = "/emails/inliner.html"
-  to = "/emails/inliner-v2.html"
-  status = 301
-  force = true
