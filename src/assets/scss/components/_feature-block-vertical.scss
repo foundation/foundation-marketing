@@ -39,6 +39,12 @@
     margin-bottom: 3rem;
     text-align: center;
   }
+
+  &.centered {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
 }
 
 

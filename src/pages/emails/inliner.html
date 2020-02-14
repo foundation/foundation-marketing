@@ -13,102 +13,110 @@ name: Responsive Email CSS Inliner
   <ul class="marketing-subnav">
     <li><a href="{{root}}emails.html">Home</a></li>
     <li><a href="{{root}}emails/getting-started.html">Getting Started</a></li>
-    <li><a href="{{root}}emails/inliner-v2.html" class="is-active">Inliner</a></li>
+    <li><a href="{{root}}emails/inliner.html" class="is-active">Inliner</a></li>
     <li><a href="{{root}}emails/email-templates.html">Email Templates</a></li>
     <li><a href="{{root}}emails/resources.html">Resources</a></li>
     <li><a href="{{root}}emails/zurb-stack.html">ZURB Stack</a></li>
-    <li><a href="https://get.foundation/emails/docs" target="_blank">Docs</a></li>
+    <li><a href="https://get.foundation/emails/docs/">Docs</a></li>
   </ul>
 
 </header>
 
 <div class="row top-headlines">
   <div class="large-12 columns">
-    <h1 class="light text-center">Bring your email styles inline</h1>
-    <p class="lead text-center">Use Foundation for Emails (Inky's) Inliner to do it in one fell swoop.</p>
+    <h1 class="light text-center">Bring Your Email Styles Inline</h1>
+    <p class="lead text-center">Use the Foundation for Emails Inliner to do it in one fell swoop.</p>
   </div>
 </div>
 
+<div class="row inliner-container is-not-loaded" data-inliner>
+  <div class="inliner-loading-indicator">
+    <img src="{{root}}assets/img/foundation-emails/fish-2.svg">
+    <p>Loading the Inliner...</p>
+  </div>
+  <div class="small-6 columns">
+    <label for="htmlInput">HTML</label>
+    <textarea class="inliner-textarea" data-input-html id="htmlInput" placeholder="Paste the complete HTML of your email here."></textarea>
+
+    <label for="cssInput">CSS</label>
+    <textarea class="inliner-textarea" data-input-css id="cssInput" placeholder="Paste the complete CSS of your email here, including Foundation."></textarea>
+
+    <div class="row column">
+      <form action="https://zurb.createsend.com/t/y/s/vjtydu/" method="post" id="emailForm">
+        <div id="emailBox" class="inliner-form">
+          <!-- <label for="fieldEmail">We'll send you a note when we add new features to Foundation for Emails!<br><small>OPTIONAL</small></label>
+          <input id="fieldEmail" name="cm-vjtydu-vjtydu" type="email"> -->
+
+          <div class="row">
+            <div class="large-6 columns">
+              <button id="inliner-compile-cta" type="submit" class="large expanded button" data-compile>Inline!</button>
+            </div>
+            <div class="large-6 columns inliner-checkbox">
+              <input type="checkbox" id="compressed" checked data-compress>
+              <label for="compressed">Compress HTML <span data-tooltip title="Compressing HTML improves the load time of an email.">(?)</span></label>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="small-6 columns" style="position: relative;">
+    <label>Final Email HTML</label>
+    <div class="inliner-output" data-output></div>
+    <div class="inliner-output-placeholder">
+      <img src="{{root}}assets/img/foundation-emails/inky-computer.svg">
+      <p>Paste the HTML and CSS of your email to the left, then hit "Inline!".</p>
+      <p><small>Make sure to include all of the Foundation for Emails CSS!</small></p>
+    </div>
+    <button class="inliner-output-copybutton button" type="button" data-output-copy>Copy to Clipboard</button>
+    <div class="inliner-message">
+      Thanks for subscribing!
+    </div>
+    <div class="inliner-error" data-error>
+      <div class="inliner-error-inner">
+        <p>There was an error inlining your code. Check that your HTML and CSS have no errors and try again.</p>
+        <p>If you're still having issues, <a href="mailto:contact@get.foundation">send us an email</a> and we'll help you sort it out.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="column row">
+  <hr>
+</div>
+
+<br><br>
+
 <div class="row">
   <div class="large-7 columns">
-    <form id="skateForm" class="inky-inliner">
-      <h4 class="normal">Email content &amp; options</h4>
-
-      <div class="inliner-form">
-        <label>Paste your email content here. Styles should be included. Links should be full URLs.</label>
-        <textarea id="emailSource" placeholder="Paste your HTML here"></textarea>
-      </div>
-
-
-      <div class="inliner-form options hide-on-submit">
-        <label for="appendQuery">
-          <input type="checkbox" id="appendQuery"> Append query string to links
-        </label>
-        <input id="linkAppend" type="text" placeholder="Enter append string (do not include the ?)" class="inactive">
-        <!-- <label for="removeComments">
-          <input type="checkbox" id="removeComments"> Remove Comments
-        </label> -->
-      </div>
-
-      <br>
-
-      <div id="emailBox" class="inliner-form">
-        <!-- <label>Enter your email and we'll send you a note once we add new features to Foundation for Emails! <small>OPTIONAL</small></label> -->
-        <!-- <input id="inlinerEmailSignup" type="email" placeholder="e.g. you@yourdomain.com"> -->
-      </div>
-
-      <br>
-
-      <a id="inlinerReset" href="#" class="button show-on-submit secondary">Convert Another Email</a>
-      <a id="showPreview" href="#" class="button show-on-submit">Preview</a>
-
-      <button type="submit" class="button ink hide-on-submit">Convert Email</button>
-
-    </form>
-  </div>
-  <div class="large-4 columns">
-    <img src="{{root}}assets/img/foundation-emails/inky-computer.svg"/>
-    <h4 class="normal">Why inline styles?</h4>
-    <ul class="inline-advantages">
-      <li>
-        <div class="gmail">
-          <p>Popular email clients like Outlook and Gmail strip out CSS <code>&lt;style&gt;</code>in the <code>&lt;head&gt;</code>.</p>
-        </div>
-      </li>
-      <li>
-        <div class="gmail">
-          <p>Made for responsive emails, meaning your media queries are moved into the body for you so they are preserved.</p>
-        </div>
-      </li>
-      <li>
-        <div class="gmail">
-          <p>This is the best way to guarantee your email works properly on the compatible clients listed in the docs.</p>
-        </div>
-      </li>
+    <h3 class="normal">What is Inlining?</h3>
+    <p>Inlining is the process of prepping an HTML email for delivery to email clients. Some email clients strip out your email's styles unless they are written inline with style tags. Here's what the inliner does:</p>
+    <ul class="inliner-benefits">
+      <li><strong>Inlining CSS:</strong> All of your CSS is embedded directly into the HTML as <code>style</code> attributes on each tag.</li>
+      <li><strong>Positioning media query CSS:</strong> CSS inside a <code>@media</code> block can't be inlined, so it's put in a <code>&lt;style&gt;</code> tag. Because some clients, such as Outlook and Gmail, strip out any CSS found in the <code>&lt;head&gt;</code>, the inliner moves the <code>&lt;style&gt;</code> tag out of the <code>&lt;head&gt;</code> and into the <code>&lt;body&gt;</code>.</li>
+      <li><strong>Compresses the output:</strong> The final HTML is compressed by removing whitespace between tags and CSS blocks. This makes the file size of the email smaller, allowing it to load faster on slower mobile networks.</li>
     </ul>
+    <p>We use this same inliner in the <a href="{{root}}emails/zurb-stack.html">ZURB Email Stack</a> but it's more automated.</p>
   </div>
-</div>
-
-<div id="previewModal" class="reveal" data-reveal>
-  <button class="close-button" data-close type="button" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-  <iframe src="about:blank"></iframe>
-</div>
-
-<section class="callout course">
-<div class="row">
-  <div class="large-4 columns">
-    <div class="course-image">
-      <a href="https://zurb.com/university/responsive-emails-intro?utm_source=Ink%20Marketing%20Site&utm_medium=Marketing%20Site&utm_content=Ink%20Download%20Page&utm_campaign=Introduction%20to%20Responsive%20Emails" target="_blank"><img src="https://zurb.com/university/assets/courses/responsive-emails-intro.png" style="height: 197px;" height="197"></a>
+  <div class="large-5 columns">
+    <div class="callout">
+      <h4>Issues with the Output?</h4>
+      <p>You can open an issue on the Foundation for Emails GitHub repo to get help. Please include the HTML/CSS that isn't working so we can test it ourselves.</p>
+      <a href="https://github.com/zurb/foundation-emails/issues/new" class="button">Open an Issue</a>
+      <p>Looking for the V1 Inky Inliner? <a href="{{root}}emails/inliner.html">You can get to it here!</a></p>
     </div>
-  </div>
-  <div class="large-7 columns">
-    <div class="course-callout">
-      <h3 class="light">Responsive Email Design Training</h3>
-      <p>We practice Responsive Email Design daily at ZURB, sending out 10 email newsletter campaigns a month and creating email templates for our clients. We even built Foundation for Emails to help us and others send emails. This course covers the basics that designers and developers &mdash; even marketers &mdash; should know to get started with responsive emails.</p>
-      <a href="https://zurb.com/university/responsive-emails-intro?utm_source=Ink%20Marketing%20Site&utm_medium=Marketing%20Site&utm_content=Ink%20Download%20Page&utm_campaign=Introduction%20to%20Responsive%20Emails" class="button primary" target="_blank">View Course</a>
+    <div class="callout">
+      <h4>Inky Language</h4>
+      <p>If you're interested in using our <a href="https://github.com/zurb/inky">Inky template language</a> to write emails even faster, <a href="https://get.foundation/emails/docs/sass-guide.html">learn how to setup the ZURB Email Stack</a> on your computer. The ZURB Stack gives you a Sass compiler, Inky support, and a full inlining process, all in one template.</p>
+      <a href="{{root}}emails/zurb-stack.html" class="button">Learn About the ZURB Email Stack</a>
     </div>
   </div>
 </div>
-</section>
+
+<br><br>
+
+<div class="footer-ad">
+  {{> course-emails}}
+</div>
+
+<script src="{{root}}assets/lib/inliner.min.js"></script>

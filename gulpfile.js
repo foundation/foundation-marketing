@@ -142,7 +142,7 @@ gulp.task("jst", function() {
     .src("src/templates/*.html")
     .pipe(
       $.jstConcat("templates.js", {
-        renameKeys: ["^.*marketing/(src.*.html)$", "$1"]
+        renameKeys: ["^.*(src\/.*.html)$", "$1"]
       })
     )
     .pipe(gulp.dest("dist/assets/js"));
