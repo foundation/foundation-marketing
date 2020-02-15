@@ -1,17 +1,24 @@
-.outline-wrap{
+.outline-wrap {
   margin-bottom: 50px;
+
   h2 {
     margin-bottom: 20px;
     text-align: center;
   }
+
   .section-title {
     border-bottom: 1px solid #ddd;
     margin-bottom: 20px;
-    h4 { margin-bottom: 2px; }
+
+    h4 {
+      margin-bottom: 2px;
+    }
+
     .desc {
       @include proxima-nova;
       font-size: em-calc(16);
-     }
+    }
+
     .sub-info {
       font-size: em-calc(14);
       @include proxima-nova-condensed;
@@ -50,23 +57,28 @@
         margin-top: 8px;
       }
     }
+
     h6 {
       span {
         font-style: italic;
       }
     }
+
     .outline-bullets {
       list-style: disc;
       color: #777;
+
       li {
         font-size: emCalc(14px);
         border: none;
         padding: 0;
       }
     }
+
     .outline-bullets.large {
-      color: #333;
+      color: $gray-3;
       margin-left: 0.9375em;
+
       li {
         font-size: emCalc(18px);
       }
