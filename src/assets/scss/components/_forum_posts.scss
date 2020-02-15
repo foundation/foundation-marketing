@@ -1,8 +1,5 @@
 //TODO: No more importants!!!!
 
-$gray: #666666;
-$forumblue: #074e68;
-
 .row {
   &.post {
     h5 {
@@ -17,7 +14,7 @@ $forumblue: #074e68;
     margin-bottom: 0 !important;
   }
 
-  > .column.desc {
+  >.column.desc {
     line-height: 1.2em;
     margin-bottom: 20px;
     padding-bottom: 0;
@@ -30,59 +27,63 @@ $forumblue: #074e68;
   max-width: 80px;
   margin-left: auto;
   margin-bottom: 10px;
+
   @include breakpoint(medium) {
     max-width: 95px;
   }
+
   height: 80px;
   border:none !important;
-  background-color:lighten($gray, 50%);
+  background-color:lighten($gray-6, 50%);
   text-align:center;
-  &.new {
-  }
 
   &.new-general {
-    background-color:$forumblue;
-    color:lighten($forumblue,70%);
+    background-color: $foundation-dark;
+    color: lighten($foundation-dark, 70%);
   }
+
   &.old-general {
-    background-color:lighten($gray, 55%) !important;
+    background-color: lighten($gray-6, 55%) !important;
   }
 
   .post-count-container {
     height: 50px;
+
     &.old-general {
-      background-color:lighten($gray, 55%) !important;
+      background-color: lighten($gray-6, 55%) !important;
     }
 
-    background-color:lighten($gray, 55%);
+    background-color:lighten($gray-6, 55%);
+
     &.new {
-      background-color:$forumblue;
-      color:lighten($forumblue, 70%);
+      background-color: $foundation-dark;
+      color: lighten($foundation-dark, 70%);
     }
 
     &.new-general {
-      background-color:$forumblue;
-      color:lighten($forumblue,70%);
+      background-color: $foundation-dark;
+      color: lighten($foundation-dark, 70%);
     }
 
 
     span.reply-count {
-      position:relative;
+      position: relative;
       top: 4px;
-      color:$gray;
+      color: $gray-6;
       @include proxima-nova;
       font-size: 1.75em;
-      font-weight:700;
+      font-weight: 700;
+
       &.old-general {
-        background-color:lighten($gray, 55%) !important;
+        background-color: lighten($gray-6, 55%) !important;
         top: 18px;
-        font-size:1.75em;
+        font-size: 1.75em;
       }
 
       &.new-general {
         top: 18px;
-        color:lighten($forumblue,70%);
-        font-size:1.75em;
+        color: lighten($foundation-dark, 70%);
+        font-size: 1.75em;
 
         &.with-replies {
           top: 6px;
@@ -90,32 +91,33 @@ $forumblue: #074e68;
       }
 
       &.new-post {
-        color:lighten($forumblue, 70%);
-        top:6px;
+        color: lighten($foundation-dark, 70%);
+        top: 6px;
 
         &.already-checked {
-          top:0.2em !important;
+          top: 0.2em !important;
         }
       }
 
     }
 
     .label {
-      display:block;
+      display: block;
       background-color: transparent !important;
-      text-transform:uppercase;
+      text-transform: uppercase;
       @include proxima-nova;
-      color:lighten($forumblue, 50%);
-      position:relative;
-      top:emCalc(-15px);
-      &.new-post { }
+      color: lighten($foundation-dark, 50%);
+      position: relative;
+      top: emCalc(-15px);
+
+      &.new-post {}
     }
   }
 
   .total-post-count {
     @include proxima-nova;
 
-    color: lighten($gray, 10%);
+    color: lighten($gray-6, 10%);
     font-size: 11px;
     font-weight: 700;
     height: 30px;
@@ -123,16 +125,15 @@ $forumblue: #074e68;
     text-transform: uppercase;
 
     &.total-replies {
-      color: lighten($gray, 10%);
+      color: lighten($gray-6, 10%);
 
       &.new {
-        background-color: darken($forumblue, 5%);
-        color: lighten($forumblue, 70%);
+        background-color: darken($foundation-dark, 5%);
+        color: lighten($foundation-dark, 70%);
       }
     }
   }
 }
-
 
 .post-count-spacing {
   @include breakpoint(small only) {
@@ -153,17 +154,17 @@ $forumblue: #074e68;
     text-transform: uppercase;
 
     a {
-      color: $gray !important;
+      color: $gray-6 !important;
 
       &:hover {
-        color: lighten($gray, 10%) !important;
+        color: lighten($gray-6, 10%) !important;
       }
     }
   }
 
   .last-reply-by {
     a {
-      color: lighten($gray, 15%);
+      color: lighten($gray-6, 15%);
     }
   }
 
@@ -180,7 +181,7 @@ $forumblue: #074e68;
   }
 
   p {
-    color: #666;
+    color: $gray-6;
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 0;
@@ -210,13 +211,14 @@ $forumblue: #074e68;
 
   span.when {
     @media screen and (min-width:0px) and (max-width:767px) {
-      margin-top:emCalc(15px);
+      margin-top: emCalc(15px);
     }
 
-    color:lighten($gray, 25%);
+    color:lighten($gray-6, 25%);
+
     @media screen and (min-width:0px) and (max-width:767px) {
       @include proxima-nova;
-      color: $gray;
+      color: $gray-6;
       font-size: emCalc(13px);
       font-weight: 400;
     }
@@ -227,9 +229,12 @@ $forumblue: #074e68;
   .row.post.impressions {
     &.old {
       a {
-        color: lighten($gray, 20%);
+        color: lighten($gray-6, 20%);
       }
     }
-    hr { margin: 1.25em 0 1.1875em; }
+
+    hr {
+      margin: 1.25em 0 1.1875em;
+    }
   }
 }
