@@ -56,9 +56,9 @@ $timeline-color: $primary-color;
   }
 
   .timeline-item {
+    @extend %clearfix;
     margin-bottom: 50px;
     position: relative;
-    @extend %clearfix;
 
     .timeline-icon {
       background: $timeline-color;
