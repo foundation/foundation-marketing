@@ -11,8 +11,8 @@ ul.events-list-updated {
   margin-left: 0 !important;
 
   li {
-    display: block;
     border-bottom: 1px dashed #ddd;
+    display: block;
   }
 }
 
@@ -22,29 +22,29 @@ ul.events-list-updated {
 
 ul.events-list,
 ul.events-list-bottom {
+  @include clearfix;
   display: block;
   list-style: none;
   margin: 40px 0;
-  @include clearfix;
 
   li {
     display: block;
     width: 100%;
 
     &.inactive {
-      opacity: .25;
       filter: alpha(opacity=25);
+      opacity: .25;
     }
 
     .border-content {
       border-bottom: 1px dashed #ddd;
-      padding-bottom: 30px;
       margin: 15px 0;
+      padding-bottom: 30px;
     }
 
     a {
-      display: block;
       color: $gray-3;
+      display: block;
       float: left;
 
       &:hover {
@@ -58,12 +58,12 @@ ul.events-list-bottom {
         span.date {
           background-color: red;
           color: $true-white;
-          text-align: center;
           font-size: rem-calc(13px);
           font-weight: normal;
-          text-transform: uppercase;
           height: 40px;
           line-height: 40px;
+          text-align: center;
+          text-transform: uppercase;
         }
       }
 
@@ -71,11 +71,11 @@ ul.events-list-bottom {
         display: block;
 
         &.type {
-          font-weight: bold;
-          font-size: rem-calc(14px);
           @include proxima-nova-condensed;
-          margin: -5px 0 10px;
           background: image-url("icons/event-icons.png") no-repeat 0 0;
+          font-size: rem-calc(14px);
+          font-weight: bold;
+          margin: -5px 0 10px;
           padding-left: 20px;
           text-transform: uppercase;
 
@@ -97,9 +97,9 @@ ul.events-list-bottom {
         }
 
         &.person {
+          @include proxima-nova;
           font-size: emCalc(22px);
           font-weight: 200;
-          @include proxima-nova;
           line-height: 26px;
 
           .title {
@@ -108,10 +108,10 @@ ul.events-list-bottom {
         }
 
         &.title {
-          font-size: emCalc(14px);
-          font-weight: normal;
-          font-style: italic;
           color: #777;
+          font-size: emCalc(14px);
+          font-style: italic;
+          font-weight: normal;
         }
 
         &.event-name {
@@ -121,17 +121,17 @@ ul.events-list-bottom {
         }
 
         &.description {
+          color: #8a9e0b;
           font-size: emCalc(13px);
           margin-top: 10px;
-          color: #8a9e0b;
         }
       }
     }
 
     a.more-info {
-      width: 300px !important;
-      position: absolute;
       padding-left: 105px;
+      position: absolute;
+      width: 300px !important;
     }
   }
 }
@@ -140,8 +140,8 @@ ul.events-list-updated {
   margin-bottom: 40px;
 
   li {
-    display: block;
     border-bottom: 1px dashed #ddd;
+    display: block;
 
     &:last-child {
       border-bottom: none;
@@ -149,8 +149,8 @@ ul.events-list-updated {
     }
 
     &.inactive {
-      opacity: .25;
       filter: alpha(opacity=25);
+      opacity: .25;
     }
 
     .border-content a {
@@ -167,23 +167,23 @@ ul.events-list-updated {
       display: block;
 
       &.date {
+        @include proxima-nova;
         background: $primary-color;
         color: $true-white;
-        @include proxima-nova;
-        text-transform: uppercase;
-        font-weight: normal;
         font-size: rem-calc(13px);
-        padding: 10px 0;
-        width: 80px;
-        text-align: center;
+        font-weight: normal;
         margin-bottom: 10px;
+        padding: 10px 0;
+        text-align: center;
+        text-transform: uppercase;
+        width: 80px;
       }
 
       &.event-name {
-        font-size: emCalc(24px);
-        line-height: 26px;
         @include proxima-nova;
+        font-size: emCalc(24px);
         font-weight: 200;
+        line-height: 26px;
       }
 
       &.image {
@@ -196,8 +196,8 @@ ul.events-list-updated {
       }
 
       &.title {
-        font-style: italic;
         color: #777;
+        font-style: italic;
       }
 
       &.description {
@@ -206,24 +206,24 @@ ul.events-list-updated {
       }
 
       &.city {
-        font-weight: normal;
         color: $gray-3;
         display: inline-block;
+        font-weight: normal;
       }
 
       &.info {
-        font-size: emCalc(16px);
-        line-height: 22px;
-        font-weight: normal;
         color: #777;
+        font-size: emCalc(16px);
+        font-weight: normal;
+        line-height: 22px;
         margin-bottom: 22px;
       }
     }
 
     .tools {
-      text-align: left;
-      padding: 17px 20px 0 20px;
       border-top: 1px dashed rgba($secondary-color, 0.7);
+      padding: 17px 20px 0 20px;
+      text-align: left;
     }
 
   }
@@ -248,8 +248,8 @@ ul.events-list-updated {
 @media only screen and (min-width: 768px) {
   ul.events-list-updated li .border-content {
     a {
-      float: left;
       display: block;
+      float: left;
       padding: 26px 0 20px;
 
       &:hover {
@@ -257,13 +257,13 @@ ul.events-list-updated {
       }
 
       &.date-image {
-        width: 15%;
         margin-right: 3%;
+        width: 15%;
       }
 
       &.text-info {
-        width: 82%;
         padding: 26px 0 20px;
+        width: 82%;
       }
 
       span {
@@ -274,28 +274,28 @@ ul.events-list-updated {
         }
 
         &.date {
-          width: 100%;
           height: 44px;
-          padding: 0;
           line-height: 44px;
-          margin-top: 5px;
           margin-bottom: 2px;
+          margin-top: 5px;
+          padding: 0;
+          width: 100%;
         }
 
         &.person {
-          width: 40%;
-          padding-right: 3%;
-          margin-right: 3%;
           border-right: 1px solid #ddd;
           float: left;
+          margin-right: 3%;
           margin-top: -4px;
+          padding-right: 3%;
+          width: 40%;
         }
 
         &.image {
-          width: 100%;
-          padding-right: 0;
           border-right: none;
           display: block;
+          padding-right: 0;
+          width: 100%;
 
           img {
             display: block;
@@ -310,9 +310,9 @@ ul.events-list-updated {
         }
 
         &.description {
-          width: 54%;
           float: left;
           margin-top: -4px;
+          width: 54%;
         }
       }
     }
@@ -324,14 +324,14 @@ ul.events-list-bottom {
 
   li {
     border-bottom: 1px solid #efefef;
-    min-height: 0;
     margin-bottom: 15px;
+    min-height: 0;
     padding-bottom: 10px;
 
     &:last-child {
+      border-bottom: 0;
       margin-bottom: 0;
       padding-bottom: 0;
-      border-bottom: 0;
     }
 
     a {
