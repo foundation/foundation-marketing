@@ -4,6 +4,7 @@
   padding: 1rem;
   margin-top: 2rem;
   background-color: transparent;
+
   img {
     width: 8rem;
     display: block;
@@ -11,6 +12,7 @@
     text-align: center;
     border-radius: 50%;
   }
+
   .profile-info {
 
     h4 {
@@ -18,61 +20,75 @@
       text-align: center;
       text-transform: uppercase;
     }
+
     .short-desc {
       text-align: center;
       margin: 0;
     }
+
     .profile-links {
       text-align: center;
       margin: 0;
     }
+
     .inline-list {
       text-align: center;
       margin-bottom: 1rem;
+
       li {
         float: none;
         display: inline-block;
       }
+
       i.fi-social-facebook {
         font-size: 1.5rem;
         color: #3b5998;
         transition: all .5s ease-in-out;
+
         &:hover {
           transform: scale(1.5);
           transition: all .5s ease-in-out;
         }
       }
+
       i.fi-social-twitter {
         font-size: 1.5rem;
         color: #55acee;
         transition: all .5s ease-in-out;
+
         &:hover {
           transform: scale(1.5);
           transition: all .5s ease-in-out;
         }
       }
+
       i.fi-social-linkedin {
         font-size: 1.5rem;
         color: #0077b5;
         transition: all .5s ease-in-out;
+
         &:hover {
           transform: scale(1.5);
           transition: all .5s ease-in-out;
         }
       }
+
       i.fi-social-github {
         font-size: 1.5rem;
-        color: #333;
+        color: $gray-3;
         transition: all .5s ease-in-out;
+
         &:hover {
           transform: scale(1.5);
           transition: all .5s ease-in-out;
         }
       }
+
       i.fi-social-youtube {
         font-size: 1.5rem;
         color: #cc181e;
         transition: all .5s ease-in-out;
+
         &:hover {
           transform: scale(1.5);
           transition: all .5s ease-in-out;
@@ -81,7 +97,6 @@
     }
   }
 }
-
 
 .cert-icons {
   text-align: center;
