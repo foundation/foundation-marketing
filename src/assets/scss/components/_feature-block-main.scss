@@ -20,6 +20,7 @@
       width: 15rem;
     }
   }
+
   @include breakpoint (small only) {
     text-align: center;
   }
@@ -93,4 +94,3 @@
 .normal-grid {
   margin-bottom: 2rem;
 }
-
