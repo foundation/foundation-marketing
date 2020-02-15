@@ -14,7 +14,7 @@
   }
 
   background: #085a78;
-  padding: 15px 0px;
+  padding: 15px 0;
   height: auto;
 
   .button {
@@ -33,7 +33,7 @@
   margin-top: 30px;
 
   ul {
-    padding: 30px 0px;
+    padding: 30px 0;
   }
 }
 
@@ -52,7 +52,7 @@ ol.getting-started-steps li:last-child {
 ol.getting-started-steps {
   list-style-type: none;
   margin: 0;
-  margin-left: 0em;
+  margin-left: 0;
   padding: 0;
   counter-reset: li-counter;
   position: relative;
@@ -344,7 +344,7 @@ a.twitter {
 }
 
 .lead-text {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .ink {
