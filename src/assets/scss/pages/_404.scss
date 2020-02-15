@@ -5,8 +5,8 @@
   text-align: center;
 
   h1.oversized {
-    font-size: 4.5rem;
     color: $true-white;
+    font-size: 4.5rem;
     line-height: 1;
   }
 
@@ -15,12 +15,12 @@
   }
 
   h5 {
-    font-size: 0.75rem;
+    color: $true-white;
     font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
+    font-size: 0.75rem;
     font-weight: 900;
     margin-bottom: 20px;
-    color: $true-white;
+    text-transform: uppercase;
   }
 
   ul {
@@ -38,8 +38,8 @@
   }
 
   @media only screen and (max-width: 40em) {
-    padding: 150px 0 50px;
     background-size: 200%;
+    padding: 150px 0 50px;
 
     h1.oversized {
       font-size: 2.5rem;
