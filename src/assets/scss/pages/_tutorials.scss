@@ -1,3 +1,5 @@
-.tutorials-page.page-content {
-  margin-bottom: 0;
+.tutorials-page {
+  &.page-content {
+    margin-bottom: 0;
+  }
 }
