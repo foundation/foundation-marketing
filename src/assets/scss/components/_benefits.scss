@@ -4,9 +4,11 @@
     width: 100%;
   }
 
-  hr.dotted {
-    margin-top: 0;
-    margin-bottom: 37px;
+  hr {
+    &.dotted {
+      margin-bottom: 37px;
+      margin-top: 0;
+    }
   }
 
   .selling-points {
@@ -26,63 +28,63 @@
       background: image-url('courses/zurbian.svg') no-repeat center center;
       background-size: 120px 120px;
       height: 120px;
-      width: 120px;
-      position: relative;
       margin-bottom: 20px;
+      position: relative;
+      width: 120px;
     }
 
     &.comprehensive {
       background: image-url('courses/comprehensive.svg') no-repeat center center;
       background-size: 120px 120px;
       height: 120px;
-      width: 120px;
-      position: relative;
       margin-bottom: 20px;
+      position: relative;
+      width: 120px;
     }
 
     &.dude {
       background: image-url('courses/dude.svg') no-repeat center center;
       background-size: 120px 120px;
       height: 120px;
-      width: 120px;
-      position: relative;
       margin-bottom: 20px;
+      position: relative;
+      width: 120px;
     }
 
     &.responsive-icon {
       background: image-url('courses/responsive-icon.svg') no-repeat center center;
       background-size: 120px 120px;
       height: 120px;
-      width: 120px;
-      position: relative;
       margin-bottom: 20px;
+      position: relative;
+      width: 120px;
     }
 
     &.present {
       background: image-url('courses/present.svg') no-repeat center center;
       background-size: 120px 120px;
       height: 120px;
-      width: 120px;
-      position: relative;
       margin-bottom: 20px;
+      position: relative;
+      width: 120px;
     }
 
     &.travel {
       background: image-url('courses/travel.svg') no-repeat center center;
       background-size: 120px 120px;
       height: 120px;
-      width: 120px;
-      position: relative;
       margin-bottom: 20px;
+      position: relative;
+      width: 120px;
     }
 
     &.pencil-icon {
       background: image-url('courses/pencil-icon.svg') no-repeat center center;
       background-size: 120px 120px;
       height: 120px;
-      width: 120px;
-      position: relative;
       margin-bottom: 20px;
+      position: relative;
+      width: 120px;
     }
   }
 }
