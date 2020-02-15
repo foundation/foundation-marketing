@@ -9,12 +9,14 @@ a {
     position: relative;
     width: 100%;
     height: 60px;
+
     h5 {
       color: $true-white;
       margin-bottom: 0 !important;
       text-align: center;
     }
   }
+
   &.docs-banner {
     display: block;
     overflow: hidden;
@@ -24,13 +26,13 @@ a {
     height: auto;
     background: $success-color;
     color: $white;
+
     h5 {
       margin-bottom: 0 !important;
       text-align: center;
       font-size: 0.9rem;
     }
   }
-
 
   &.notice {
     background: url('../img/foundation-emails/banner/inky-banner-bg-boat.svg') no-repeat center center;
