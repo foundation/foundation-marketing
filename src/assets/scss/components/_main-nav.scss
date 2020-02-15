@@ -23,7 +23,7 @@
       float: left;
     }
 
-    &:last-child  {
+    &:last-child {
       float: right;
     }
   }
@@ -54,7 +54,7 @@
     padding-top: 4px;
   }
 
-  .topbar-title > a {
+  .topbar-title>a {
     font-family: "zurb-logo";
     font-size: 38px;
     font-weight: normal;
@@ -97,7 +97,7 @@
     margin-left: -1px;
   }
 
-  .dropdown.menu > li.opens-right > .is-dropdown-submenu {
+  .dropdown.menu>li.opens-right>.is-dropdown-submenu {
     border: none;
   }
 
