@@ -24,18 +24,17 @@
 
 // Post Count Stub
 .post-count {
-  max-width: 80px;
-  margin-left: auto;
+  background-color: lighten($gray-6, 50%);
+  border: 0 !important;
+  height: 80px;
   margin-bottom: 10px;
+  margin-left: auto;
+  max-width: 80px;
+  text-align: center;
 
   @include breakpoint(medium) {
     max-width: 95px;
   }
-
-  height: 80px;
-  border:none !important;
-  background-color:lighten($gray-6, 50%);
-  text-align:center;
 
   &.new-general {
     background-color: $foundation-dark;
@@ -47,13 +46,12 @@
   }
 
   .post-count-container {
+    background-color:lighten($gray-6, 55%);
     height: 50px;
 
     &.old-general {
       background-color: lighten($gray-6, 55%) !important;
     }
-
-    background-color:lighten($gray-6, 55%);
 
     &.new {
       background-color: $foundation-dark;
@@ -67,23 +65,23 @@
 
 
     span.reply-count {
-      position: relative;
-      top: 4px;
-      color: $gray-6;
       @include proxima-nova;
+      color: $gray-6;
       font-size: 1.75em;
       font-weight: 700;
+      position: relative;
+      top: 4px;
 
       &.old-general {
         background-color: lighten($gray-6, 55%) !important;
-        top: 18px;
         font-size: 1.75em;
+        top: 18px;
       }
 
       &.new-general {
-        top: 18px;
         color: lighten($foundation-dark, 70%);
         font-size: 1.75em;
+        top: 18px;
 
         &.with-replies {
           top: 6px;
@@ -102,15 +100,13 @@
     }
 
     .label {
-      display: block;
-      background-color: transparent !important;
-      text-transform: uppercase;
       @include proxima-nova;
+      background-color: transparent !important;
       color: lighten($foundation-dark, 50%);
+      display: block;
       position: relative;
+      text-transform: uppercase;
       top: emCalc(-15px);
-
-      &.new-post {}
     }
   }
 
@@ -198,11 +194,11 @@
     margin-top: 2px !important;
 
     a {
-      @media screen and (min-width:767px) {
+      @media screen and (min-width: 767px) {
         margin: emCalc(0px) emCalc(5px) emCalc(15px) 0 !important;
       }
 
-      @media screen and (min-width:0px) and (max-width:767px) {
+      @media screen and (min-width: 0px) and (max-width: 767px) {
         margin: emCalc(15px) emCalc(5px) emCalc(15px) 0 !important;
       }
 
@@ -210,13 +206,13 @@
   }
 
   span.when {
-    @media screen and (min-width:0px) and (max-width:767px) {
+    @media screen and (min-width: 0px) and (max-width: 767px) {
       margin-top: emCalc(15px);
     }
 
     color:lighten($gray-6, 25%);
 
-    @media screen and (min-width:0px) and (max-width:767px) {
+    @media screen and (min-width: 0px) and (max-width: 767px) {
       @include proxima-nova;
       color: $gray-6;
       font-size: emCalc(13px);
