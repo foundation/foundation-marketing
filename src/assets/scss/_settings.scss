@@ -45,22 +45,25 @@
 // $global-width: rem-calc(1200);
 // $global-font-size: 100%;
 // $global-lineheight: 1.5;
- $primary-color: #1d92cf;
- $secondary-color: #777;
- $success-color: #3adb76;
- $warning-color: #ffae00;
- $alert-color: #ec5840;
- $light-gray: #f5f5f5;
- $medium-gray: #BFBFBF;
- $dark-gray: #8a8a8a;
- $black: #0a0a0a;
- $true-black: #000;
- $white: #fefefe;
- $true-white: #fff;
- $foundation-dark: #074E68;
+$primary-color: #1d92cf;
+$secondary-color: #777;
+$success-color: #3adb76;
+$warning-color: #ffae00;
+$alert-color: #ec5840;
+$light-gray: #f5f5f5;
+$medium-gray: #BFBFBF;
+$dark-gray: #8a8a8a;
+$black: #0a0a0a;
+$true-black: #000;
+$white: #fefefe;
+$true-white: #fff;
+$gray-3: #333;
+$gray-6: #666;
+$gray-9: #999;
+$foundation-dark: #074E68;
 // $body-background: $white;
- $body-font-color: $black;
- $body-font-family: "Proxima Nova", "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+$body-font-color: $black;
+$body-font-family: 'Proxima Nova', 'proxima-nova', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
 // $body-antialiased: true;
 // $text-direction: ltr;
 // $global-margin: 1rem;
@@ -68,7 +71,7 @@
 // $global-margin: 1rem;
 // $global-weight-normal: normal;
 // $global-weight-bold: bold;
-   $global-radius: 3px;
+$global-radius: 3px;
 // $global-namespace: false;
 // $global-text-direction: ltr;
 // $rem-base: 16px;
@@ -141,7 +144,7 @@ $breakpoints: (
 // $button-fill: solid;
 // $button-background: $primary-color;
 // $button-background-hover: scale-color($button-background, $lightness: -15%);
-// $button-color: #fff;
+// $button-color: $true-white;
 // $button-color-alt: #000;
 // $button-radius: $global-radius;
 // $button-sizes: (
@@ -440,7 +443,7 @@ $orbit-bullet-margin-bottom: inherit;
 // $topbar-padding: 0.5rem;
 $topbar-background: #2c3840;
 $topbar-hover-color: lighten($topbar-background, 10%);
-// $topbar-link-color: #fff;
+// $topbar-link-color: $true-white;
 // $topbar-input-width: 200px;
 
 // 31. Base Typography
@@ -483,7 +486,7 @@ $topbar-hover-color: lighten($topbar-background, 10%);
 // $code-background: $light-gray;
 // $code-border: 1px solid $medium-gray;
 // $code-padding: rem-calc(2 5 1);
- $anchor-color: $primary-color;
+$anchor-color: $primary-color;
 // $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 // $anchor-text-decoration: none;
 // $anchor-text-decoration-hover: none;
@@ -527,5 +530,5 @@ $topbar-hover-color: lighten($topbar-background, 10%);
 // -------------
 
 // $drilldown-transition: transform 0.15s linear;
- $dropdownmenu-arrows: false;
+$dropdownmenu-arrows: false;
 // $dropdownmenu-min-width: 200px;
