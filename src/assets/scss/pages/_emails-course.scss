@@ -1,6 +1,6 @@
 .emails-course {
   background: #252849;
-  /* Old browsers */
+  // Old browsers
   background: -moz-linear-gradient(45deg, #252849 0%, #36365a 34%, #4c3d66 100%);
   background: -webkit-linear-gradient(45deg, #252849 0%, #36365a 34%, #4c3d66 100%);
   background: linear-gradient(45deg, #252849 0%, #36365a 34%, #4c3d66 100%);
@@ -23,12 +23,12 @@
   margin-top: 2rem;
 
   span {
-    text-transform: uppercase;
+    display: block;
     font-size: rem-calc(17px);
     font-weight: bold;
-    display: block;
-    margin-bottom: -5px;
     letter-spacing: 3px;
+    margin-bottom: -5px;
+    text-transform: uppercase;
   }
 }
 
