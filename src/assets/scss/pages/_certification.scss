@@ -1,16 +1,16 @@
 // cert cards
 
 .profile-card {
-  padding: 1rem;
-  margin-top: 2rem;
   background-color: transparent;
+  margin-top: 2rem;
+  padding: 1rem;
 
   img {
-    width: 8rem;
+    border-radius: 50%;
     display: block;
     margin: 1rem auto;
     text-align: center;
-    border-radius: 50%;
+    width: 8rem;
   }
 
   .profile-info {
@@ -22,27 +22,27 @@
     }
 
     .short-desc {
-      text-align: center;
       margin: 0;
+      text-align: center;
     }
 
     .profile-links {
-      text-align: center;
       margin: 0;
+      text-align: center;
     }
 
     .inline-list {
-      text-align: center;
       margin-bottom: 1rem;
+      text-align: center;
 
       li {
-        float: none;
         display: inline-block;
+        float: none;
       }
 
       i.fi-social-facebook {
-        font-size: 1.5rem;
         color: #3b5998;
+        font-size: 1.5rem;
         transition: all .5s ease-in-out;
 
         &:hover {
@@ -52,8 +52,8 @@
       }
 
       i.fi-social-twitter {
-        font-size: 1.5rem;
         color: #55acee;
+        font-size: 1.5rem;
         transition: all .5s ease-in-out;
 
         &:hover {
@@ -63,8 +63,8 @@
       }
 
       i.fi-social-linkedin {
-        font-size: 1.5rem;
         color: #0077b5;
+        font-size: 1.5rem;
         transition: all .5s ease-in-out;
 
         &:hover {
@@ -74,8 +74,8 @@
       }
 
       i.fi-social-github {
-        font-size: 1.5rem;
         color: $gray-3;
+        font-size: 1.5rem;
         transition: all .5s ease-in-out;
 
         &:hover {
@@ -85,8 +85,8 @@
       }
 
       i.fi-social-youtube {
-        font-size: 1.5rem;
         color: #cc181e;
+        font-size: 1.5rem;
         transition: all .5s ease-in-out;
 
         &:hover {
@@ -102,8 +102,8 @@
   text-align: center;
 
   img {
-    padding: 20px;
     max-height: 150px;
+    padding: 20px;
   }
 
   a {
