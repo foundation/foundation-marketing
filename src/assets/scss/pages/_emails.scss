@@ -1,4 +1,5 @@
 .emails-intro {
+
   p,
   li {
     font-size: 1.25rem;
@@ -19,8 +20,13 @@
 
 .floating-inky {
   @keyframes inky-float {
-    from { transform: translateY(0px); }
-    to   { transform: translateY(-10px) }
+    from {
+      transform: translateY(0px);
+    }
+
+    to {
+      transform: translateY(-10px)
+    }
   }
 
   position: relative;
@@ -81,6 +87,7 @@
 .emails-landing {
   hr.dotted {
     max-width: 100%;
+
     @include breakpoint(large) {
       margin-top: 4rem;
       margin-bottom: 4rem;
