@@ -17,13 +17,13 @@ $accent-color: #1583CC;
 }
 
 .anniversary {
-  padding-top: $anniversary-section-padding;
   padding-bottom: $anniversary-section-padding;
+  padding-top: $anniversary-section-padding;
 
   p {
-    font-size: rem-calc(18);
-    font-family: $body-font-family;
     color: $text-color;
+    font-family: $body-font-family;
+    font-size: rem-calc(18);
     line-height: 22px;
   }
 
@@ -33,20 +33,20 @@ $accent-color: #1583CC;
   }
 
   .section-header {
-    text-align: center;
-    font-size: rem-calc(26);
-    font-family: $body-font-family;
     color: $text-color;
+    font-family: $body-font-family;
+    font-size: rem-calc(26);
     font-weight: bold;
     margin-bottom: rem-calc(30);
+    text-align: center;
   }
 
   .section-subheader {
-    text-align: center;
     color: $text-color-light;
     font-family: $body-font-family;
     font-size: rem-calc(18);
     line-height: 22px;
+    text-align: center;
   }
 
   .avatar {
@@ -59,51 +59,51 @@ $accent-color: #1583CC;
   }
 
   .badge {
-    top: -0.97rem;
-    position: relative;
     padding: 1.556em 1.556em;
+    position: relative;
+    top: -0.97rem;
   }
 }
 
 .anniversary-header {
-  background: url("../img/logos.jpg") center center repeat-x;
+  background: url('../img/logos.jpg') center center repeat-x;
   height: rem-calc(500);
+  overflow: hidden;
   position: relative;
   z-index: 0;
-  overflow: hidden;
 
   .anniversary-header-content {
-    bottom: -1rem;
     @include horizontal-center;
+    bottom: -1rem;
     z-index: 1;
   }
 
   .huge-number {
-    position: relative;
-    z-index: 3;
-    transition: 0.3s ease-in-out;
     min-width: 639px;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    z-index: 3;
 
     &::after {
+      animation-delay: 200ms;
+      animation-direction: alternate;
+      animation-duration: 5ms;
+      animation-iteration-count: infinite;
+      animation-name: flicker;
+      animation-timing-function: ease-in;
       content: url(../img/icons/flame.png);
       position: absolute;
-      top: -3.5rem;
       right: 74%;
-      z-index: 2;
+      top: -3.5rem;
       transform-origin: center bottom;
-      animation-name: flicker;
-      animation-duration: 5ms;
-      animation-delay: 200ms;
-      animation-timing-function: ease-in;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
+      z-index: 2;
     }
 
     &::before {
-      content: url(../img/icons/candle.png);
+      content: url('../img/icons/candle.png');
       position: absolute;
-      top: -1.75rem;
       right: 76%;
+      top: -1.75rem;
       z-index: 2;
     }
 
@@ -138,113 +138,113 @@ $smallo: 0.08;
   text-align: center;
 
   .fixed-column {
-    min-width: 60px;
-    max-width: 120px;
     display: inline-block;
     margin: 0 auto;
+    max-width: 120px;
+    min-width: 60px;
     text-align: left;
   }
 
   .brand--list {
-    list-style-type: none;
     color: $white;
+    list-style-type: none;
 
     li {
-      white-space: nowrap;
-      text-transform: uppercase;
       font-weight: bold;
       letter-spacing: 1px;
+      text-transform: uppercase;
+      white-space: nowrap;
     }
 
     &.mb1 {
       animation: scroll 150s infinite linear;
-      opacity: $bigo;
-      top: -2000px;
-      position: absolute;
       font-size: 300%;
       line-height: 45px;
+      opacity: $bigo;
+      position: absolute;
+      top: -2000px;
 
       &.p1 {
-        top: 0;
         animation: scroll 120s infinite linear;
+        top: 0;
       }
 
       &.p2 {
-        top: -4000px;
         animation: scroll 135s infinite linear;
         left: 500px;
+        top: -4000px;
       }
 
       &.p3 {
-        top: -6000px;
         animation: scroll 140s infinite linear;
+        top: -6000px;
       }
     }
 
     &.mb2 {
-      margin-top: -300px;
       animation: scroll 50s infinite linear;
-      opacity: $medo;
-      top: -4000px;
-      position: relative;
       font-size: 150%;
       line-height: 23px;
+      margin-top: -300px;
+      opacity: $medo;
+      position: relative;
+      top: -4000px;
     }
 
     &.mb3 {
-      margin-top: -500px;
       animation: scroll 69s infinite linear;
-      opacity: $medo;
-      top: -6000px;
-      position: relative;
       font-size: 150%;
+      margin-top: -500px;
+      opacity: $medo;
+      position: relative;
+      top: -6000px;
     }
 
     &.mb4 {
-      margin-top: -700px;
       animation: scroll 56s infinite linear;
-      opacity: $smallo;
-      top: -8000px;
-      position: relative;
       line-height: 13px;
+      margin-top: -700px;
+      opacity: $smallo;
+      position: relative;
+      top: -8000px;
     }
 
     &.mb5 {
-      margin-top: -900px;
       animation: scroll 70s infinite linear;
-      opacity: $medo;
-      top: -7000px;
-      position: relative;
       font-size: 150%;
       line-height: 23px;
+      margin-top: -900px;
+      opacity: $medo;
+      position: relative;
+      top: -7000px;
     }
 
     &.mb6 {
-      margin-top: -1100px;
       animation: scroll 99s infinite linear;
-      opacity: $smallo;
-      top: -5000px;
-      position: relative;
       line-height: 13px;
+      margin-top: -1100px;
+      opacity: $smallo;
+      position: relative;
+      top: -5000px;
     }
 
     &.mb7 {
-      margin-top: -1300px;
       animation: scroll 69s infinite linear;
-      opacity: $smallo;
-      top: -3000px;
-      position: relative;
       line-height: 13px;
+      margin-top: -1300px;
+      opacity: $smallo;
+      position: relative;
+      top: -3000px;
     }
 
     &.mb8 {
-      margin-top: -1500px;
       animation: scroll 85s infinite linear;
-      opacity: $medo;
-      top: -1000px;
-      position: relative;
       font-size: 150%;
       line-height: 23px;
+      margin-top: -1500px;
+      opacity: $medo;
+      position: relative;
+      top: -1000px;
     }
   }
 }
@@ -265,8 +265,8 @@ $smallo: 0.08;
   }
 
   20% {
-    transform: rotate(1deg);
     opacity: 0.7;
+    transform: rotate(1deg);
   }
 
   40% {
@@ -274,8 +274,8 @@ $smallo: 0.08;
   }
 
   60% {
-    transform: rotate(1deg) scaleY(1.04);
     opacity: 1;
+    transform: rotate(1deg) scaleY(1.04);
   }
 
   80% {
@@ -288,22 +288,22 @@ $smallo: 0.08;
 }
 
 .showcase-img {
-  height: 226px;
-  position: relative;
-  margin-bottom: rem-calc(30);
   background-image: url('https://placehold.it/226') center center no-repeat;
   background-size: cover;
+  height: 226px;
+  margin-bottom: rem-calc(30);
+  position: relative;
 
   &::after {
-    content: '\A';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
     background: rgba(0, 0, 0, 0.3);
+    content: '\A';
+    height: 100%;
+    left: 0;
     opacity: 1;
+    position: absolute;
+    top: 0;
     transition: $global-transition;
+    width: 100%;
   }
 
   &:hover:after {
@@ -314,8 +314,8 @@ $smallo: 0.08;
     @include absolute-center;
     color: $white;
     font-family: $body-font-family;
-    font-weight: bold;
     font-size: rem-calc(20);
+    font-weight: bold;
     text-align: center;
   }
 
@@ -364,10 +364,10 @@ $smallo: 0.08;
 .manifesto {
 
   .manifesto-title {
-    border-top: 1px solid $accent-color;
     border-bottom: 1px solid $accent-color;
-    padding: 1.5rem 0;
+    border-top: 1px solid $accent-color;
     margin-bottom: rem-calc(42);
+    padding: 1.5rem 0;
 
     h1 {
       color: $accent-color;
@@ -391,16 +391,16 @@ $smallo: 0.08;
     }
 
     p {
-      font-size: rem-calc(14);
       color: $text-color;
+      font-size: rem-calc(14);
     }
   }
 }
 
 .future-section {
-  padding-top: rem-calc(46);
-  padding-bottom: rem-calc(46);
   background-color: $foundation-dark;
+  padding-bottom: rem-calc(46);
+  padding-top: rem-calc(46);
 
   .section-header,
   .section-subheader,
@@ -421,15 +421,15 @@ $smallo: 0.08;
 }
 
 a.button.special-hollow {
-  margin-top: 1rem;
-  margin-bottom: 0;
-  font-size: rem-calc(18);
-  padding: 0.5em 2em;
-  border-radius: 5px;
   background-color: transparent;
   border: 1px solid $white;
-  color: $white;
+  border-radius: 5px;
   box-shadow: none;
+  color: $white;
+  font-size: rem-calc(18);
+  margin-bottom: 0;
+  margin-top: 1rem;
+  padding: 0.5em 2em;
   transition: $global-transition;
 
   &:hover {
@@ -455,12 +455,12 @@ a.button.special-hollow {
   position: relative;
 
   &::after {
-    content: '';
     background: url('../img/learn/website-examples/yetitime.png') center center no-repeat;
+    bottom: 0;
+    content: '';
+    height: 133px;
     position: absolute;
     right: 1rem;
-    bottom: 0;
-    height: 133px;
     width: 110px;
 
     @include breakpoint(small only) {
@@ -471,9 +471,9 @@ a.button.special-hollow {
 
 .thumb-category {
   color: $medium-gray;
-  text-align: center;
-  font-weight: bold;
   font-size: 0.875rem;
-  text-transform: uppercase;
+  font-weight: bold;
   margin-bottom: 0;
+  text-align: center;
+  text-transform: uppercase;
 }
