@@ -11,6 +11,7 @@ $accent-color: #1583CC;
 .mb1 {
   margin-bottom: rem-calc(46);
 }
+
 .mb2 {
   margin-bottom: 5rem;
 }
@@ -89,10 +90,10 @@ $accent-color: #1583CC;
       top: -3.5rem;
       right: 74%;
       z-index: 2;
-      transform-origin:center bottom;
+      transform-origin: center bottom;
       animation-name: flicker;
-      animation-duration:5ms;
-      animation-delay:200ms;
+      animation-duration: 5ms;
+      animation-delay: 200ms;
       animation-timing-function: ease-in;
       animation-iteration-count: infinite;
       animation-direction: alternate;
@@ -118,10 +119,12 @@ $accent-color: #1583CC;
 
 $left-slug: for-left !default;
 $top-slug: for-top !default;
+
 @for $i from 1 through 160 {
   .#{$left-slug}-#{$i} {
     margin-left: 1px + $i;
   }
+
   .#{$top-slug}-#{$i} {
     margin-top: 1px + $i;
   }
@@ -256,24 +259,29 @@ $smallo: 0.08;
   }
 }
 
-@keyframes flicker{
-  0%  {
+@keyframes flicker {
+  0% {
     transform: rotate(-1deg);
   }
+
   20% {
     transform: rotate(1deg);
     opacity: 0.7;
   }
+
   40% {
     transform: rotate(-1deg);
   }
+
   60% {
     transform: rotate(1deg) scaleY(1.04);
     opacity: 1;
   }
+
   80% {
     transform: rotate(-2deg) scaleY(0.92);
   }
+
   100% {
     transform: rotate(1deg);
   }
@@ -290,10 +298,10 @@ $smallo: 0.08;
     content: '\A';
     position: absolute;
     width: 100%;
-    height:100%;
-    top:0;
-    left:0;
-    background:rgba(0,0,0,0.3);
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
     opacity: 1;
     transition: $global-transition;
   }
@@ -389,23 +397,15 @@ $smallo: 0.08;
   }
 }
 
-.buzz-section {
-
-}
-
-.showcase-section {
-
-}
-
 .future-section {
   padding-top: rem-calc(46);
   padding-bottom: rem-calc(46);
   background-color: $forumblue;
 
-    .section-header,
-    .section-subheader,
-    p {
-      color: $white;
+  .section-header,
+  .section-subheader,
+  p {
+    color: $white;
   }
 
   p {
