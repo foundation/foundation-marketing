@@ -316,8 +316,8 @@
     background-repeat: no-repeat;
     height: 542px;
     position: absolute;
-    bottom: 0px;
-    right: 0px;
+    bottom: 0;
+    right: 0;
     width: 220px;
     opacity: 0.7;
     background-size: cover;
@@ -332,7 +332,7 @@
 
   /* line 477, ../sass/app.scss */
   .templates-callout {
-    top: 0px;
+    top: 0;
     margin-bottom: 50px;
   }
 
@@ -385,7 +385,7 @@
 }
 
 .email-training {
-  padding: 50px 0px 80px 0px;
+  padding: 50px 0 80px 0;
 
 }
 
@@ -413,7 +413,7 @@ ul.changelog li.release-number {
 
 /* line 221, ../sass/app.scss */
 ul.changelog li.release-number p {
-  margin-bottom: 0px !important;
+  margin-bottom: 0 !important;
 }
 
 /* line 222, ../sass/app.scss */
@@ -458,7 +458,7 @@ ul.changelog li .release-description a {
     width: 100%;
     padding-top: 12px;
     padding-left: 20px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     border-bottom: #dddddd 1px solid;
   }
 
@@ -567,7 +567,7 @@ ul.changelog li .release-description a {
 }
 
 .course-image {
-  padding: 50px 0px 40px 0px;
+  padding: 50px 0 40px 0;
 
   img {
     height: 100px;
@@ -578,7 +578,7 @@ ul.changelog li .release-description a {
 
   /* line 181, ../sass/app.scss */
   .course-image {
-    padding-bottom: 0px !important;
+    padding-bottom: 0 !important;
   }
 }
 
@@ -880,7 +880,7 @@ ul.changelog li .release-description a {
 
 /* line 327, ../sass/app.scss */
 .how-to-use.two .process-2 img {
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 /* line 329, ../sass/app.scss */
@@ -919,7 +919,7 @@ ul.changelog li .release-description a {
 
 /* line 335, ../sass/app.scss */
 .how-to-use.three .process-3 img {
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 /* line 336, ../sass/app.scss */
@@ -1016,13 +1016,13 @@ ul.changelog li .release-description a {
   width: 217px;
   background-size: cover;
   position: absolute;
-  right: 0px;
+  right: 0;
   top: 92px;
 }
 
 /* line 355, ../sass/app.scss */
 .how-to-use.five .process-5-2 img {
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 /* line 358, ../sass/app.scss */
@@ -1364,8 +1364,8 @@ iframe {
     background-repeat: no-repeat;
     height: 542px;
     position: absolute;
-    bottom: 0px;
-    right: 0px;
+    bottom: 0;
+    right: 0;
     width: 220px;
     opacity: 0.7;
     background-size: cover;
@@ -1380,7 +1380,7 @@ iframe {
 
   /* line 477, ../sass/app.scss */
   .templates-callout {
-    top: 0px;
+    top: 0;
     margin-bottom: 50px;
   }
 
@@ -1526,7 +1526,7 @@ ul.mobile-nav a.current {
 
   /* line 508, ../sass/app.scss */
   .how-to-use.two .process-2 img {
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   /* line 510, ../sass/app.scss */
@@ -1570,7 +1570,7 @@ ul.mobile-nav a.current {
 
   /* line 516, ../sass/app.scss */
   .how-to-use.three .process-3 img {
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   /* line 518, ../sass/app.scss */
@@ -1619,7 +1619,7 @@ ul.mobile-nav a.current {
 
   /* line 525, ../sass/app.scss */
   .how-to-use.four .process-4-2 img {
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   /* line 529, ../sass/app.scss */
@@ -1669,7 +1669,7 @@ ul.mobile-nav a.current {
 
   /* line 535, ../sass/app.scss */
   .how-to-use.five .process-5-2 img {
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   /* line 538, ../sass/app.scss */
@@ -2018,7 +2018,7 @@ h6 small.cp {
 /* Header Social Links */
 
 ul {
-  margin-left: 0em;
+  margin-left: 0;
 }
 
 /* line 102, ../sass/app.scss */
@@ -2073,14 +2073,14 @@ ul.header-social-links li a:hover {
 
 .framework-callouts {
   h2 {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     text-align: center;
   }
 
   h6 {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     text-transform: uppercase;
     font-size: 0.8em;
     margin-top: -10px;
@@ -2105,9 +2105,9 @@ ul.header-social-links li a:hover {
 
   .framework-mascot {
     img {
-      padding: 0px;
+      padding: 0;
       height: 300px;
-      margin: 0px;
+      margin: 0;
     }
   }
 
@@ -2154,7 +2154,7 @@ ul.header-social-links li a:hover {
 }
 
 .lead-text {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .ink {
@@ -2285,7 +2285,7 @@ ul.header-social-links li a:hover {
 }
 
 p.small-lead {
-  margin-top: 0px;
+  margin-top: 0;
   color: rgba(255, 255, 255, 0.3);
 }
 
