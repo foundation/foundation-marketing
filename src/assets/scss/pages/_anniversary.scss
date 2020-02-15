@@ -400,7 +400,7 @@ $smallo: 0.08;
 .future-section {
   padding-top: rem-calc(46);
   padding-bottom: rem-calc(46);
-  background-color: $forumblue;
+  background-color: $foundation-dark;
 
   .section-header,
   .section-subheader,
@@ -434,16 +434,16 @@ a.button.special-hollow {
 
   &:hover {
     background-color: $white;
-    color: $forumblue;
+    color: $foundation-dark;
     transition: $global-transition;
   }
 
   &.blue {
-    border: 1px solid $forumblue;
-    color: $forumblue;
+    border: 1px solid $foundation-dark;
+    color: $foundation-dark;
 
     &:hover {
-      background-color: $forumblue;
+      background-color: $foundation-dark;
       color: $white;
       transition: $global-transition;
     }
