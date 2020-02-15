@@ -3,8 +3,14 @@
 .top-cta-class {
   margin-bottom: 50px;
 
-  p { font-size: 0.8125em; color: #777; }
-  h2 { font-weight: 200; }
+  p {
+    font-size: 0.8125em;
+    color: #777;
+  }
+
+  h2 {
+    font-weight: 200;
+  }
 
   .class-price {
     font-size: 14px;
@@ -24,21 +30,28 @@
   overflow: hidden;
   margin-bottom: 1rem;
 }
+
 .building-block-item .building-block-item-header {
   margin-bottom: 2rem;
-  color: #333;
-  h4 { font-size: 13px; }
+  color: $gray-3;
+
+  h4 {
+    font-size: 13px;
+  }
 }
 
 .with-icon {
-	text-align: center;
-	& p, ul li {
-		text-align: left;
-	}
-	img {
-		width: 200px;
-		padding: 20px;
-	}
+  text-align: center;
+
+  & p,
+  ul li {
+    text-align: left;
+  }
+
+  img {
+    width: 200px;
+    padding: 20px;
+  }
 }
 
 .about-zurb {
@@ -55,7 +68,7 @@
   }
 
   .lesson-item-header {
-    color: #333;
+    color: $gray-3;
     font-size: 1.2rem;
   }
 }
