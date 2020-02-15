@@ -30,7 +30,7 @@
 
   &.sites {
     h3 {
-      color: #666;
+      color: $gray-6;
       font-size: 1.6875rem;
     }
   }
@@ -52,7 +52,8 @@ form {
       padding-right: 3rem;
 
       &:hover {
-        background: scale-color($emails-accent-color, $lightness: -14%);;
+        background: scale-color($emails-accent-color, $lightness: -14%);
+        ;
       }
     }
 
