@@ -20,14 +20,14 @@
     }
 
     .sub-info {
-      font-size: em-calc(14);
       @include proxima-nova-condensed;
-      text-transform: uppercase;
       color: #777;
+      font-size: em-calc(14);
+      font-weight: 600;
       margin-bottom: 0;
       position: relative;
+      text-transform: uppercase;
       top: -14px;
-      font-weight: 600;
     }
   }
 
@@ -37,9 +37,9 @@
   }
 
   .outline-intro {
-    margin-top: 10px;
-    margin-bottom: 60px;
     list-style-type: none;
+    margin-bottom: 60px;
+    margin-top: 10px;
 
     li {
       padding: 25px 0;
@@ -65,12 +65,12 @@
     }
 
     .outline-bullets {
-      list-style: disc;
       color: #777;
+      list-style: disc;
 
       li {
-        font-size: emCalc(14px);
         border: none;
+        font-size: emCalc(14px);
         padding: 0;
       }
     }
@@ -90,7 +90,7 @@
   list-style-type: none;
 
   li {
-    font-size: 1.125rem;
     color: #777;
+    font-size: 1.125rem;
   }
 }
