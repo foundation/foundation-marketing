@@ -11,12 +11,14 @@
     padding: 15px 20px 5px 15px;
     border-radius: 5px;
     margin-bottom: 30px;
+
     p {
       @include proxima-nova;
       font-size: emCalc(16px);
       font-style: italic;
       margin: 0;
     }
+
     &:after {
       content: '';
       width: 0px;
@@ -29,9 +31,11 @@
       left: 20px;
     }
   }
+
   .student {
     margin-left: 25px;
     margin-bottom: 80px;
+
     img {
       display: inline-block;
       border-radius: 100px;
@@ -40,6 +44,7 @@
       float: left;
       margin-right: 10px;
     }
+
     p:nth-child(2) {
       @include proxima-nova-condensed;
       text-transform: uppercase;
@@ -49,6 +54,7 @@
       position: relative;
       top: 5px;
     }
+
     p:nth-child(3) {
       @include proxima-nova-condensed;
       text-transform: uppercase;
