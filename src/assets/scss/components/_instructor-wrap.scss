@@ -1,29 +1,36 @@
 .instructor-wrap {
   background: #f5f5f5;
   padding: 50px 0 20px;
+
   h3 {
     text-align: center;
     margin-bottom: 5px;
   }
+
   p.sub-headline {
     text-align: center;
     font-size: em-calc(18);
     margin-bottom: 45px;
   }
+
   .instructor {
     position: relative;
     margin-bottom: 40px;
+
     @media only screen and (max-width: 767px) {
       text-align: center;
     }
   }
+
   img {
     max-height: 150px;
     border-radius: 100%;
   }
+
   h5 {
     margin-bottom: 5px;
   }
+
   .title {
     font-weight: 600;
     text-transform: uppercase;
@@ -33,6 +40,7 @@
     margin-bottom: 10px;
     @include proxima-nova-condensed;
   }
+
   p {
     font-size: em-calc(14);
   }
