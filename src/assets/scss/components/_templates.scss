@@ -42,7 +42,6 @@
 span {
   &.notes {
     background: url('../img/brand-logos/notable-icon.png') 0 2px no-repeat;
-    display: inline-block;
     float: left;
     font-size: 14px;
     height: 22px;
@@ -130,6 +129,6 @@ span {
   }
 }
 
-.signup-modal-alt.reveal form [for="opt-in"] {
+.signup-modal-alt.reveal form [for='opt-in'] {
   margin: 0;
 }
