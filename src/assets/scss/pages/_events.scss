@@ -1,6 +1,7 @@
 /// EVENTS (Shindigs)
 .border-content {
   padding: 0px 20px;
+
   &:hover {
     background: #f8f8f8;
   }
@@ -8,6 +9,7 @@
 
 ul.events-list-updated {
   margin-left: 0px !important;
+
   li {
     display: block;
     border-bottom: 1px dashed #ddd;
@@ -18,36 +20,44 @@ ul.events-list-updated {
   clear: both;
 }
 
-ul.events-list, ul.events-list-bottom {
+ul.events-list,
+ul.events-list-bottom {
   display: block;
   list-style: none;
   margin: 40px 0;
   @include clearfix;
+
   li {
     display: block;
     width: 100%;
+
     &.inactive {
       opacity: .25;
-      filter: alpha(opacity = 25);
+      filter: alpha(opacity=25);
     }
+
     .border-content {
       border-bottom: 1px dashed #ddd;
       padding-bottom: 30px;
       margin: 15px 0;
     }
+
     a {
       display: block;
-      color: #333;
+      color: $gray-3;
       float: left;
+
       &:hover {
-        color: #333;
+        color: $gray-3;
       }
+
       &.date-image {
         width: 85px;
         margin-right: 20px;
+
         span.date {
           background-color: red;
-          color: #FFF;
+          color: $true-white;
           text-align: center;
           font-size: rem-calc(13px);
           font-weight: normal;
@@ -56,8 +66,10 @@ ul.events-list, ul.events-list-bottom {
           line-height: 40px;
         }
       }
+
       span {
         display: block;
+
         &.type {
           font-weight: bold;
           font-size: rem-calc(14px);
@@ -66,37 +78,48 @@ ul.events-list, ul.events-list-bottom {
           background: image-url("icons/event-icons.png") no-repeat 0 0;
           padding-left: 20px;
           text-transform: uppercase;
+
           &.soapbox {
             background-position: 0 4px;
           }
+
           &.speak {
             background-position: 0 -96px;
           }
+
           &.foundation {
             background-position: 0 -197px;
           }
+
           &.training {
             background-position: 0 -295px;
           }
         }
+
         &.person {
           font-size: emCalc(22px);
           font-weight: 200;
           @include proxima-nova;
           line-height: 26px;
-          .title { font-size: emCalc(14px) !important; }
+
+          .title {
+            font-size: emCalc(14px) !important;
+          }
         }
+
         &.title {
           font-size: emCalc(14px);
           font-weight: normal;
           font-style: italic;
           color: #777;
         }
+
         &.event-name {
           font-size: emCalc(14px);
           font-weight: normal;
           margin-top: 8px;
         }
+
         &.description {
           font-size: emCalc(13px);
           margin-top: 10px;
@@ -104,6 +127,7 @@ ul.events-list, ul.events-list-bottom {
         }
       }
     }
+
     a.more-info {
       width: 300px !important;
       position: absolute;
@@ -114,30 +138,37 @@ ul.events-list, ul.events-list-bottom {
 
 ul.events-list-updated {
   margin-bottom: 40px;
+
   li {
     display: block;
     border-bottom: 1px dashed #ddd;
+
     &:last-child {
       border-bottom: none;
       margin-bottom: 4rem;
     }
+
     &.inactive {
       opacity: .25;
-      filter: alpha(opacity = 25);
+      filter: alpha(opacity=25);
     }
+
     .border-content a {
-      color: #333;
+      color: $gray-3;
       display: block;
       padding: 26px 0 0 0;
+
       &.text-info {
         padding: 10px 0 26px;
       }
     }
+
     .border-content span {
       display: block;
+
       &.date {
         background: $primary-color;
-        color: #FFF;
+        color: $true-white;
         @include proxima-nova;
         text-transform: uppercase;
         font-weight: normal;
@@ -147,32 +178,39 @@ ul.events-list-updated {
         text-align: center;
         margin-bottom: 10px;
       }
+
       &.event-name {
         font-size: emCalc(24px);
         line-height: 26px;
         @include proxima-nova;
         font-weight: 200;
       }
+
       &.image {
         float: left;
       }
+
       &.person {
         font-size: emCalc(14px);
         font-weight: normal;
       }
+
       &.title {
         font-style: italic;
         color: #777;
       }
+
       &.description {
         color: $primary-color;
         font-size: rem-calc(14px);
       }
+
       &.city {
         font-weight: normal;
-        color: #333;
+        color: $gray-3;
         display: inline-block;
       }
+
       &.info {
         font-size: emCalc(16px);
         line-height: 22px;
@@ -181,6 +219,7 @@ ul.events-list-updated {
         margin-bottom: 22px;
       }
     }
+
     .tools {
       text-align: left;
       padding: 17px 20px 0 20px;
@@ -193,10 +232,12 @@ ul.events-list-updated {
 @media only screen and (max-width: 767px) {
   ul.events-list-updated li .border-content a.date-image {
     @include clearfix;
+
     span {
       display: block;
       float: left;
       height: 42px;
+
       img {
         height: 42px;
       }
@@ -210,22 +251,28 @@ ul.events-list-updated {
       float: left;
       display: block;
       padding: 26px 0 20px;
+
       &:hover {
-        color: #333;
+        color: $gray-3;
       }
+
       &.date-image {
         width: 15%;
         margin-right: 3%;
       }
+
       &.text-info {
         width: 82%;
         padding: 26px 0 20px;
       }
+
       span {
         display: block;
+
         &.event-name {
           margin: 1px 0 10px;
         }
+
         &.date {
           width: 100%;
           height: 44px;
@@ -234,6 +281,7 @@ ul.events-list-updated {
           margin-top: 5px;
           margin-bottom: 2px;
         }
+
         &.person {
           width: 40%;
           padding-right: 3%;
@@ -242,20 +290,25 @@ ul.events-list-updated {
           float: left;
           margin-top: -4px;
         }
+
         &.image {
           width: 100%;
           padding-right: 0;
           border-right: none;
           display: block;
+
           img {
             display: block;
           }
         }
-        &.title, &.city {
+
+        &.title,
+        &.city {
           display: block;
           float: none;
           font-size: 14px;
         }
+
         &.description {
           width: 54%;
           float: left;
@@ -268,19 +321,21 @@ ul.events-list-updated {
 
 ul.events-list-bottom {
   margin-top: 20px;
+
   li {
     border-bottom: 1px solid #efefef;
     min-height: 0;
     margin-bottom: 15px;
     padding-bottom: 10px;
+
     &:last-child {
       margin-bottom: 0;
       padding-bottom: 0;
       border-bottom: 0;
     }
+
     a {
       float: none;
     }
   }
 }
-
