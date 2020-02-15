@@ -6,20 +6,4 @@
   display: inline-block;
   right: 2rem;
   top: 6rem;
-
-  // &::before {
-  //   content: '';
-  //   @include css-triangle(16px, $white, right);
-  //   position: absolute;
-  //   left: 0;
-  //   top: 1px;
-  // }
-
-  // &::after {
-  //   content: '';
-  //   @include css-triangle(16px, $white, left);
-  //   position: absolute;
-  //   right: 0;
-  //   top: 1px;
-  // }
 }
