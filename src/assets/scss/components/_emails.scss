@@ -1,36 +1,40 @@
 //TODO: What is this!! Gotta dig into this
 
-/*Features Page*/
+// Features Page
 
-.ink.hero-button {
-  margin-right: 0;
+.ink {
+  &.hero-button {
+    margin-right: 0;
+  }
 }
 
-.row.email-no-margin {
-  margin-left: 0;
-  margin-right: 0;
+.row {
+  &.email-no-margin {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 #features-hero {
-  background: url(../img/marquee-stars.svg) $foundation-dark;
-  text-align: left;
-  position: relative;
+  background: url('../img/marquee-stars.svg') $foundation-dark;
   padding: 50px 20px 0 20px;
+  position: relative;
+  text-align: left;
 
 
-  @media screen and (max-width:768px) {
-    padding: 40px 5px 30px 5px;
+  @media screen and (max-width: 768px) {
     overflow: hidden;
+    padding: 40px 5px 30px 5px;
   }
 
   h1 {
-    font-size: 3em;
     color: $true-white;
+    font-size: 3em;
     font-weight: 500;
-    margin-bottom: 0;
     line-height: 100%;
+    margin-bottom: 0;
 
-    @media screen and (max-width:768px) {
+    @media screen and (max-width: 768px) {
       font-size: 35px;
     }
   }
@@ -40,7 +44,7 @@
     font-weight: 300;
     line-height: 1.6em;
 
-    @media screen and (max-width:768px) {
+    @media screen and (max-width: 768px) {
       font-size: 18px;
       line-height: 28px;
     }
@@ -51,15 +55,12 @@
   }
 
   .largerocket {
-    width: 230px;
     right: 150px;
     top: 50px;
-
+    width: 230px;
 
     img {
-      //      top: 30;
       right: 50;
-
 
       @include breakpoint(medium only) {
         max-width: 100px;
@@ -75,8 +76,8 @@
   }
 
   &.news {
-    margin-bottom: 60px;
     background: none;
+    margin-bottom: 60px;
     overflow: visible;
 
     h1,
@@ -109,18 +110,13 @@
   }
 }
 
-#subForm {
-  // margin-top: 2.5rem;
-}
-
-
 .mainfeature {
   img {
     width: 300%;
   }
 }
 
-/* Foundation for Emails */
+// Foundation for Emails
 
 .top-area {
   background-color: #002b35;
@@ -128,83 +124,77 @@
   z-index: 4;
 }
 
-/* line 90, ../sass/app.scss */
-.top-area.main {
-  background-image: url(../img/foundation-emails/water.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+// line 90, ../sass/app.scss
+.top-area {
+  &.main {
+    background-image: url('../img/foundation-emails/water.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .row {
+      position: relative;
+    }
+
+    p.lead {
+      color: $gray-9;
+      font-family: 'Proxima Nova', 'proxima-nova', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+      font-size: 1.35em;
+      line-height: 1.3em;
+    }
+  }
+
+  &.downloading {
+    overflow: hidden;
+
+    h1 {
+      font-size: 3em;
+      padding: 110px 0 0;
+    }
+  }
+
+  h1 {
+    color: $true-white;
+    font-family: 'Proxima Nova', 'proxima-nova', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-size: 4em;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    color: $true-white;
+    font-size: 2.1875em;
+    margin-bottom: 12px;
+    padding: 51px 0 0 0;
+  }
+
+  p {
+    color: $true-white;
+    font-weight: 300;
+  }
 }
 
-/* line 91, ../sass/app.scss */
-.top-area.main .row {
-  position: relative;
-}
-
-/* line 92, ../sass/app.scss */
-.top-area.main p.lead {
-  font-family: "Proxima Nova", "proxima-nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-size: 1.35em;
-  line-height: 1.3em;
-  color: $gray-9;
-}
-
-/* line 94, ../sass/app.scss */
-.top-area.downloading {
-  overflow: hidden;
-}
-
-/* line 95, ../sass/app.scss */
-.top-area.downloading h1 {
-  font-size: 3em;
-  padding: 110px 0 0;
-}
-
-/* line 97, ../sass/app.scss */
-.top-area h1 {
-  color: $true-white;
-  font-family: "Proxima Nova", "proxima-nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-size: 4.0em;
-  margin-bottom: 0;
-  font-weight: 500;
-}
-
-/* line 98, ../sass/app.scss */
-.top-area h2 {
-  color: $true-white;
-  font-size: 2.1875em;
-  padding: 51px 0 0 0;
-  margin-bottom: 12px;
-}
-
-/* line 99, ../sass/app.scss */
-.top-area p {
-  color: $true-white;
-  font-weight: 300;
-}
-
-/* line 112, ../sass/app.scss */
+// line 112, ../sass/app.scss
 .inky {
-  background: url(../img/foundation-emails/inky-all-devices.svg) no-repeat center center;
+  background: url('../img/foundation-emails/inky-all-devices.svg') no-repeat center center;
   background-size: cover;
   height: 410px;
-  width: 380px;
   position: relative;
   top: 50px !important;
+  width: 380px;
 
   @media only screen and (max-width: 680px) {
     display: none;
   }
-}
 
-/* line 113, ../sass/app.scss */
-.inky.loaded {
-  animation-name: inky-float;
-  -webkit-animation-name: inky-float;
-  animation-duration: 5s;
-  -webkit-animation-duration: 5s;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
+  &.loaded {
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: inky-float;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-name: inky-float;
+  }
 }
 
 @keyframes inky-float {
@@ -235,20 +225,15 @@
   }
 }
 
-/* line 126, ../sass/app.scss */
-.bubble {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  opacity: 0;
-}
-
-/* line 127, ../sass/app.scss */
+// line 126, ../sass/app.scss
 .bubble {
   $delays: (3, 6, 4, 2, 6, 8, 3, 5, 7, 1, );
-  opacity: 0;
   -webkit-animation: purple-bubbles 5s ease-in infinite;
   animation: purple-bubbles 5s ease-in infinite;
+  height: 16px;
+  opacity: 0;
+  position: absolute;
+  width: 16px;
 
   @for $i from 1 through 10 {
     &:nth-child(#{$i}) {
@@ -260,8 +245,8 @@
 @keyframes purple-bubbles {
   0% {
     -webkit-transform: scale(0);
-    opacity: 0;
     margin-top: 0;
+    opacity: 0;
   }
 
   17% {
@@ -297,14 +282,14 @@
 
   100% {
     -webkit-transform: scale(0);
-    opacity: 0;
     margin-top: -100px;
+    opacity: 0;
   }
 }
 
 @media only screen and (max-width: 767px) {
 
-  /* line 474, ../sass/app.scss */
+  // line 474, ../sass/app.scss
   .top-area {
     position: relative;
   }
