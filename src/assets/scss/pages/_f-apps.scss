@@ -1,8 +1,12 @@
 .apps-promo {
 
+  background: #085a78;
+  height: auto;
+  padding: 15px 0;
+
   h3,
   p {
-    color: white;
+    color: $true-white;
   }
 
   h3 {
@@ -12,10 +16,6 @@
   p {
     margin-bottom: 0;
   }
-
-  background: #085a78;
-  padding: 15px 0;
-  height: auto;
 
   .button {
     margin: .5rem 0 0 0;
@@ -46,15 +46,14 @@
 
 ol.getting-started-steps li:last-child {
   padding-bottom: 70px;
-
 }
 
 ol.getting-started-steps {
+  counter-reset: li-counter;
   list-style-type: none;
   margin: 0;
   margin-left: 0;
   padding: 0;
-  counter-reset: li-counter;
   position: relative;
 }
 
@@ -64,14 +63,14 @@ ol.getting-started-steps li {
 }
 
 ol.getting-started-steps li:before {
-  font-size: 6rem;
-  font-weight: 600;
   color: #ddd;
-  position: absolute;
-  left: 15px;
   content: counter(li-counter);
   counter-increment: li-counter;
+  font-size: 6rem;
+  font-weight: 600;
+  left: 15px;
   line-height: 0.8;
+  position: absolute;
 }
 
 .templates {
@@ -82,7 +81,7 @@ ol.getting-started-steps li:before {
   }
 }
 
-/* Foundation for App - Landing Page */
+// Foundation for App - Landing Page
 
 #features-hero {
   h1 {
@@ -96,55 +95,51 @@ ol.getting-started-steps li:before {
 
 .hero-heading {
   background: darken($primary-color, 25%);
+  font-family: 'Proxima Nova', 'proxima-nova', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   padding: rem-calc(40 0 40 0);
-  font-family: "Proxima Nova", "proxima-nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 
   @include breakpoint(medium) {
     height: 684px;
   }
 
-  /*   margin-bottom: rem-calc(50); */
+  // margin-bottom: rem-calc(50);
   &.home-hero {
     padding: rem-calc(50 0 0 0);
-
-    // margin-bottom: rem-calc(0);
     .row {
       position: relative;
     }
   }
 
   &.foundation-emails {
-    background-image: url(../img/foundation-emails/water.png) !important;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
     background-color: #002b35 !important;
+    background-image: url('../img/foundation-emails/water.png') !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-bottom: 0;
   }
 
   &.foundation-apps {
-    background-repeat: no-repeat;
-    background-position: center right;
-    background-size: contain;
-    margin-bottom: 0;
-    background-color: #002c3a;
-    background-image: url(../img/foundation-apps/apps-bg.png);
-    // background-image: url(../img/foundation-apps/apps-bg.png), url('../img/foundation-apps/snow1-copy.png'), url('../img/foundation-apps/snow2.png'), url('../img/foundation-apps/snow3.png') !important;
-    right: 0;
-    position: relative;
-    top: 0;
-    width: 100%;
-    -webkit-animation: snow 10s linear infinite;
     -moz-animation: snow 10s linear infinite;
     -ms-animation: snow 10s linear infinite;
+    -webkit-animation: snow 10s linear infinite;
     animation: snow 10s linear infinite;
-
+    background-color: #002c3a;
+    background-image: url('../img/foundation-apps/apps-bg.png');
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 0;
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 100%;
   }
 
   h1 {
     font-size: 3em;
-    line-height: 1.0;
     font-weight: 500;
+    line-height: 1;
 
     @include breakpoint(medium) {
       margin-top: 110px;
@@ -158,8 +153,8 @@ ol.getting-started-steps li:before {
   }
 
   h3 {
-    font-weight: 300;
     font-size: 1.35em;
+    font-weight: 300;
   }
 
   h6 {
@@ -169,9 +164,9 @@ ol.getting-started-steps li:before {
 
   p {
     color: rgba($true-white, 1);
-    margin-top: 10px;
     font-size: 1.3em;
     line-height: 1.5em;
+    margin-top: 10px;
   }
 
   a {
@@ -183,10 +178,10 @@ ol.getting-started-steps li:before {
   }
 
   .yeti {
-    width: 570px;
-    position: absolute;
     bottom: -115px;
+    position: absolute;
     right: -3rem;
+    width: 570px;
 
     @include breakpoint(medium only) {
       width: 470px;
@@ -204,26 +199,26 @@ ol.getting-started-steps li:before {
   .sub-header {
     background: darken($primary-color, 13%);
     margin-top: 2.5rem;
-    padding-top: 2rem;
     padding-bottom: 6rem;
+    padding-top: 2rem;
 
     p {
-      margin: 0;
       color: white;
+      margin: 0;
       opacity: 0.7;
     }
   }
 }
 
 a.stars {
-  padding-left: 22px;
-  margin-right: 20px;
   background: url('../img/homepage/icon-stargazer.png') no-repeat left center;
+  margin-right: 20px;
+  padding-left: 22px;
 }
 
 a.twitter {
-  padding-left: 22px;
   background: url('../img/homepage/icon-twitter.png') no-repeat left center;
+  padding-left: 22px;
 }
 
 .commit {
@@ -235,14 +230,14 @@ a.twitter {
   margin: 0 0 2rem 0;
 
   >button {
-    text-align: center;
-    font-size: 0.75rem;
     color: #777;
+    font-size: 0.75rem;
     height: auto;
+    text-align: center;
 
     img {
-      width: 90%;
       margin: 0 auto 1rem;
+      width: 90%;
 
       &:hover {
         cursor: pointer;
@@ -263,11 +258,11 @@ a.twitter {
   }
 
   @include breakpoint(medium) {
+    text-align: left;
+
     h3 {
       margin-top: 15%;
     }
-
-    text-align: left;
   }
 }
 
@@ -312,22 +307,22 @@ a.twitter {
 .hero-githubissues {
 
   h4 {
-    font-weight: normal;
-    font-size: 0.9em;
-    margin: 0 auto;
     color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9em;
+    font-weight: normal;
+    margin: 0 auto;
 
     span {
-      font-size: 0.9em;
       color: rgba(255, 255, 255, 0.7);
+      font-size: 0.9em;
     }
   }
 
   p {
-    font-size: 0.9em;
-    margin-top: -20px;
-    margin-bottom: 7em;
     color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9em;
+    margin-bottom: 7em;
+    margin-top: -20px;
 
     a {
       color: rgba(255, 255, 255, 0.8);
@@ -348,14 +343,12 @@ a.twitter {
 }
 
 .ink {
-
   &.button {
     background: #cc7691;
   }
 }
 
 .apps {
-
   &.button {
     background: #3FC380;
   }
