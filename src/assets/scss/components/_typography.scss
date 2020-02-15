@@ -69,7 +69,7 @@
   font-size: rem-calc(18);
   line-height: 1.6;
 
-  & + & {
+  &+& {
     @include breakpoint(medium) {
       margin-top: -2rem;
     }
@@ -113,7 +113,7 @@ p {
     text-align: center;
   }
 
-  + .subheader {
+  +.subheader {
     margin-bottom: 3rem;
   }
 }
@@ -166,25 +166,23 @@ p {
 
     }
   }
-
-  .media-object {
-    // margin-bottom: 0;
-  }
 }
+
 .case-study-logo {
-  max-height: 4rem;
   margin-bottom: 1rem;
+  max-height: 4rem;
 
   &.arlington {
     max-height: 3.5rem;
   }
 }
+
 .spaced-list {
   li {
     margin-bottom: 1rem;
   }
 }
 
-.page-intro + .page-intro {
+.page-intro+.page-intro {
   margin-top: -1rem;
 }
