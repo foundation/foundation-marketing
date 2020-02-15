@@ -3,7 +3,6 @@
   padding: 75px 0 50px;
   margin-bottom: 2rem;
 
-
   @include breakpoint(medium) {
     margin-bottom: 2rem;
   }
@@ -11,30 +10,30 @@
   .img-wrap {
     height: 55px;
     margin-bottom: 10px;
+  }
+
+  img {
+    &.mic {
+      height: 52px;
+      width: auto;
     }
 
-    img {
-      &.mic {
-        height: 52px;
-        width: auto;
-      }
-
-      &.question {
-        height: 52px;
-        width: auto;
-      }
-
-      &.video {
-        height: 40px;
-        margin-top: 5px;
-        width: auto;
-      }
-
-      &.web {
-        height: 52px;
-        width: auto;
-      }
+    &.question {
+      height: 52px;
+      width: auto;
     }
+
+    &.video {
+      height: 40px;
+      margin-top: 5px;
+      width: auto;
+    }
+
+    &.web {
+      height: 52px;
+      width: auto;
+    }
+  }
 
   h3 {
     margin: 0 auto;
