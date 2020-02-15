@@ -3,19 +3,19 @@
   padding: 50px 0 20px;
 
   h3 {
-    text-align: center;
     margin-bottom: 5px;
+    text-align: center;
   }
 
   p.sub-headline {
-    text-align: center;
     font-size: em-calc(18);
     margin-bottom: 45px;
+    text-align: center;
   }
 
   .instructor {
-    position: relative;
     margin-bottom: 40px;
+    position: relative;
 
     @media only screen and (max-width: 767px) {
       text-align: center;
@@ -23,8 +23,8 @@
   }
 
   img {
-    max-height: 150px;
     border-radius: 100%;
+    max-height: 150px;
   }
 
   h5 {
@@ -32,13 +32,13 @@
   }
 
   .title {
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: em-calc(14);
-    line-height: 1.1;
-    color: #777777;
-    margin-bottom: 10px;
     @include proxima-nova-condensed;
+    color: #777777;
+    font-size: em-calc(14);
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    text-transform: uppercase;
   }
 
   p {
