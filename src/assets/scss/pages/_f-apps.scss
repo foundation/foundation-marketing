@@ -1,11 +1,25 @@
 .apps-promo {
-  h3, p { color: white; }
-  h3 { margin: 0; }
-  p { margin-bottom: 0; }
+
+  h3,
+  p {
+    color: white;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
   background: #085a78;
   padding: 15px 0px;
   height: auto;
-  .button { margin: .5rem 0 0 0;}
+
+  .button {
+    margin: .5rem 0 0 0;
+  }
 }
 
 .apps {
@@ -15,58 +29,60 @@
   }
 }
 
-
-
-.app-types{
+.app-types {
   margin-top: 30px;
 
-  ul{
+  ul {
     padding: 30px 0px;
   }
 }
 
-
 .hero-graphic {
-  img{
+  img {
     height: 50%;
     width: 50%;
   }
 }
 
 ol.getting-started-steps li:last-child {
-    padding-bottom: 70px;
+  padding-bottom: 70px;
 
-  }
+}
 
 ol.getting-started-steps {
-    list-style-type: none;
-    margin: 0;
-    margin-left: 0em;
-    padding: 0;
-    counter-reset: li-counter;
-    position: relative;
+  list-style-type: none;
+  margin: 0;
+  margin-left: 0em;
+  padding: 0;
+  counter-reset: li-counter;
+  position: relative;
 }
-ol.getting-started-steps li{
-//    border-bottom:1px solid #ddd;
-    padding: 30px 0 30px 80px;
+
+ol.getting-started-steps li {
+  // border-bottom:1px solid #ddd;
+  padding: 30px 0 30px 80px;
 }
+
 ol.getting-started-steps li:before {
-    font-size: 6rem;
-    font-weight: 600;
-    color: #ddd;
-    position: absolute;
-    left: 15px;
-    content: counter(li-counter);
-    counter-increment: li-counter;
-    line-height: 0.8;
+  font-size: 6rem;
+  font-weight: 600;
+  color: #ddd;
+  position: absolute;
+  left: 15px;
+  content: counter(li-counter);
+  counter-increment: li-counter;
+  line-height: 0.8;
 }
+
 .templates {
-    padding-bottom: 80px;
-  h4 { margin-top: 1rem; }
+  padding-bottom: 80px;
+
+  h4 {
+    margin-top: 1rem;
+  }
 }
 
 /* Foundation for App - Landing Page */
-
 
 #features-hero {
   h1 {
@@ -87,46 +103,41 @@ ol.getting-started-steps li:before {
     height: 684px;
   }
 
-/*   margin-bottom: rem-calc(50); */
+  /*   margin-bottom: rem-calc(50); */
   &.home-hero {
     padding: rem-calc(50 0 0 0);
+
     // margin-bottom: rem-calc(0);
     .row {
       position: relative;
     }
   }
-  &.foundation-emails{
+
+  &.foundation-emails {
     background-image: url(../img/foundation-emails/water.png) !important;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     background-color: #002b35 !important;
     margin-bottom: 0;
-
-
-
   }
 
-  &.foundation-apps{
-
+  &.foundation-apps {
     background-repeat: no-repeat;
     background-position: center right;
     background-size: contain;
     margin-bottom: 0;
     background-color: #002c3a;
-
     background-image: url(../img/foundation-apps/apps-bg.png);
-
     // background-image: url(../img/foundation-apps/apps-bg.png), url('../img/foundation-apps/snow1-copy.png'), url('../img/foundation-apps/snow2.png'), url('../img/foundation-apps/snow3.png') !important;
-
-  right: 0;
-  position: relative;
-  top: 0;
-  width: 100%;
-  -webkit-animation: snow 10s linear infinite;
-  -moz-animation: snow 10s linear infinite;
-  -ms-animation: snow 10s linear infinite;
-  animation: snow 10s linear infinite;
+    right: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+    -webkit-animation: snow 10s linear infinite;
+    -moz-animation: snow 10s linear infinite;
+    -ms-animation: snow 10s linear infinite;
+    animation: snow 10s linear infinite;
 
   }
 
@@ -139,24 +150,35 @@ ol.getting-started-steps li:before {
       margin-top: 110px;
     }
   }
-  h1,h3, h4 {color: #fff;}
-  h3{
+
+  h1,
+  h3,
+  h4 {
+    color: $true-white;
+  }
+
+  h3 {
     font-weight: 300;
     font-size: 1.35em;
   }
-  h6{
-    color: rgba(#fff,.4);
+
+  h6 {
+    color: rgba($true-white, .4);
     font-size: 1.2em;
   }
+
   p {
-    color: rgba(#fff,1);
+    color: rgba($true-white, 1);
     margin-top: 10px;
     font-size: 1.3em;
     line-height: 1.5em;
   }
+
   a {
-    color: rgba(#fff,1);
-    &:hover { color: rgba(#fff,1);
+    color: rgba($true-white, 1);
+
+    &:hover {
+      color: rgba($true-white, 1);
     }
   }
 
@@ -165,8 +187,14 @@ ol.getting-started-steps li:before {
     position: absolute;
     bottom: -115px;
     right: -3rem;
-    @include breakpoint(medium only) {width: 470px;}
-    @include breakpoint(small only) {display:none;}
+
+    @include breakpoint(medium only) {
+      width: 470px;
+    }
+
+    @include breakpoint(small only) {
+      display: none;
+    }
   }
 
   .button {
@@ -198,8 +226,6 @@ a.twitter {
   background: url('../img/homepage/icon-twitter.png') no-repeat left center;
 }
 
-
-
 .commit {
   display: inline-block;
   line-height: 1;
@@ -207,14 +233,17 @@ a.twitter {
 
 .example-icons {
   margin: 0 0 2rem 0;
-  > button {
+
+  >button {
     text-align: center;
     font-size: 0.75rem;
     color: #777;
     height: auto;
+
     img {
-    width: 90%;
-    margin: 0 auto 1rem;
+      width: 90%;
+      margin: 0 auto 1rem;
+
       &:hover {
         cursor: pointer;
       }
@@ -224,10 +253,20 @@ a.twitter {
 
 .example-orbit-content {
   text-align: center;
-  h3 { margin-top: 1rem; }
-  img { display: inline; }
+
+  h3 {
+    margin-top: 1rem;
+  }
+
+  img {
+    display: inline;
+  }
+
   @include breakpoint(medium) {
-    h3 { margin-top: 15%; }
+    h3 {
+      margin-top: 15%;
+    }
+
     text-align: left;
   }
 }
@@ -235,49 +274,72 @@ a.twitter {
 .angular-overview ul {
   li {
     padding: 0;
+
     .block {
       padding-right: 7%;
+
       @include breakpoint(small only) {
-        &.angular, &.components, &.motion {
+
+        &.angular,
+        &.components,
+        &.motion {
           padding-left: 4rem;
         }
-        &.angular { background: url(../images/content/feature-angular-sm.svg) no-repeat 0 0; background-size: 3rem 3rem; }
-        &.components { background: url(../images/content/feature-components-sm.svg) no-repeat 0 0; background-size: 3rem 3rem; }
-        &.motion { background: url(../images/content/feature-motion-sm.svg) no-repeat 0 0; background-size: 3rem 3rem; }
-        h4 { padding-top: 0; }
+
+        &.angular {
+          background: url(../images/content/feature-angular-sm.svg) no-repeat 0 0;
+          background-size: 3rem 3rem;
+        }
+
+        &.components {
+          background: url(../images/content/feature-components-sm.svg) no-repeat 0 0;
+          background-size: 3rem 3rem;
+        }
+
+        &.motion {
+          background: url(../images/content/feature-motion-sm.svg) no-repeat 0 0;
+          background-size: 3rem 3rem;
+        }
+
+        h4 {
+          padding-top: 0;
+        }
       }
     }
   }
 }
 
+.hero-githubissues {
 
-
-.hero-githubissues{
-
-  h4{
+  h4 {
     font-weight: normal;
     font-size: 0.9em;
-    margin:0 auto;
-    color: rgba(255,255,255,0.7);
-    span{
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.7);
+
+    span {
       font-size: 0.9em;
-      color: rgba(255,255,255,0.7);
+      color: rgba(255, 255, 255, 0.7);
     }
   }
-  p{
+
+  p {
     font-size: 0.9em;
-    margin-top:-20px;
+    margin-top: -20px;
     margin-bottom: 7em;
-    color: rgba(255,255,255,0.8);
-    a{
-      color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
+
+    a {
+      color: rgba(255, 255, 255, 0.8);
     }
-    a:hover{
-      color: rgba(255,255,255,1);
+
+    a:hover {
+      color: rgba(255, 255, 255, 1);
     }
   }
-  span{
-    color: rgba(255,255,255,0.8);
+
+  span {
+    color: rgba(255, 255, 255, 0.8);
   }
 }
 
@@ -299,20 +361,19 @@ a.twitter {
   }
 }
 
-
-
 .apps-explanation-text {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
-
 
 // start chris
 .orbit {
   .orbit-container {
     padding: 0;
   }
+
   .orbit-slide {
     padding-top: 30px;
   }
 }
+
 // end chris
