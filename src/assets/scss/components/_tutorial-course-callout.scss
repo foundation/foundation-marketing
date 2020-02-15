@@ -1,16 +1,16 @@
 // testimonial styles
 .course-testimonials {
   background: #F6F6F6 !important;
-  position: relative;
   padding: 70px 0 10px 0;
+  position: relative;
 }
 
 .testimonial {
   .quote-courses {
     background: #ebf3f5;
-    padding: 15px 20px 5px 15px;
     border-radius: 5px;
     margin-bottom: 30px;
+    padding: 15px 20px 5px 15px;
 
     p {
       @include proxima-nova;
@@ -20,47 +20,46 @@
     }
 
     &:after {
-      content: '';
-      width: 0;
-      height: 0;
+      border-color: #ebf3f5 transparent transparent transparent;
       border-style: solid;
       border-width: 20px 18px 0 18px;
-      border-color: #ebf3f5 transparent transparent transparent;
+      content: '';
+      height: 0;
+      left: 20px;
       position: relative;
       top: 37px;
-      left: 20px;
+      width: 0;
     }
   }
 
   .student {
-    margin-left: 25px;
     margin-bottom: 80px;
+    margin-left: 25px;
 
     img {
-      display: inline-block;
       border-radius: 100px;
-      width: 60px;
-      height: 60px;
       float: left;
+      height: 60px;
       margin-right: 10px;
+      width: 60px;
     }
 
     p:nth-child(2) {
       @include proxima-nova-condensed;
-      text-transform: uppercase;
       font-size: 16px;
       font-weight: 600;
       margin-bottom: 0;
       position: relative;
+      text-transform: uppercase;
       top: 5px;
     }
 
     p:nth-child(3) {
       @include proxima-nova-condensed;
-      text-transform: uppercase;
-      font-size: 14px;
       color: $gray-6;
+      font-size: 14px;
       position: relative;
+      text-transform: uppercase;
       top: 5px;
     }
   }
