@@ -1,11 +1,11 @@
 .footer-nav {
   @include flex-grid-row;
+  @include proxima-nova;
   align-items: center;
   background-color: $topbar-background;
+  justify-content: center;
   padding: 2rem;
   width: 100%;
-  @include proxima-nova;
-  justify-content: center;
 
   @include breakpoint(small only) {
     flex-direction: column;
@@ -37,9 +37,9 @@
 
 .footer-nav-left {
   @media screen and (min-width: 40em) and (max-width: 75.125em) {
-    order: 3;
     display: flex;
     margin-left: 1rem;
+    order: 3;
   }
 
   @include breakpoint(small only) {
@@ -49,9 +49,9 @@
 
 .footer-nav-right {
   @media screen and (min-width: 40em) and (max-width: 75.125em) {
-    order: 2;
     display: flex;
     margin-right: 1rem;
+    order: 2;
   }
 
   @include breakpoint(small only) {
@@ -77,9 +77,9 @@
   @media screen and (min-width: 40em) and (max-width: 75.125em) {
     display: flex;
     flex: 1 0 auto;
+    justify-content: center;
     order: 1;
     width: 100%;
-    justify-content: center;
   }
 }
 
@@ -99,8 +99,8 @@
   text-align: center;
 
   @include breakpoint(small only) {
-    margin-left: 0;
     display: flex;
+    margin-left: 0;
     margin-top: 1rem;
 
     .footer-nav-menu-item {
@@ -111,8 +111,8 @@
 
 .footer-nav-menu-item {
   display: inline-block;
-  margin-right: 2.5rem;
   font-size: 1.25rem;
+  margin-right: 2.5rem;
   padding: 0.4rem 0;
 
   a {
@@ -176,11 +176,11 @@
   font-weight: 800;
   letter-spacing: -1px;
   line-height: 1.1em;
-  margin-top: 0;
   margin-bottom: 1.5rem;
-  max-width: 64rem;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0;
+  max-width: 64rem;
 
   @include breakpoint(medium only) {
     font-size: 3rem;
@@ -193,10 +193,10 @@
 
 .homepage-section-desc {
   color: $white;
-  margin-bottom: 2.5rem;
-  z-index: 1;
   font-size: 1.25rem;
   line-height: 1.8;
+  margin-bottom: 2.5rem;
+  z-index: 1;
 
   &.light {
     color: darken($white, 20%);
@@ -218,8 +218,8 @@ a.text-link {
 }
 
 .hyperlink {
-  text-decoration: underline;
   color: $white;
+  text-decoration: underline;
   transition: color 0.15s ease;
 }
 
@@ -244,16 +244,16 @@ a.text-link {
     border-radius: 5px;
     color: darken($foundation-dark, 45%);
     height: 2.55rem;
+    opacity: 0.5;
     padding-left: 1rem;
     transition: background-color 0.3s ease;
-    opacity: 0.5;
 
     &:focus,
     &:focus {
       background-color: darken($foundation-dark, 5%);
       box-shadow: none;
-      transition: background-color 0.3s ease;
       color: $white;
+      transition: background-color 0.3s ease;
     }
   }
 

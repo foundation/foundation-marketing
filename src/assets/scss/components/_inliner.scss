@@ -14,7 +14,7 @@
   margin-bottom: 1rem;
 
   &::placeholder {
-    color: #333;
+    color: $gray-3;
     font-family: 'Proxima Nova', 'Helvetica Neue', 'Helvetica', sans-serif;
     transition: color 0.15s linear;
   }
@@ -25,7 +25,7 @@
 }
 
 .inliner-checkbox {
-  color: #333;
+  color: $gray-3;
   font-size: 1rem;
   line-height: 54px;
 
@@ -38,12 +38,12 @@
   }
 
   label {
-    margin-left: 0;
     cursor: pointer;
+    margin-left: 0;
 
     &::before {
       background-color: transparent;
-      border: 1px solid #999;
+      border: 1px solid $gray-9;
       border-radius: 1000px;
       color: transparent;
       content: '\2713';
@@ -62,9 +62,9 @@
   }
 }
 
-.inliner-checkbox input:checked + label::before {
-  background-color: #333;
-  border-color: #333;
+.inliner-checkbox input:checked+label::before {
+  background-color: $gray-3;
+  border-color: $gray-3;
   color: $true-white;
 }
 
@@ -83,7 +83,7 @@
   right: 15%;
   text-align: center;
 
-  .inliner-output:not(:empty) ~ & {
+  .inliner-output:not(:empty)~& {
     display: none;
   }
 
@@ -100,7 +100,7 @@
   }
 
   small {
-    color: #666;
+    color: $gray-6;
   }
 }
 
@@ -109,7 +109,7 @@
   right: 26px;
   top: 36px;
 
-  .inliner-output:empty ~ & {
+  .inliner-output:empty~& {
     display: none;
   }
 }
@@ -131,9 +131,17 @@
 
 .inliner-loading-indicator {
   @keyframes fish-hover {
-    0%   { transform: translateY(0); }
-    50%  { transform: translateY(10px); }
-    100% { transform: translateY(0); }
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(10px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
   }
 
   display: none;
@@ -157,7 +165,7 @@
   }
 
   p {
-    color: #666;
+    color: $gray-6;
     font-size: 2rem;
     font-weight: bold;
   }

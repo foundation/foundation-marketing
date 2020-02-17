@@ -1,11 +1,25 @@
 .apps-promo {
-  h3, p { color: white; }
-  h3 { margin: 0; }
-  p { margin-bottom: 0; }
+
   background: #085a78;
-  padding: 15px 0px;
   height: auto;
-  .button { margin: .5rem 0 0 0;}
+  padding: 15px 0;
+
+  h3,
+  p {
+    color: $true-white;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .button {
+    margin: .5rem 0 0 0;
+  }
 }
 
 .apps {
@@ -15,58 +29,59 @@
   }
 }
 
-
-
-.app-types{
+.app-types {
   margin-top: 30px;
 
-  ul{
-    padding: 30px 0px;
+  ul {
+    padding: 30px 0;
   }
 }
 
-
 .hero-graphic {
-  img{
+  img {
     height: 50%;
     width: 50%;
   }
 }
 
 ol.getting-started-steps li:last-child {
-    padding-bottom: 70px;
-
-  }
+  padding-bottom: 70px;
+}
 
 ol.getting-started-steps {
-    list-style-type: none;
-    margin: 0;
-    margin-left: 0em;
-    padding: 0;
-    counter-reset: li-counter;
-    position: relative;
+  counter-reset: li-counter;
+  list-style-type: none;
+  margin: 0;
+  margin-left: 0;
+  padding: 0;
+  position: relative;
 }
-ol.getting-started-steps li{
-//    border-bottom:1px solid #ddd;
-    padding: 30px 0 30px 80px;
+
+ol.getting-started-steps li {
+  // border-bottom:1px solid #ddd;
+  padding: 30px 0 30px 80px;
 }
+
 ol.getting-started-steps li:before {
-    font-size: 6rem;
-    font-weight: 600;
-    color: #ddd;
-    position: absolute;
-    left: 15px;
-    content: counter(li-counter);
-    counter-increment: li-counter;
-    line-height: 0.8;
+  color: #ddd;
+  content: counter(li-counter);
+  counter-increment: li-counter;
+  font-size: 6rem;
+  font-weight: 600;
+  left: 15px;
+  line-height: 0.8;
+  position: absolute;
 }
+
 .templates {
-    padding-bottom: 80px;
-  h4 { margin-top: 1rem; }
+  padding-bottom: 80px;
+
+  h4 {
+    margin-top: 1rem;
+  }
 }
 
-/* Foundation for App - Landing Page */
-
+// Foundation for App - Landing Page
 
 #features-hero {
   h1 {
@@ -80,93 +95,101 @@ ol.getting-started-steps li:before {
 
 .hero-heading {
   background: darken($primary-color, 25%);
+  font-family: 'Proxima Nova', 'proxima-nova', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   padding: rem-calc(40 0 40 0);
-  font-family: "Proxima Nova", "proxima-nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 
   @include breakpoint(medium) {
     height: 684px;
   }
 
-/*   margin-bottom: rem-calc(50); */
+  // margin-bottom: rem-calc(50);
   &.home-hero {
     padding: rem-calc(50 0 0 0);
-    // margin-bottom: rem-calc(0);
     .row {
       position: relative;
     }
   }
-  &.foundation-emails{
-    background-image: url(../img/foundation-emails/water.png) !important;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+
+  &.foundation-emails {
     background-color: #002b35 !important;
+    background-image: url('../img/foundation-emails/water.png') !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-bottom: 0;
-
-
-
   }
 
-  &.foundation-apps{
-
-    background-repeat: no-repeat;
+  &.foundation-apps {
+    -moz-animation: snow 10s linear infinite;
+    -ms-animation: snow 10s linear infinite;
+    -webkit-animation: snow 10s linear infinite;
+    animation: snow 10s linear infinite;
+    background-color: #002c3a;
+    background-image: url('../img/foundation-apps/apps-bg.png');
     background-position: center right;
+    background-repeat: no-repeat;
     background-size: contain;
     margin-bottom: 0;
-    background-color: #002c3a;
-
-    background-image: url(../img/foundation-apps/apps-bg.png);
-
-    // background-image: url(../img/foundation-apps/apps-bg.png), url('../img/foundation-apps/snow1-copy.png'), url('../img/foundation-apps/snow2.png'), url('../img/foundation-apps/snow3.png') !important;
-
-  right: 0;
-  position: relative;
-  top: 0;
-  width: 100%;
-  -webkit-animation: snow 10s linear infinite;
-  -moz-animation: snow 10s linear infinite;
-  -ms-animation: snow 10s linear infinite;
-  animation: snow 10s linear infinite;
-
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 100%;
   }
 
   h1 {
     font-size: 3em;
-    line-height: 1.0;
     font-weight: 500;
+    line-height: 1;
 
     @include breakpoint(medium) {
       margin-top: 110px;
     }
   }
-  h1,h3, h4 {color: #fff;}
-  h3{
-    font-weight: 300;
-    font-size: 1.35em;
+
+  h1,
+  h3,
+  h4 {
+    color: $true-white;
   }
-  h6{
-    color: rgba(#fff,.4);
+
+  h3 {
+    font-size: 1.35em;
+    font-weight: 300;
+  }
+
+  h6 {
+    color: rgba($true-white, .4);
     font-size: 1.2em;
   }
+
   p {
-    color: rgba(#fff,1);
-    margin-top: 10px;
+    color: rgba($true-white, 1);
     font-size: 1.3em;
     line-height: 1.5em;
+    margin-top: 10px;
   }
+
   a {
-    color: rgba(#fff,1);
-    &:hover { color: rgba(#fff,1);
+    color: rgba($true-white, 1);
+
+    &:hover {
+      color: rgba($true-white, 1);
     }
   }
 
   .yeti {
-    width: 570px;
-    position: absolute;
     bottom: -115px;
+    position: absolute;
     right: -3rem;
-    @include breakpoint(medium only) {width: 470px;}
-    @include breakpoint(small only) {display:none;}
+    width: 570px;
+
+    @include breakpoint(medium only) {
+      width: 470px;
+    }
+
+    @include breakpoint(small only) {
+      display: none;
+    }
   }
 
   .button {
@@ -176,29 +199,27 @@ ol.getting-started-steps li:before {
   .sub-header {
     background: darken($primary-color, 13%);
     margin-top: 2.5rem;
-    padding-top: 2rem;
     padding-bottom: 6rem;
+    padding-top: 2rem;
 
     p {
-      margin: 0;
       color: white;
+      margin: 0;
       opacity: 0.7;
     }
   }
 }
 
 a.stars {
-  padding-left: 22px;
-  margin-right: 20px;
   background: url('../img/homepage/icon-stargazer.png') no-repeat left center;
+  margin-right: 20px;
+  padding-left: 22px;
 }
 
 a.twitter {
-  padding-left: 22px;
   background: url('../img/homepage/icon-twitter.png') no-repeat left center;
+  padding-left: 22px;
 }
-
-
 
 .commit {
   display: inline-block;
@@ -207,14 +228,17 @@ a.twitter {
 
 .example-icons {
   margin: 0 0 2rem 0;
-  > button {
-    text-align: center;
-    font-size: 0.75rem;
+
+  >button {
     color: #777;
+    font-size: 0.75rem;
     height: auto;
+    text-align: center;
+
     img {
-    width: 90%;
-    margin: 0 auto 1rem;
+      margin: 0 auto 1rem;
+      width: 90%;
+
       &:hover {
         cursor: pointer;
       }
@@ -224,95 +248,125 @@ a.twitter {
 
 .example-orbit-content {
   text-align: center;
-  h3 { margin-top: 1rem; }
-  img { display: inline; }
+
+  h3 {
+    margin-top: 1rem;
+  }
+
+  img {
+    display: inline;
+  }
+
   @include breakpoint(medium) {
-    h3 { margin-top: 15%; }
     text-align: left;
+
+    h3 {
+      margin-top: 15%;
+    }
   }
 }
 
 .angular-overview ul {
   li {
     padding: 0;
+
     .block {
       padding-right: 7%;
+
       @include breakpoint(small only) {
-        &.angular, &.components, &.motion {
+
+        &.angular,
+        &.components,
+        &.motion {
           padding-left: 4rem;
         }
-        &.angular { background: url(../images/content/feature-angular-sm.svg) no-repeat 0 0; background-size: 3rem 3rem; }
-        &.components { background: url(../images/content/feature-components-sm.svg) no-repeat 0 0; background-size: 3rem 3rem; }
-        &.motion { background: url(../images/content/feature-motion-sm.svg) no-repeat 0 0; background-size: 3rem 3rem; }
-        h4 { padding-top: 0; }
+
+        &.angular {
+          background: url(../images/content/feature-angular-sm.svg) no-repeat 0 0;
+          background-size: 3rem 3rem;
+        }
+
+        &.components {
+          background: url(../images/content/feature-components-sm.svg) no-repeat 0 0;
+          background-size: 3rem 3rem;
+        }
+
+        &.motion {
+          background: url(../images/content/feature-motion-sm.svg) no-repeat 0 0;
+          background-size: 3rem 3rem;
+        }
+
+        h4 {
+          padding-top: 0;
+        }
       }
     }
   }
 }
 
+.hero-githubissues {
 
-
-.hero-githubissues{
-
-  h4{
+  h4 {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9em;
     font-weight: normal;
-    font-size: 0.9em;
-    margin:0 auto;
-    color: rgba(255,255,255,0.7);
-    span{
+    margin: 0 auto;
+
+    span {
+      color: rgba(255, 255, 255, 0.7);
       font-size: 0.9em;
-      color: rgba(255,255,255,0.7);
     }
   }
-  p{
+
+  p {
+    color: rgba(255, 255, 255, 0.8);
     font-size: 0.9em;
-    margin-top:-20px;
     margin-bottom: 7em;
-    color: rgba(255,255,255,0.8);
-    a{
-      color: rgba(255,255,255,0.8);
+    margin-top: -20px;
+
+    a {
+      color: rgba(255, 255, 255, 0.8);
     }
-    a:hover{
-      color: rgba(255,255,255,1);
+
+    a:hover {
+      color: rgba(255, 255, 255, 1);
     }
   }
-  span{
-    color: rgba(255,255,255,0.8);
+
+  span {
+    color: rgba(255, 255, 255, 0.8);
   }
 }
 
 .lead-text {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .ink {
-
   &.button {
     background: #cc7691;
   }
 }
 
 .apps {
-
   &.button {
     background: #3FC380;
   }
 }
 
-
-
 .apps-explanation-text {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
-
 
 // start chris
 .orbit {
   .orbit-container {
     padding: 0;
   }
+
   .orbit-slide {
     padding-top: 30px;
   }
 }
+
 // end chris

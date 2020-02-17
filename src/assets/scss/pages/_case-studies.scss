@@ -1,22 +1,26 @@
-/* ======================================
-Styles for the case study at the bottom of index
-=================================== */
+// ======================================
+// Styles for the case study at the bottom of index
+// ===================================
 
 .case-study {
   background: #efefef;
   display: none;
   margin-top: 44px;
 
-  p{ margin-bottom: 0; }
+  p {
+    margin-bottom: 0;
+  }
 
   &.active {
     display: block;
   }
 
-  span{ display: block; }
+  span {
+    display: block;
+  }
 
   .type {
-    font-family: "Proxima Nova","proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Proxima Nova', 'proxima-nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 0.75em;
     font-weight: bold;
     margin-bottom: 13px;
@@ -36,7 +40,7 @@ Styles for the case study at the bottom of index
   }
 
   a {
-    color: #333;
+    color: $gray-3;
     display: block;
     padding-top: 20px;
     text-align: center;
@@ -48,10 +52,7 @@ Styles for the case study at the bottom of index
 }
 
 .quote {
-
-//  color: $white;
   border-left: 5px solid #432a78;
-//  background: #432a78;
   margin-bottom: 2rem;
   margin-top: 1rem;
   padding: 1rem 3rem;
@@ -114,11 +115,14 @@ Styles for the case study at the bottom of index
   }
 }
 
-.sites-using-foundation{
+.sites-using-foundation {
   margin-bottom: 0;
   margin-top: 44px;
   overflow: hidden;
-  h3{ text-align:center;}
+
+  h3 {
+    text-align: center;
+  }
 }
 
 .featured-casestudy-name {
@@ -152,7 +156,7 @@ Styles for the case study at the bottom of index
     line-height: initial;
     margin: 0;
     padding: 0;
-    position:relative;
+    position: relative;
 
     img {
       float: left;
@@ -162,17 +166,15 @@ Styles for the case study at the bottom of index
     }
 
     .image-hover-reveal {
+      @include transition(opacity 0.2s ease-out);
+      @include transition-delay(0.25s);
       background-color: rgba(0, 0, 0, 0.5);
       color: $white;
       display: inline;
-      height: 100%;
       margin-left: -100%;
       opacity: 0;
       position: absolute;
-      width: 100%;
       z-index: 80;
-      @include transition( opacity 0.2s ease-out);
-      @include transition-delay( 0.25s);
 
       &:hover {
         opacity: 1;
@@ -180,20 +182,20 @@ Styles for the case study at the bottom of index
       }
 
       &:hover p {
+        @include transition(all 0.2s ease-out);
+        @include transition-delay(0.25s);
         opacity: 1;
         top: 40%;
-        @include transition( all 0.2s ease-out);
-        @include transition-delay( 0.25s);
       }
 
       p {
+        @include transition(all 0.2s ease-out);
         bottom: 0;
         display: block;
         opacity: 0;
         position: absolute;
         text-align: center;
         width: 100%;
-        @include transition( all 0.2s ease-out);
       }
     }
 
@@ -203,7 +205,7 @@ Styles for the case study at the bottom of index
   }
 
   .image-banner {
-    background-color: rgba($primary-color ,0.8);
+    background-color: rgba($primary-color, 0.8);
     color: $white;
     font-weight: 600;
     left: 0;
@@ -219,7 +221,6 @@ Styles for the case study at the bottom of index
 .column-block {
   margin-bottom: 30px;
 }
-
 
 .cs-intro {
   margin-bottom: 2rem;

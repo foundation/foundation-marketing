@@ -1,56 +1,59 @@
 // Styles for the buzz page
 
-
 .lead.intro {
   margin-bottom: 0;
 }
 
 .buzz-quote-name {
   text-align: center;
+
   img {
+    border-radius: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 50%;
     max-width: 80px;
   }
+
   h4 {
-    font-family: "Proxima Nova Condensed", Helvetica, Arial, sans-serif !important;
-    text-transform: uppercase;
+    font-family: 'Proxima Nova Condensed', Helvetica, Arial, sans-serif !important;
     font-size: 16px;
     font-weight: 600;
-    padding-top: 0.75rem;
     margin-bottom: 5px;
+    padding-top: 0.75rem;
+    text-transform: uppercase;
   }
 }
-
 
 .buzz-quote {
-  margin: 0;
-  padding: 1px 0 0 1.5rem;
-  margin-bottom: 3rem;
   border-left: 1px solid #eee;
+  margin: 0;
+  margin-bottom: 3rem;
+  padding: 1px 0 0 1.5rem;
+
   h4 {
-    margin: -4px 0 0 0;
-    font-weight: 200;
     font-size: 1.25rem;
+    font-weight: 200;
     line-height: 1.6;
+    margin: -4px 0 0 0;
   }
 }
-
 
 .buzz-press {
   margin-bottom: 3rem;
+
   h4 {
     margin-top: -15px;
   }
-  a{
+
+  a {
     color: #222;
     font-weight: 300;
   }
+
   .lead {
-    margin-bottom: .5rem;
     font-size: 1.125rem;
+    margin-bottom: .5rem;
   }
 
   .excerpt {
@@ -65,26 +68,26 @@
 
 }
 
-
 .cite {
+  color: #777777;
+  font-family: 'Proxima Nova Condensed', Helvetica, Arial, sans-serif !important;
   font-size: 0.75rem;
-  font-family: "Proxima Nova Condensed", Helvetica, Arial, sans-serif !important;
   font-weight: 600;
   text-transform: uppercase;
-  color: #777777;
 }
-
 
 .buzz-tweet {
   border-bottom: solid #eee 1px;
   margin-bottom: 1rem;
-  img{
+
+  img {
+    border: 1px solid #efefef;
     border-radius: 50%;
-    width: 10%;
     float: left;
     margin: 0.35rem 1rem 1rem 0;
-    border: 1px solid #efefef;
+    width: 10%;
   }
+
   p {
     padding-left: 15%;
   }

@@ -21,7 +21,7 @@
   }
 
   @include breakpoint(small only) {
-    .breadcrumbs > * {
+    .breadcrumbs>* {
       line-height: 2;
     }
   }
@@ -54,9 +54,9 @@
 
     .f5 {
       background: none;
-      border: 0.12rem solid #074E68;
+      border: 0.12rem solid $foundation-dark;
       border-radius: 8px;
-      color: #074E68;
+      color: $foundation-dark;
       font-weight: bold;
     }
 
@@ -70,9 +70,9 @@
 
     .f3 {
       background: none;
-      border: 0.12rem solid #666;
+      border: 0.12rem solid $gray-6;
       border-radius: 8px;
-      color: #666;
+      color: $gray-6;
       font-weight: bold;
     }
 

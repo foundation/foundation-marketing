@@ -1,10 +1,9 @@
-// No!
 $red: #ee4d4d;
 $blue: #2b2e48;
 
 // Typography
 $base-font: helvetica, arial, tahoma, verdana;
-$base-font-title: "Dosis", arial, tahoma, verdana;
+$base-font-title: 'Dosis', arial, tahoma, verdana;
 $base-font-color: #726f77;
 
 // Timeline
@@ -51,15 +50,15 @@ $timeline-color: $primary-color;
     transition: $global-transition;
 
     &:hover {
-      box-shadow: 0 1px 0px 0px $white;
+      box-shadow: 0 1px 0 0 $white;
       transition: $global-transition;
     }
   }
 
   .timeline-item {
+    @extend %clearfix;
     margin-bottom: 50px;
     position: relative;
-    @extend %clearfix;
 
     .timeline-icon {
       background: $timeline-color;
@@ -108,8 +107,8 @@ $timeline-color: $primary-color;
 
       .timeline-content-month {
         font-size: rem-calc(14);
-        text-transform: uppercase;
         font-weight: 400;
+        text-transform: uppercase;
       }
 
       &.right {
@@ -136,12 +135,14 @@ $timeline-color: $primary-color;
         text-align: left;
         width: 90%;
 
-        &::before,
-        &.right::before {
-          border-left: 0;
-          border-right: 7px solid $timeline-color;
-          left: 10%;
-          margin-left: -6px;
+        &,
+        &.right {
+          &::before {
+            border-left: 0;
+            border-right: 7px solid $timeline-color;
+            left: 10%;
+            margin-left: -6px;
+          }
         }
       }
 

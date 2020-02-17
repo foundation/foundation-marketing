@@ -1,5 +1,5 @@
 .terminal-window {
-  background: #333;
+  background: $gray-3;
   border-radius: 8px;
   color: $true-white;
   font-family: 'Courier', monospace;
@@ -12,7 +12,7 @@
 
   // Window title bar
   &::before {
-    background: #666;
+    background: $gray-6;
     border-radius: 8px 8px 0 0;
     content: '';
     display: block;

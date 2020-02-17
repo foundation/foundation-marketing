@@ -52,17 +52,17 @@
 }
 
 .controls button.active,
-.controlslayout input[type="radio"]:checked + label {
+.controlslayout input[type='radio']:checked+label {
   background: $secondary-color;
 }
 
-#controlslayout input[type="radio"] {
+#controlslayout input[type='radio'] {
   height: 0;
   visibility: hidden;
   width: 0;
 }
 
-#controlslayout input[type="radio"]+label {
+#controlslayout input[type='radio']+label {
   margin: 0;
 }
 
@@ -72,5 +72,5 @@
 
 #controlslayout .fa {
   color: $white;
-  font-size:1.5em;
+  font-size: 1.5em;
 }

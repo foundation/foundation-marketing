@@ -40,9 +40,9 @@
   }
 
   .row.collapse form {
-    input[type="text"] {
+    input[type='text'] {
       border: 0;
-      color: #999;
+      color: $gray-9;
       font-size: 17px;
       font-weight: 200;
       position: relative;

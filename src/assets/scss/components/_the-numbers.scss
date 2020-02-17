@@ -35,7 +35,7 @@
     }
 
     h6 {
-      color: #333;
+      color: $gray-3;
       font-weight: 400;
     }
   }
@@ -67,7 +67,6 @@
       &.arlington {
         color: $arlington;
       }
-
     }
 
     @include breakpoint(small only) {

@@ -42,8 +42,6 @@
   &.in-page {
     border: 2px dashed #cacaca;
 
-
-
     &.is-dragged {
       background: #ededed;
       border: 2px solid $dark-gray;
@@ -65,14 +63,14 @@
     background: lighten($light-gray, 18%);
     border: 2px dashed $light-gray;
     border-radius: 2px;
-    color: #fff;
+    color: $true-white;
     font-size: 21px;
     font-weight: normal;
     line-height: 1.3em;
     padding: 20px;
   }
 
-  .button{
+  .button {
     background-color: $primary-color;
     margin: 0.5em 0 0;
 
@@ -81,7 +79,6 @@
     }
   }
 }
-
 
 .file-upload input.file-input {
   cursor: pointer;
@@ -127,7 +124,7 @@
 }
 
 .sign-up-callout {
-  background-color: #fff;
+  background-color: $true-white;
   height: 120px;
   margin-bottom: 2rem;
   padding-top: 19px;
@@ -158,7 +155,6 @@
   font-size: 0.875rem;
   padding-top: 0.6rem;
 }
-
 
 .example-callout {
   background: -webkit-linear-gradient(bottom, #4e5763, #0e1c22);
@@ -261,7 +257,7 @@
 
   &.end {
     border: 0;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   @include breakpoint(medium) {
@@ -301,9 +297,9 @@
 }
 
 .feature-image-right {
-  position:absolute;
-  right:-300px;
-  top:30px;
+  position: absolute;
+  right: -300px;
+  top: 30px;
 }
 
 .section-one {

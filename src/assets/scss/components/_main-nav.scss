@@ -3,11 +3,7 @@
   font-family: 'zurb-logo';
   font-style: normal;
   font-weight: normal;
-  src: url('/assets/fonts/zurb-webfont.eot'),
-  url('/assets/fonts/zurb-webfont.eot?#iefix') format('embedded-opentype'),
-  url('/assets/fonts/zurb-webfont.svg') format('svg'),
-  url('/assets/fonts/zurb-webfont.ttf') format('truetype'),
-  url('/assets/fonts/zurb-webfont.woff') format('woff');
+  src: url('/assets/fonts/zurb-webfont.woff') format('woff');
 }
 
 .marketing-topbar {
@@ -23,7 +19,7 @@
       float: left;
     }
 
-    &:last-child  {
+    &:last-child {
       float: right;
     }
   }
@@ -54,8 +50,8 @@
     padding-top: 4px;
   }
 
-  .topbar-title > a {
-    font-family: "zurb-logo";
+  .topbar-title>a {
+    font-family: 'zurb-logo';
     font-size: 38px;
     font-weight: normal;
     opacity: 0.75;
@@ -97,8 +93,8 @@
     margin-left: -1px;
   }
 
-  .dropdown.menu > li.opens-right > .is-dropdown-submenu {
-    border: none;
+  .dropdown.menu>li.opens-right>.is-dropdown-submenu {
+    border: 0;
   }
 
   // zurb logo

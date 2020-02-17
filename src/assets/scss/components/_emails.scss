@@ -1,36 +1,40 @@
 //TODO: What is this!! Gotta dig into this
 
-/*Features Page*/
+// Features Page
 
-.ink.hero-button {
-  margin-right: 0;
+.ink {
+  &.hero-button {
+    margin-right: 0;
+  }
 }
 
-.row.email-no-margin {
-  margin-left: 0;
-  margin-right: 0;
+.row {
+  &.email-no-margin {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
-#features-hero   {
-  background: url(../img/marquee-stars.svg) #074e68;
-  text-align:left;
-  position: relative;
+#features-hero {
+  background: url('../img/marquee-stars.svg') $foundation-dark;
   padding: 50px 20px 0 20px;
+  position: relative;
+  text-align: left;
 
 
-  @media screen and (max-width:768px) {
-    padding: 40px 5px 30px 5px;
+  @media screen and (max-width: 768px) {
     overflow: hidden;
+    padding: 40px 5px 30px 5px;
   }
 
   h1 {
+    color: $true-white;
     font-size: 3em;
-    color: #fff;
     font-weight: 500;
-    margin-bottom:0;
     line-height: 100%;
+    margin-bottom: 0;
 
-    @media screen and (max-width:768px) {
+    @media screen and (max-width: 768px) {
       font-size: 35px;
     }
   }
@@ -40,7 +44,7 @@
     font-weight: 300;
     line-height: 1.6em;
 
-    @media screen and (max-width:768px) {
+    @media screen and (max-width: 768px) {
       font-size: 18px;
       line-height: 28px;
     }
@@ -51,15 +55,12 @@
   }
 
   .largerocket {
-    width: 230px;
     right: 150px;
     top: 50px;
-
+    width: 230px;
 
     img {
-      //      top: 30;
-      right:50;
-
+      right: 50;
 
       @include breakpoint(medium only) {
         max-width: 100px;
@@ -75,36 +76,39 @@
   }
 
   &.news {
-    margin-bottom: 60px;
     background: none;
+    margin-bottom: 60px;
     overflow: visible;
-    h1, h3, h4 {
-      color: #333;
+
+    h1,
+    h3,
+    h4 {
+      color: $gray-3;
     }
+
     h1 {
       font-size: 3.5rem;
     }
-    + #newsletter {
+
+    +#newsletter {
       display: none;
     }
+
     .largerocket {
       @include breakpoint(medium only) {
         max-width: 200px;
       }
     }
+
     @include breakpoint(medium only) {
       margin-bottom: 220px;
     }
+
     @include breakpoint(small only) {
       margin-bottom: 200px;
     }
   }
 }
-
-#subForm {
-  // margin-top: 2.5rem;
-}
-
 
 .mainfeature {
   img {
@@ -112,120 +116,124 @@
   }
 }
 
- /* Foundation for Emails */
+// Foundation for Emails
 
- .top-area {
+.top-area {
   background-color: #002b35;
   position: relative;
   z-index: 4;
 }
-/* line 90, ../sass/app.scss */
-.top-area.main {
-  background-image: url(../img/foundation-emails/water.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+
+// line 90, ../sass/app.scss
+.top-area {
+  &.main {
+    background-image: url('../img/foundation-emails/water.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .row {
+      position: relative;
+    }
+
+    p.lead {
+      color: $gray-9;
+      font-family: 'Proxima Nova', 'proxima-nova', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+      font-size: 1.35em;
+      line-height: 1.3em;
+    }
+  }
+
+  &.downloading {
+    overflow: hidden;
+
+    h1 {
+      font-size: 3em;
+      padding: 110px 0 0;
+    }
+  }
+
+  h1 {
+    color: $true-white;
+    font-family: 'Proxima Nova', 'proxima-nova', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-size: 4em;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    color: $true-white;
+    font-size: 2.1875em;
+    margin-bottom: 12px;
+    padding: 51px 0 0 0;
+  }
+
+  p {
+    color: $true-white;
+    font-weight: 300;
+  }
 }
-/* line 91, ../sass/app.scss */
-.top-area.main .row {
-  position: relative;
-}
-/* line 92, ../sass/app.scss */
-.top-area.main p.lead {
-  font-family: "Proxima Nova", "proxima-nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-size: 1.35em;
-  line-height: 1.3em;
-  color: #999;
-}
-/* line 94, ../sass/app.scss */
-.top-area.downloading {
-  overflow: hidden;
-}
-/* line 95, ../sass/app.scss */
-.top-area.downloading h1 {
-  font-size: 3em;
-  padding: 110px 0 0;
-}
-/* line 97, ../sass/app.scss */
-.top-area h1 {
-  color: #FFF;
-  font-family: "Proxima Nova", "proxima-nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-size: 4.0em;
-  margin-bottom: 0;
-  font-weight: 500;
-}
-/* line 98, ../sass/app.scss */
-.top-area h2 {
-  color: #FFF;
-  font-size: 2.1875em;
-  padding: 51px 0 0 0;
-  margin-bottom: 12px;
-}
-/* line 99, ../sass/app.scss */
-.top-area p {
-  color: #FFF;
-  font-weight: 300;
-}
-/* line 112, ../sass/app.scss */
+
+// line 112, ../sass/app.scss
 .inky {
-  background: url(../img/foundation-emails/inky-all-devices.svg) no-repeat center center;
+  background: url('../img/foundation-emails/inky-all-devices.svg') no-repeat center center;
   background-size: cover;
   height: 410px;
-  width: 380px;
   position: relative;
   top: 50px !important;
+  width: 380px;
 
   @media only screen and (max-width: 680px) {
     display: none;
   }
-}
 
-/* line 113, ../sass/app.scss */
-.inky.loaded {
-  animation-name: inky-float;
-  -webkit-animation-name: inky-float;
-  animation-duration: 5s;
-  -webkit-animation-duration: 5s;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
+  &.loaded {
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: inky-float;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-name: inky-float;
+  }
 }
 
 @keyframes inky-float {
   0% {
     transform: translateY(0%);
   }
+
   50% {
     transform: translateY(2%);
   }
+
   100% {
     transform: translateY(0%);
   }
 }
+
 @-webkit-keyframes inky-float {
   0% {
     -webkit-transform: translateY(0%);
   }
+
   50% {
     -webkit-transform: translateY(2%);
   }
+
   100% {
     -webkit-transform: translateY(0%);
   }
 }
-/* line 126, ../sass/app.scss */
-.bubble {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  opacity: 0;
-}
 
-/* line 127, ../sass/app.scss */
+// line 126, ../sass/app.scss
 .bubble {
-  $delays: (3, 6, 4, 2, 6, 8, 3, 5, 7, 1,);
-  opacity: 0;
+  $delays: (3, 6, 4, 2, 6, 8, 3, 5, 7, 1, );
   -webkit-animation: purple-bubbles 5s ease-in infinite;
   animation: purple-bubbles 5s ease-in infinite;
+  height: 16px;
+  opacity: 0;
+  position: absolute;
+  width: 16px;
 
   @for $i from 1 through 10 {
     &:nth-child(#{$i}) {
@@ -237,42 +245,51 @@
 @keyframes purple-bubbles {
   0% {
     -webkit-transform: scale(0);
-    opacity: 0;
     margin-top: 0;
+    opacity: 0;
   }
+
   17% {
     -webkit-transform: scale(0.1);
     opacity: 1;
   }
+
   19% {
     -webkit-transform: scale(0.9);
     opacity: 1;
   }
+
   20% {
     -webkit-transform: scale(1);
   }
+
   25% {
     -webkit-transform: scale(1.1);
   }
+
   30% {
     -webkit-transform: scale(0.95);
   }
+
   45% {
     -webkit-transform: scale(1.1);
   }
+
   91% {
     -webkit-transform: scale(1);
     opacity: 0;
   }
+
   100% {
     -webkit-transform: scale(0);
-    opacity: 0;
     margin-top: -100px;
+    opacity: 0;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 474, ../sass/app.scss */
+
+  // line 474, ../sass/app.scss
   .top-area {
     position: relative;
   }
@@ -284,8 +301,8 @@
     background-repeat: no-repeat;
     height: 542px;
     position: absolute;
-    bottom: 0px;
-    right: 0px;
+    bottom: 0;
+    right: 0;
     width: 220px;
     opacity: 0.7;
     background-size: cover;
@@ -300,23 +317,33 @@
 
   /* line 477, ../sass/app.scss */
   .templates-callout {
-    top: 0px;
+    top: 0;
     margin-bottom: 50px;
   }
 
   /* line 480, ../sass/app.scss */
-  .how-to-use h3, .how-to-use p {
+  .how-to-use h3,
+  .how-to-use p {
     width: 100% !important;
     margin-left: 0 !important;
   }
+
   /* line 481, ../sass/app.scss */
   .how-to-use .bump-space {
     margin-left: 0 !important;
   }
+
   /* line 482, ../sass/app.scss */
-  .how-to-use .process-1, .how-to-use .process-2, .how-to-use .process-3, .how-to-use .process-4, .how-to-use .process-4-2, .how-to-use .process-5, .how-to-use .process-5-2 {
+  .how-to-use .process-1,
+  .how-to-use .process-2,
+  .how-to-use .process-3,
+  .how-to-use .process-4,
+  .how-to-use .process-4-2,
+  .how-to-use .process-5,
+  .how-to-use .process-5-2 {
     display: none !important;
   }
+
   /* line 483, ../sass/app.scss */
   .how-to-use .number {
     position: relative;
@@ -326,6 +353,7 @@
     top: auto;
     line-height: 1em;
   }
+
   /* line 484, ../sass/app.scss */
   .how-to-use img {
     margin-left: 0 !important;
@@ -340,14 +368,17 @@
     top: -54px;
   }
 }
-.email-training{
-  padding: 50px 0px 80px 0px;
+
+.email-training {
+  padding: 50px 0 80px 0;
 
 }
+
 /* line 161, ../sass/app.scss */
 .course-callout {
   padding: 40px 0 30px;
 }
+
 /* Changelog */
 /* line 216, ../sass/app.scss */
 .row.log-space {
@@ -358,39 +389,47 @@
 ul.changelog li {
   list-style: none !important;
 }
+
 /* line 220, ../sass/app.scss */
 ul.changelog li.release-number {
   width: 17%;
   padding-top: 12px;
 }
+
 /* line 221, ../sass/app.scss */
 ul.changelog li.release-number p {
-  margin-bottom: 0px !important;
+  margin-bottom: 0 !important;
 }
+
 /* line 222, ../sass/app.scss */
 ul.changelog li.release-number a {
   font-size: 14px;
 }
+
 /* line 224, ../sass/app.scss */
 ul.changelog li.changes {
   border-left: #cccccc 1px solid;
   width: 82.5555%;
 }
+
 /* line 225, ../sass/app.scss */
 ul.changelog li span.point-release-number {
   font-weight: 600;
-  color: #333;
+  color: $gray-3;
 }
+
 /* line 227, ../sass/app.scss */
 ul.changelog li .release-description {
   margin-top: 10px;
 }
+
 /* line 228, ../sass/app.scss */
 ul.changelog li .release-description li {
   padding: 12px 0;
   border-bottom: #ddd dashed 1px;
   line-height: 22px;
 }
+
 /* line 229, ../sass/app.scss */
 ul.changelog li .release-description a {
   font-size: 13px;
@@ -398,14 +437,16 @@ ul.changelog li .release-description a {
 }
 
 @media only screen and (max-width: 767px) {
+
   /* line 237, ../sass/app.scss */
   ul.changelog li.release-number {
     width: 100%;
     padding-top: 12px;
     padding-left: 20px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     border-bottom: #dddddd 1px solid;
   }
+
   /* line 238, ../sass/app.scss */
   ul.changelog li.changes {
     width: 100%;
@@ -413,6 +454,7 @@ ul.changelog li .release-description a {
     padding-left: 20px;
   }
 }
+
 /* Email - Home - Intro*/
 
 /* line 160, ../sass/app.scss */
@@ -429,34 +471,41 @@ ul.changelog li .release-description a {
   position: relative;
   top: 150px;
 }
+
 /* line 163, ../sass/app.scss */
-.templates-callout h5, .templates-callout p {
-  color: #FFF;
+.templates-callout h5,
+.templates-callout p {
+  color: $true-white;
   position: relative;
   z-index: 2;
 }
+
 /* line 164, ../sass/app.scss */
 .templates-callout p {
   margin-bottom: 30px;
 }
+
 /* line 165, ../sass/app.scss */
 .templates-callout a {
   margin-bottom: 0;
 }
+
 /* callout */
 /* line 153, ../sass/app.scss */
 .callout {
   background: #F0F4F5;
-//  margin-bottom: 60px;
+  //  margin-bottom: 60px;
 
   &.secondary {
     background: #F0F4F5;
   }
 }
+
 /* line 154, ../sass/app.scss */
 .callout .row {
   position: relative;
 }
+
 /* line 155, ../sass/app.scss */
 .callout .row .stamp {
   background: url(../img/foundation-emails/inky-stamp-2.svg) no-repeat center center;
@@ -467,45 +516,54 @@ ul.changelog li .release-description a {
   top: -104px;
   background-size: cover;
 }
+
 /* line 210, ../sass/app.scss */
 .top-headlines {
   margin-top: 50px;
 }
 
 @media only screen and (min-width: 768px) {
+
   /* line 170, ../sass/app.scss */
   .discover-links a {
     transition: all .5s;
     -webkit-transition: all .5s;
   }
+
   /* line 172, ../sass/app.scss */
   .discover-links a:hover.process {
     background-position: center 5px;
   }
+
   /* line 173, ../sass/app.scss */
   .discover-links a:hover.docs {
     background-position: center -500px;
   }
+
   /* line 174, ../sass/app.scss */
   .discover-links a:hover.inliner {
     background-position: center -1500px;
   }
+
   /* line 175, ../sass/app.scss */
   .discover-links a:hover.download {
     background-position: center -1000px;
   }
 }
+
 .course-image {
-  padding: 50px 0px 40px 0px;
+  padding: 50px 0 40px 0;
 
   img {
     height: 100px;
   }
 }
+
 @media only screen and (max-width: 767px) {
+
   /* line 181, ../sass/app.scss */
   .course-image {
-    padding-bottom: 0px !important;
+    padding-bottom: 0 !important;
   }
 }
 
@@ -515,6 +573,7 @@ ul.changelog li .release-description a {
 .discover-links {
   margin-bottom: 50px;
 }
+
 /* line 187, ../sass/app.scss */
 .discover-links a {
   display: block;
@@ -523,26 +582,32 @@ ul.changelog li .release-description a {
   background: url(../img/foundation-emails/icons/discover.png) no-repeat 0 0;
   background-size: 125px 2000px;
 }
+
 /* line 188, ../sass/app.scss */
 .discover-links a.process {
   background-position: center 14px;
 }
+
 /* line 189, ../sass/app.scss */
 .discover-links a.docs {
   background-position: center -490px;
 }
+
 /* line 190, ../sass/app.scss */
 .discover-links a.download {
   background-position: center -990px;
 }
+
 /* line 191, ../sass/app.scss */
 .discover-links a.inliner {
   background-position: center -1490px;
 }
+
 /* line 193, ../sass/app.scss */
 .discover-links span {
   display: block;
 }
+
 /* line 194, ../sass/app.scss */
 .discover-links span.title {
   font-family: "Proxima Nova", "proxima-nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -550,9 +615,10 @@ ul.changelog li .release-description a {
   color: #0d2b40;
   margin-bottom: 10px;
 }
+
 /* line 195, ../sass/app.scss */
 .discover-links span.description {
-  color: #333;
+  color: $gray-3;
   font-size: 0.875em;
   line-height: 1.6em;
 }
@@ -656,6 +722,7 @@ ul.changelog li .release-description a {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
 /* line 291, ../sass/app.scss */
 .under-inky-fish ul {
   font-size: 0.875em;
@@ -666,6 +733,7 @@ ul.changelog li .release-description a {
 .read-docs {
   margin-top: 20px;
 }
+
 /* line 294, ../sass/app.scss */
 .read-docs a {
   background: #e5ecee url(../img/foundation-emails/icons/read-docs.png) no-repeat 38px center;
@@ -673,11 +741,13 @@ ul.changelog li .release-description a {
   background-size: 32px 44px;
   display: block;
 }
+
 /* line 295, ../sass/app.scss */
 .read-docs span {
   margin-bottom: 0;
   display: block;
 }
+
 /* line 296, ../sass/app.scss */
 .read-docs span.title {
   color: #0c2739;
@@ -685,10 +755,11 @@ ul.changelog li .release-description a {
   font-family: "Proxima Nova", "proxima-nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   margin-bottom: 10px;
 }
+
 /* line 297, ../sass/app.scss */
 .read-docs span.description {
   font-size: 0.875em;
-  color: #333;
+  color: $gray-3;
   line-height: 1.6;
 }
 
@@ -710,38 +781,49 @@ ul.changelog li .release-description a {
   0% {
     transform: rotate(-15deg);
   }
+
   50% {
     transform: rotate(15deg);
   }
+
   100% {
     transform: rotate(-15deg);
   }
 }
+
 @-webkit-keyframes inky-fishes {
   0% {
     -webkit-transform: rotate(-15deg);
   }
+
   50% {
     -webkit-transform: rotate(15deg);
   }
+
   100% {
     -webkit-transform: rotate(-15deg);
   }
 }
+
 /* process */
 /* line 318, ../sass/app.scss */
 .how-to-use {
   position: relative;
 }
+
 /* line 319, ../sass/app.scss */
 .how-to-use.one {
   margin-bottom: 3rem;
 }
+
 /* line 320, ../sass/app.scss */
-.how-to-use.one p, .how-to-use.one img, .how-to-use.one h3 {
+.how-to-use.one p,
+.how-to-use.one img,
+.how-to-use.one h3 {
   width: 430px;
   margin-left: 80px;
 }
+
 /* line 321, ../sass/app.scss */
 .how-to-use.one .process-1 {
   background: url(../img/foundation-emails/inky-outlook.svg) no-repeat center center;
@@ -752,19 +834,25 @@ ul.changelog li .release-description a {
   right: 65px;
   top: -50px;
 }
+
 /* line 322, ../sass/app.scss */
 .how-to-use.one .bump-space {
   margin-left: 120px;
 }
+
 /* line 324, ../sass/app.scss */
 .how-to-use.two {
   margin-bottom: 3rem;
 }
+
 /* line 325, ../sass/app.scss */
-.how-to-use.two p, .how-to-use.two img, .how-to-use.two h3 {
+.how-to-use.two p,
+.how-to-use.two img,
+.how-to-use.two h3 {
   width: 460px;
   margin-left: 110px;
 }
+
 /* line 326, ../sass/app.scss */
 .how-to-use.two .process-2 {
   height: 134px;
@@ -774,28 +862,36 @@ ul.changelog li .release-description a {
   left: 8px;
   top: 38px;
 }
+
 /* line 327, ../sass/app.scss */
 .how-to-use.two .process-2 img {
-  margin-left: 0px;
+  margin-left: 0;
 }
+
 /* line 329, ../sass/app.scss */
 .how-to-use.two .bump-space {
   margin-left: 270px;
 }
+
 /* line 331, ../sass/app.scss */
 .how-to-use.three {
   margin-bottom: 3rem;
 }
+
 /* line 332, ../sass/app.scss */
-.how-to-use.three p, .how-to-use.three img, .how-to-use.three h3 {
+.how-to-use.three p,
+.how-to-use.three img,
+.how-to-use.three h3 {
   width: 460px;
   margin-left: 110px;
 }
+
 /* line 333, ../sass/app.scss */
 .how-to-use.three p.with-border {
   border-bottom: 1px solid #ddd;
   padding-bottom: 20px;
 }
+
 /* line 334, ../sass/app.scss */
 .how-to-use.three .process-3 {
   height: 377px;
@@ -805,10 +901,12 @@ ul.changelog li .release-description a {
   right: 110px;
   top: -80px;
 }
+
 /* line 335, ../sass/app.scss */
 .how-to-use.three .process-3 img {
-  margin-left: 0px;
+  margin-left: 0;
 }
+
 /* line 336, ../sass/app.scss */
 .how-to-use.three .process-3 .inky-point {
   background: url(../img/foundation-emails/inky-point.svg) no-repeat center center;
@@ -816,23 +914,30 @@ ul.changelog li .release-description a {
   width: 349px;
   background-size: cover;
 }
+
 /* line 338, ../sass/app.scss */
 .how-to-use.three .bump-space {
   margin-left: 50px;
 }
+
 /* line 340, ../sass/app.scss */
 .how-to-use.four {
   margin-bottom: 3rem;
 }
+
 /* line 341, ../sass/app.scss */
-.how-to-use.four p, .how-to-use.four img, .how-to-use.four h3 {
+.how-to-use.four p,
+.how-to-use.four img,
+.how-to-use.four h3 {
   width: 460px;
   margin-left: 110px;
 }
+
 /* line 342, ../sass/app.scss */
 .how-to-use.four .bump-space {
   margin-left: 300px;
 }
+
 /* line 343, ../sass/app.scss */
 .how-to-use.four .process-4 {
   background: url(../img/foundation-emails/fish-3.svg) no-repeat center center;
@@ -843,6 +948,7 @@ ul.changelog li .release-description a {
   right: 0;
   top: 35px;
 }
+
 /* line 344, ../sass/app.scss */
 .how-to-use.four .process-4-2 {
   height: 63px;
@@ -852,6 +958,7 @@ ul.changelog li .release-description a {
   left: 201px;
   top: -16px;
 }
+
 /* line 345, ../sass/app.scss */
 .how-to-use.four .process-4-2 img {
   margin-left: -25px;
@@ -862,17 +969,22 @@ ul.changelog li .release-description a {
 .how-to-use.five .number {
   top: -13px;
 }
+
 /* line 351, ../sass/app.scss */
-.how-to-use.five p, .how-to-use.five img, .how-to-use.five h3 {
+.how-to-use.five p,
+.how-to-use.five img,
+.how-to-use.five h3 {
   width: 460px;
   margin-left: 110px;
 }
+
 /* line 352, ../sass/app.scss */
 .how-to-use.five .bump-space {
   margin-left: 185px;
   position: relative;
   z-index: 2;
 }
+
 /* line 353, ../sass/app.scss */
 .how-to-use.five .process-5 {
   height: 377px;
@@ -882,23 +994,27 @@ ul.changelog li .release-description a {
   left: 0;
   top: -120px;
 }
+
 /* line 354, ../sass/app.scss */
 .how-to-use.five .process-5-2 {
   height: 56px;
   width: 217px;
   background-size: cover;
   position: absolute;
-  right: 0px;
+  right: 0;
   top: 92px;
 }
+
 /* line 355, ../sass/app.scss */
 .how-to-use.five .process-5-2 img {
-  margin-left: 0px;
+  margin-left: 0;
 }
+
 /* line 358, ../sass/app.scss */
 .how-to-use h3 {
   margin-bottom: 10px;
 }
+
 /* line 359, ../sass/app.scss */
 .how-to-use .number {
   display: block;
@@ -910,6 +1026,7 @@ ul.changelog li .release-description a {
   top: 23px;
   line-height: 1em;
 }
+
 /* line 360, ../sass/app.scss */
 .how-to-use .campaign-monitor {
   background: url(../img/foundation-emails/campaign-monitor.png) no-repeat left center;
@@ -933,7 +1050,9 @@ ul.changelog li .release-description a {
   position: relative;
   top: -210px;
 }
+
 @media only screen and (max-width: 767px) {
+
   /* line 363, ../sass/app.scss */
   .process-5-3 {
     width: 100%;
@@ -956,24 +1075,30 @@ ul.changelog li .release-description a {
   0% {
     transform: translateX(0%);
   }
+
   50% {
     transform: translateX(3%);
   }
+
   100% {
     transform: translateX(0%);
   }
 }
+
 @-webkit-keyframes fish1 {
   0% {
     -webkit-transform: translateX(0%);
   }
+
   50% {
     -webkit-transform: translateX(3%);
   }
+
   100% {
     -webkit-transform: translateX(0%);
   }
 }
+
 /* line 381, ../sass/app.scss */
 .process-3.load div {
   animation-name: small-inky;
@@ -991,24 +1116,30 @@ ul.changelog li .release-description a {
   0% {
     transform: translateY(0%);
   }
+
   50% {
     transform: translateY(2%);
   }
+
   100% {
     transform: translateY(0%);
   }
 }
+
 @-webkit-keyframes small-inky {
   0% {
     -webkit-transform: translateY(0%);
   }
+
   50% {
     -webkit-transform: translateY(2%);
   }
+
   100% {
     -webkit-transform: translateY(0%);
   }
 }
+
 /* line 405, ../sass/app.scss */
 .process-4-2.load img {
   animation-name: fish2;
@@ -1023,24 +1154,30 @@ ul.changelog li .release-description a {
   0% {
     transform: translateY(0%);
   }
+
   50% {
     transform: translateY(12%);
   }
+
   100% {
     transform: translateY(0%);
   }
 }
+
 @-webkit-keyframes fish2 {
   0% {
     -webkit-transform: translateY(0%);
   }
+
   50% {
     -webkit-transform: translateY(12%);
   }
+
   100% {
     -webkit-transform: translateY(0%);
   }
 }
+
 /* line 418, ../sass/app.scss */
 .process-5-2.load img {
   animation-name: fish3;
@@ -1055,20 +1192,25 @@ ul.changelog li .release-description a {
   0% {
     transform: translateX(0%);
   }
+
   50% {
     transform: translateX(5%);
   }
+
   100% {
     transform: translateX(0%);
   }
 }
+
 @-webkit-keyframes fish3 {
   0% {
     -webkit-transform: translateX(0%);
   }
+
   50% {
     -webkit-transform: translateX(5%);
   }
+
   100% {
     -webkit-transform: translateX(0%);
   }
@@ -1078,12 +1220,14 @@ iframe {
   width: 100%;
   border: 1px solid #ddd;
 }
+
 /* docs  */
 /* line 433, ../sass/app.scss */
 .doc-nav {
   list-style: none;
   margin-top: 1.875em;
 }
+
 /* line 434, ../sass/app.scss */
 .doc-nav li {
   display: block;
@@ -1091,20 +1235,24 @@ iframe {
   font-size: 0.875em;
   margin-bottom: 10px;
 }
+
 /* line 435, ../sass/app.scss */
 .doc-nav li a {
-  color: #333;
+  color: $gray-3;
   display: block;
 }
+
 /* line 436, ../sass/app.scss */
 .doc-nav li a.active {
   font-weight: bold;
   margin-bottom: 10px;
 }
+
 /* line 437, ../sass/app.scss */
 .doc-nav li a:hover {
   color: #000;
 }
+
 /* line 439, ../sass/app.scss */
 .doc-nav li ul li {
   font-size: 1em;
@@ -1115,40 +1263,47 @@ iframe {
   margin-top: 30px;
   margin-bottom: 0;
 }
+
 /* line 444, ../sass/app.scss */
 .docs .label {
   background: #ddd;
-  color: #333;
+  color: $gray-3;
 }
+
 /* line 445, ../sass/app.scss */
 .docs table {
   width: 100%;
   font-size: 0.9375em;
 }
+
 /* line 446, ../sass/app.scss */
 .docs table td {
   line-height: 1.6;
   vertical-align: top;
 }
+
 /* line 448, ../sass/app.scss */
 .docs hr.section {
   margin-top: 50px;
   border-style: solid;
   border-width: 2px;
 }
+
 /* line 453, ../sass/app.scss */
 .docs code.geshi {
   display: block;
   padding: 15px;
   background: #1c1c1c;
   font-size: 14px;
-  color: #fff;
+  color: $true-white;
 }
+
 /* line 460, ../sass/app.scss */
 .docs iframe {
   width: 100%;
   border: 1px solid #ddd;
 }
+
 /* line 464, ../sass/app.scss */
 .docs ol {
   margin-left: 2.5em;
@@ -1161,22 +1316,27 @@ iframe {
   margin: 20px 0 50px;
   padding-top: 20px;
 }
+
 /* line 121, ../../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/zurb-foundation-4.3.2/scss/foundation/components/_global.scss */
-.prev-next-section:before, .prev-next-section:after {
+.prev-next-section:before,
+.prev-next-section:after {
   content: " ";
   display: table;
 }
+
 /* line 122, ../../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/zurb-foundation-4.3.2/scss/foundation/components/_global.scss */
 .prev-next-section:after {
   clear: both;
 }
+
 /* line 469, ../sass/app.scss */
 .prev-next-section a {
   font-weight: bold;
-  color: #333;
+  color: $gray-3;
 }
 
 @media only screen and (max-width: 767px) {
+
   /* line 474, ../sass/app.scss */
   .top-area {
     position: relative;
@@ -1189,8 +1349,8 @@ iframe {
     background-repeat: no-repeat;
     height: 542px;
     position: absolute;
-    bottom: 0px;
-    right: 0px;
+    bottom: 0;
+    right: 0;
     width: 220px;
     opacity: 0.7;
     background-size: cover;
@@ -1205,23 +1365,33 @@ iframe {
 
   /* line 477, ../sass/app.scss */
   .templates-callout {
-    top: 0px;
+    top: 0;
     margin-bottom: 50px;
   }
 
   /* line 480, ../sass/app.scss */
-  .how-to-use h3, .how-to-use p {
+  .how-to-use h3,
+  .how-to-use p {
     width: 100% !important;
     margin-left: 0 !important;
   }
+
   /* line 481, ../sass/app.scss */
   .how-to-use .bump-space {
     margin-left: 0 !important;
   }
+
   /* line 482, ../sass/app.scss */
-  .how-to-use .process-1, .how-to-use .process-2, .how-to-use .process-3, .how-to-use .process-4, .how-to-use .process-4-2, .how-to-use .process-5, .how-to-use .process-5-2 {
+  .how-to-use .process-1,
+  .how-to-use .process-2,
+  .how-to-use .process-3,
+  .how-to-use .process-4,
+  .how-to-use .process-4-2,
+  .how-to-use .process-5,
+  .how-to-use .process-5-2 {
     display: none !important;
   }
+
   /* line 483, ../sass/app.scss */
   .how-to-use .number {
     position: relative;
@@ -1231,6 +1401,7 @@ iframe {
     font-size: 3.625em;
     top: auto;
   }
+
   /* line 484, ../sass/app.scss */
   .how-to-use img {
     margin-left: 0 !important;
@@ -1245,30 +1416,35 @@ iframe {
     top: -54px;
   }
 }
+
 /* line 489, ../sass/app.scss */
 ul.mobile-nav {
   display: block;
   margin-bottom: 0;
 }
+
 /* line 490, ../sass/app.scss */
 ul.mobile-nav li {
   display: block;
 }
+
 /* line 491, ../sass/app.scss */
 ul.mobile-nav a {
   display: block;
   padding: 10px;
   background: #003542;
-  color: #FFF;
+  color: $true-white;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   font-weight: bold;
 }
+
 /* line 492, ../sass/app.scss */
 ul.mobile-nav a.current {
   background: #002f3b;
 }
 
 @media only screen and (min-width: 767px) and (max-width: 1024px) {
+
   /* line 497, ../sass/app.scss */
   .callout .row .stamp {
     top: -134px;
@@ -1284,11 +1460,15 @@ ul.mobile-nav a.current {
   .how-to-use {
     position: relative;
   }
+
   /* line 501, ../sass/app.scss */
-  .how-to-use.one p, .how-to-use.one img, .how-to-use.one h3 {
+  .how-to-use.one p,
+  .how-to-use.one img,
+  .how-to-use.one h3 {
     width: 400px;
     margin-left: 70px;
   }
+
   /* line 502, ../sass/app.scss */
   .how-to-use.one .process-1 {
     background: url(../img/foundation-emails/inky.svg) no-repeat center center;
@@ -1299,19 +1479,25 @@ ul.mobile-nav a.current {
     right: -13px;
     top: -50px;
   }
+
   /* line 503, ../sass/app.scss */
   .how-to-use.one .bump-space {
     margin-left: 60px;
   }
+
   /* line 505, ../sass/app.scss */
   .how-to-use.two {
     margin-bottom: 10px;
   }
+
   /* line 506, ../sass/app.scss */
-  .how-to-use.two p, .how-to-use.two img, .how-to-use.two h3 {
+  .how-to-use.two p,
+  .how-to-use.two img,
+  .how-to-use.two h3 {
     width: 440px;
     margin-left: 100px;
   }
+
   /* line 507, ../sass/app.scss */
   .how-to-use.two .process-2 {
     height: 65px;
@@ -1322,23 +1508,30 @@ ul.mobile-nav a.current {
     top: 38px;
     z-index: -1;
   }
+
   /* line 508, ../sass/app.scss */
   .how-to-use.two .process-2 img {
-    margin-left: 0px;
+    margin-left: 0;
   }
+
   /* line 510, ../sass/app.scss */
   .how-to-use.two .bump-space {
     margin-left: 100px;
   }
+
   /* line 512, ../sass/app.scss */
   .how-to-use.three {
     margin-bottom: 30px;
   }
+
   /* line 513, ../sass/app.scss */
-  .how-to-use.three p, .how-to-use.three img, .how-to-use.three h3 {
+  .how-to-use.three p,
+  .how-to-use.three img,
+  .how-to-use.three h3 {
     width: 350px;
     margin-left: 100px;
   }
+
   /* line 514, ../sass/app.scss */
   .how-to-use.three {
     border-bottom: 1px solid #ddd;
@@ -1349,6 +1542,7 @@ ul.mobile-nav a.current {
     border-bottom: 1px solid #ddd;
     padding-bottom: 20px;
   }
+
   /* line 515, ../sass/app.scss */
   .how-to-use.three .process-3 {
     height: 377px;
@@ -1358,27 +1552,35 @@ ul.mobile-nav a.current {
     right: 70px;
     top: -100px;
   }
+
   /* line 516, ../sass/app.scss */
   .how-to-use.three .process-3 img {
-    margin-left: 0px;
+    margin-left: 0;
   }
+
   /* line 518, ../sass/app.scss */
   .how-to-use.three .bump-space {
     margin-left: 0;
   }
+
   /* line 520, ../sass/app.scss */
   .how-to-use.four {
     margin-bottom: 30px;
   }
+
   /* line 521, ../sass/app.scss */
-  .how-to-use.four p, .how-to-use.four img, .how-to-use.four h3 {
+  .how-to-use.four p,
+  .how-to-use.four img,
+  .how-to-use.four h3 {
     width: 350px;
     margin-left: 100px;
   }
+
   /* line 522, ../sass/app.scss */
   .how-to-use.four .bump-space {
     margin-left: 150px;
   }
+
   /* line 523, ../sass/app.scss */
   .how-to-use.four .process-4 {
     background: url(../img/foundation-emails/fish-3.png) no-repeat center center;
@@ -1389,6 +1591,7 @@ ul.mobile-nav a.current {
     right: 0;
     top: 35px;
   }
+
   /* line 524, ../sass/app.scss */
   .how-to-use.four .process-4-2 {
     height: 63px;
@@ -1398,29 +1601,37 @@ ul.mobile-nav a.current {
     left: 40px;
     top: -16px;
   }
+
   /* line 525, ../sass/app.scss */
   .how-to-use.four .process-4-2 img {
-    margin-left: 0px;
+    margin-left: 0;
   }
+
   /* line 529, ../sass/app.scss */
   .how-to-use.five {
     padding-bottom: 160px;
   }
+
   /* line 530, ../sass/app.scss */
   .how-to-use.five .number {
     top: -13px;
   }
+
   /* line 531, ../sass/app.scss */
-  .how-to-use.five p, .how-to-use.five img, .how-to-use.five h3 {
+  .how-to-use.five p,
+  .how-to-use.five img,
+  .how-to-use.five h3 {
     width: 470px;
     margin-left: 100px;
   }
+
   /* line 532, ../sass/app.scss */
   .how-to-use.five .bump-space {
     margin-left: 20px;
     position: relative;
     z-index: 2;
   }
+
   /* line 533, ../sass/app.scss */
   .how-to-use.five .process-5 {
     height: 377px;
@@ -1430,6 +1641,7 @@ ul.mobile-nav a.current {
     left: 0;
     top: -120px;
   }
+
   /* line 534, ../sass/app.scss */
   .how-to-use.five .process-5-2 {
     height: 80px;
@@ -1439,14 +1651,17 @@ ul.mobile-nav a.current {
     right: 50px;
     top: 92px;
   }
+
   /* line 535, ../sass/app.scss */
   .how-to-use.five .process-5-2 img {
-    margin-left: 0px;
+    margin-left: 0;
   }
+
   /* line 538, ../sass/app.scss */
   .how-to-use h3 {
     margin-bottom: 10px;
   }
+
   /* line 539, ../sass/app.scss */
   .how-to-use .number {
     display: block;
@@ -1458,6 +1673,7 @@ ul.mobile-nav a.current {
     top: 23px;
     line-height: 1em;
   }
+
   /* line 540, ../sass/app.scss */
   .how-to-use .campaign-monitor {
     background: url(../img/foundation-emails/campaign-monitor.png) no-repeat left center;
@@ -1489,12 +1705,15 @@ ul.mobile-nav a.current {
     overflow-x: hidden;
   }
 }
+
 @media only screen and (max-width: 1024px) and (min-width: 940px) {
+
   /* line 549, ../sass/app.scss */
   .top-bar-section .has-form {
     padding-top: 0;
     padding-bottom: 0;
   }
+
   /* line 552, ../sass/app.scss */
   .top-bar-section .has-form a {
     line-height: 26px;
@@ -1502,29 +1721,35 @@ ul.mobile-nav a.current {
     padding-bottom: 0;
   }
 }
+
 /* coming-soon */
 /* line 561, ../sass/app.scss */
 .coming-soon {
   background: #004454;
 }
+
 /* line 562, ../sass/app.scss */
 .coming-soon .home-text {
   padding: 80px 0 83px;
 }
+
 /* line 563, ../sass/app.scss */
 .coming-soon .cs-text {
   margin-bottom: 5px;
   color: rgba(255, 255, 255, 0.5);
 }
+
 /* line 564, ../sass/app.scss */
 .coming-soon input {
   height: 42px;
 }
+
 /* line 565, ../sass/app.scss */
 .coming-soon .confirm {
   font-size: 1em;
   font-style: italic;
 }
+
 /* line 566, ../sass/app.scss */
 .coming-soon .confirm.error {
   color: red;
@@ -1537,7 +1762,9 @@ ul.mobile-nav a.current {
   background-size: 624px 558px;
   min-height: 60vh;
 }
+
 @media only screen and (max-width: 767px) {
+
   /* line 583, ../sass/app.scss */
   .cs-inky {
     background: url(../img/foundation-emails/inky-mobile-hold.svg) no-repeat center bottom;
@@ -1551,6 +1778,7 @@ ul.mobile-nav a.current {
 .inliner-form .inactive {
   display: none;
 }
+
 /* line 593, ../sass/app.scss */
 .inliner-form textarea {
   min-height: 500px;
@@ -1562,11 +1790,13 @@ ul.mobile-nav a.current {
   -ms-transition: all 0.7s ease-out;
   -o-transition: all 0.7s ease-out;
 }
+
 /* line 603, ../sass/app.scss */
 .inliner-form label {
   margin-bottom: 8px;
   line-height: 1.4;
 }
+
 /* line 604, ../sass/app.scss */
 .inliner-form.options label {
   margin-bottom: 0;
@@ -1576,39 +1806,46 @@ ul.mobile-nav a.current {
 .inky-inliner {
   margin-bottom: 50px;
 }
+
 /* line 607, ../sass/app.scss */
 .inky-inliner h4 {
   margin-bottom: 5px;
 }
+
 /* line 608, ../sass/app.scss */
 .inky-inliner p {
   margin-bottom: 10px;
 }
+
 /* line 609, ../sass/app.scss */
 //.inky-inliner .button:not(.secondary) {
 //  background: #004454;
-//  color: #FFF;
+//  color: $true-white;
 //}
 /* line 610, ../sass/app.scss */
 .inky-inliner .button:not(.secondary):hover {
   background: #002B36;
 }
+
 /* line 612, ../sass/app.scss */
 .inky-inliner textarea.result {
   min-height: 300px;
 }
+
 /* line 615, ../sass/app.scss */
 .inky-inliner .show-on-submit {
   display: none;
 }
+
 /* line 618, ../sass/app.scss */
 .inky-inliner .alert-box {
   background: #004454;
   border-color: 002932;
 }
+
 /* line 621, ../sass/app.scss */
 .inky-inliner .alert-box a {
-  color: #fff;
+  color: $true-white;
 }
 
 /* line 626, ../sass/app.scss */
@@ -1623,10 +1860,11 @@ ul.mobile-nav a.current {
   position: absolute;
   top: 0;
   left: 0;
-  background: #fff;
+  background: $true-white;
   z-index: 999;
   display: none;
 }
+
 /* line 637, ../sass/app.scss */
 #previewModal .control-bar {
   width: 100%;
@@ -1636,16 +1874,19 @@ ul.mobile-nav a.current {
   background: #f7f7f7;
   box-shadow: 0 0 3px 5px rgba(0, 0, 0, 0.25);
 }
+
 /* line 645, ../sass/app.scss */
 #previewModal .control-bar .close-btn {
   margin: 14px 10px;
   display: inline-block;
 }
+
 /* line 650, ../sass/app.scss */
 #previewModal .control-bar .report-btn {
   margin: 5px 10px;
   float: right;
 }
+
 /* line 656, ../sass/app.scss */
 #previewModal iframe {
   margin-top: 55px;
@@ -1653,6 +1894,7 @@ ul.mobile-nav a.current {
   width: 100%;
   height: 100%;
 }
+
 /* line 663, ../sass/app.scss */
 #previewModal.active {
   display: block;
@@ -1669,10 +1911,12 @@ table span {
   display: block;
   text-align: center;
 }
+
 /* line 676, ../sass/app.scss */
 table .check {
   color: green;
 }
+
 /* line 677, ../sass/app.scss */
 table .x {
   color: red;
@@ -1684,10 +1928,12 @@ table .x {
   border: 1px solid #ddd;
   padding: 15px;
 }
+
 /* line 680, ../sass/app.scss */
 .compatibility-section p {
   margin-bottom: 0;
 }
+
 /* line 681, ../sass/app.scss */
 .compatibility-section a.reveal-table {
   font-size: 0.875em;
@@ -1695,6 +1941,7 @@ table .x {
   text-align: right;
   line-height: 22px;
 }
+
 /* line 682, ../sass/app.scss */
 .compatibility-section table.comp-table {
   display: none;
@@ -1724,8 +1971,9 @@ ul.sub-nav li a {
   display: block;
   font-size: 0.875em;
   padding: 5px 0;
-  color: #333;
+  color: $gray-3;
 }
+
 /* line 691, ../sass/app.scss */
 ul.sub-nav li.active a {
   color: #CC7691;
@@ -1737,6 +1985,7 @@ ul.sub-nav li.active a {
 h6 {
   position: relative;
 }
+
 /* line 697, ../sass/app.scss */
 h6 small.cp {
   position: absolute;
@@ -1746,41 +1995,47 @@ h6 small.cp {
   padding: 12px 10px 10px 24px;
   font-size: 12px;
   text-transform: uppercase;
-  color: #FFF;
+  color: $true-white;
   border-radius: 3px;
-  font-family: "Proxima Nova Condensed","proxima-nova-condensed","Helvetica Neue",Helvetica, Arial, sans-serif;
+  font-family: "Proxima Nova Condensed", "proxima-nova-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* Header Social Links */
 
-ul{
-  margin-left: 0em;
+ul {
+  margin-left: 0;
 }
+
 /* line 102, ../sass/app.scss */
 ul.header-social-links {
   display: block;
 }
+
 /* line 103, ../sass/app.scss */
 ul.header-social-links li {
   display: inline-block;
   margin-right: 25px;
 }
+
 /* line 104, ../sass/app.scss */
 ul.header-social-links li:last-child {
   margin-right: 0;
 }
+
 /* line 105, ../sass/app.scss */
 ul.header-social-links li i {
   font-size: 16px;
   display: inline-block;
   margin-right: 8px;
 }
+
 /* line 106, ../sass/app.scss */
 ul.header-social-links li a {
-  color: #FFF;
+  color: $true-white;
   color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
 }
+
 /* line 107, ../sass/app.scss */
 ul.header-social-links li a:hover {
   text-decoration: underline;
@@ -1793,24 +2048,24 @@ ul.header-social-links li a:hover {
 
 /* Contribute */
 
-.zurb-logo-sm{
+.zurb-logo-sm {
   height: 20px;
 }
 
-#contribute-large-marquee #tweetUsername{
-  color: #fff;
+#contribute-large-marquee #tweetUsername {
+  color: $true-white;
 }
 
-.framework-callouts{
-  h2{
-    margin: 0px;
-    padding: 0px;
+.framework-callouts {
+  h2 {
+    margin: 0;
+    padding: 0;
     text-align: center;
   }
 
-  h6{
-    margin: 0px;
-    padding: 0px;
+  h6 {
+    margin: 0;
+    padding: 0;
     text-transform: uppercase;
     font-size: 0.8em;
     margin-top: -10px;
@@ -1821,10 +2076,10 @@ ul.header-social-links li a:hover {
 
   p {
     margin-top: 20px;
-    color:#222222;
+    color: #222222;
   }
 
-  img{
+  img {
     text-align: center;
   }
 
@@ -1833,15 +2088,15 @@ ul.header-social-links li a:hover {
     text-align: center;
   }
 
-  .framework-mascot{
-    img{
-      padding: 0px;
+  .framework-mascot {
+    img {
+      padding: 0;
       height: 300px;
-      margin: 0px;
+      margin: 0;
     }
   }
 
-  .button{
+  .button {
     margin-top: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -1849,37 +2104,42 @@ ul.header-social-links li a:hover {
   }
 }
 
-.hero-githubissues{
+.hero-githubissues {
 
-  h4{
+  h4 {
     font-weight: normal;
     font-size: 0.9em;
-    margin:0 auto;
-    color: rgba(255,255,255,0.7);
-    span{
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.7);
+
+    span {
       font-size: 0.9em;
-      color: rgba(255,255,255,0.7);
+      color: rgba(255, 255, 255, 0.7);
     }
   }
-  p{
+
+  p {
     font-size: 0.9em;
-    margin-top:-20px;
+    margin-top: -20px;
     margin-bottom: 7em;
-    color: rgba(255,255,255,0.8);
-    a{
-      color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
+
+    a {
+      color: rgba(255, 255, 255, 0.8);
     }
-    a:hover{
-      color: rgba(255,255,255,1);
+
+    a:hover {
+      color: rgba(255, 255, 255, 1);
     }
   }
-  span{
-    color: rgba(255,255,255,0.8);
+
+  span {
+    color: rgba(255, 255, 255, 0.8);
   }
 }
 
 .lead-text {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .ink {
@@ -1914,53 +2174,108 @@ ul.header-social-links li a:hover {
 
 
 
-.style0{
-  enable-background:  new 0 0 530 360;
+.style0 {
+  enable-background: new 0 0 530 360;
 }
-.st0{opacity:0.2;}
-.st1{fill:#010101;}
-.st2{fill:none;stroke:#010101;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
-.st3{fill:none;stroke:#010101;stroke-miterlimit:10;}
-.st4{fill:#EBEBEB;}
-.st5{fill:#CFD5D6;}
-.st6{opacity:0.75;}
-.st7{fill:#FFFFFF;}
-.st8{fill:#78868C;}
-.st9{fill:none;stroke:#CFD5D6;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
-.st10{fill:none;stroke:#CFD5D6;stroke-miterlimit:10;}
-.st11{fill:#0D5E7D;}
-.st12{opacity:0.25;}
-.st13{fill:#9B9A9A;}
 
-.features-vertical-grid, .features-scrolling-sections, .features-source-ordering, .features-templatizing-angular, .features-component-driven, .features-motion-views, .features-animation-classes, .features-motion-modifiers, .features-sass-mixins, .features-notifications, .features-menu-bar, .features-action-sheets  {
+.st0 {
+  opacity: 0.2;
+}
+
+.st1 {
+  fill: #010101;
+}
+
+.st2 {
+  fill: none;
+  stroke: #010101;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.st3 {
+  fill: none;
+  stroke: #010101;
+  stroke-miterlimit: 10;
+}
+
+.st4 {
+  fill: #EBEBEB;
+}
+
+.st5 {
+  fill: #CFD5D6;
+}
+
+.st6 {
+  opacity: 0.75;
+}
+
+.st7 {
+  fill: $true-white;
+}
+
+.st8 {
+  fill: #78868C;
+}
+
+.st9 {
+  fill: none;
+  stroke: #CFD5D6;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.st10 {
+  fill: none;
+  stroke: #CFD5D6;
+  stroke-miterlimit: 10;
+}
+
+.st11 {
+  fill: #0D5E7D;
+}
+
+.st12 {
+  opacity: 0.25;
+}
+
+.st13 {
+  fill: #9B9A9A;
+}
+
+.features-vertical-grid,
+.features-scrolling-sections,
+.features-source-ordering,
+.features-templatizing-angular,
+.features-component-driven,
+.features-motion-views,
+.features-animation-classes,
+.features-motion-modifiers,
+.features-sass-mixins,
+.features-notifications,
+.features-menu-bar,
+.features-action-sheets {
+
   //    padding-left: 4rem;
-  h4 { margin-top: 1rem; }
-  p { margin-bottom: 2rem; }
+  h4 {
+    margin-top: 1rem;
+  }
+
+  p {
+    margin-bottom: 2rem;
+  }
 }
 
-//.features-vertical-grid { background: url(../img/foundation-apps/vertical-grid.svg) no-repeat 0 0; background-size: 3rem 3rem;}
-//.features-scrolling-sections { background: url(../img/foundation-apps/independent-scrolling-sections.svg) no-repeat 0 0; background-size: 3rem 3rem;}
-//.features-source-ordering { background: url(../img/foundation-apps/easier-source-ordering.svg) no-repeat 0 0; background-size: 3rem 3rem;}
-
-//.features-templatizing-angular { background: url(../img/foundation-apps/templatizing-angular.svg) no-repeat 0 0; background-size: 3rem 3rem;}
-//.features-component-driven { background: url(../img/foundation-apps/component-driven.svg) no-repeat 0 0; background-size: 3rem 3rem;}
-//.features-motion-views { background: url(../img/foundation-apps/add-motion-to-views.svg) no-repeat 0 0; background-size: 3rem 3rem;}
-
-//.features-animation-classes { background: url(../img/foundation-apps/animation-classes.svg) no-repeat 0 0; background-size: 3rem 3rem;}
-//.features-motion-modifiers { background: url(../img/foundation-apps/motion-modifiers.svg) no-repeat 0 0; background-size: 3rem 3rem;}
-//.features-sass-mixins { background: url(../img/foundation-apps/sass-mixins.svg) no-repeat 0 0; background-size: 3rem 3rem;}
-//
-//.features-notifications { background: url(../img/foundation-apps/notifications.svg) no-repeat 0 0; background-size: 3rem 3rem;}
-//.features-menu-bar { background: url(../img/foundation-apps/menu-bar.svg) no-repeat 0 0; background-size: 3rem 3rem;}
-//.features-action-sheets { background: url(../img/foundation-apps/action-sheets.svg) no-repeat 0 0; background-size: 3rem 3rem;}
-
-p.small-lead{
-  margin-top: 0px;
-  color: rgba(255,255,255,0.3);
+p.small-lead {
+  margin-top: 0;
+  color: rgba(255, 255, 255, 0.3);
 }
 
-.top-bar-section .dropdown li.title{
-  color: rgba(255,255,255,0.5);
+.top-bar-section .dropdown li.title {
+  color: rgba(255, 255, 255, 0.5);
   padding-top: 10px;
   padding-left: 15px;
   font-size: 0.8em;
@@ -1968,7 +2283,8 @@ p.small-lead{
   //  letter-spacing: 2px;
 }
 
-.top-bar-section .divider, .top-bar-section [role="separator"]{
+.top-bar-section .divider,
+.top-bar-section [role="separator"] {
   border-top: solid 1px #484848;
 }
 
