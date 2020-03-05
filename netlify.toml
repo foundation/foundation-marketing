@@ -1,4 +1,16 @@
 [[redirects]]
+  from = "/sites/docs"
+  to = "/sites/docs/"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/emails/docs"
+  to = "/emails/docs/"
+  status = 301
+  force = false
+
+[[redirects]]
   from = "/sites/docs/*"
   to = "https://foundation-sites.netlify.com/:splat"
   status = 200
