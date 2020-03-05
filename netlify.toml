@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/sites/docs*"
+  from = "/sites/docs/*"
   to = "https://foundation-sites.netlify.com/:splat"
   status = 200
   force = true
@@ -7,8 +7,8 @@
     X-From = "Netlify"
 
 [[redirects]]
-  from = "/emails/docs*"
-  to = "https://foundation-emails.netlify.com:splat"
+  from = "/emails/docs/*"
+  to = "https://foundation-emails.netlify.com/:splat"
   status = 200
   force = true
   [redirects.headers]
