@@ -43,6 +43,6 @@
     "lodash": "^4.17.15",
     "typed.js": "^2.0.11",
     "waypoints": "^4.0.1",
-    "what-input": "^5.2.6"
+    "what-input": "^5.2.7"
   }
 }
