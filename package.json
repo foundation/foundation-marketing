@@ -37,8 +37,8 @@
     "yargs": "^3.8.0"
   },
   "dependencies": {
-    "chart.js": "^2.8.0",
-    "foundation-sites": "6.3.1",
+    "chart.js": "^3.0.0",
+    "foundation-sites": "6.5.0",
     "jquery": "^2.2.4",
     "lodash": "^4.17.15",
     "typed.js": "^2.0.11",
